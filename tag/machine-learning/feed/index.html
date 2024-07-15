@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>machine-learning &#8211; e a la i por pi</title>
+	<atom:link href="https://msenger.web.cern.ch/tag/machine-learning/feed/" rel="self" type="application/rss+xml" />
+	<link>https://msenger.web.cern.ch</link>
+	<description></description>
+	<lastBuildDate>Tue, 13 Jul 2021 06:52:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+
+<image>
+	<url>https://msenger.web.cern.ch/wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg</url>
+	<title>machine-learning &#8211; e a la i por pi</title>
+	<link>https://msenger.web.cern.ch</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Charge Sharing and Spacial Resolution of an AC-LGAD with &#8220;100 % Fill Factor Pads&#8221;</title>
+		<link>https://msenger.web.cern.ch/charge-sharing-and-spacial-resolution-of-an-ac-lgad-with-100-fill-factor-pads/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Mon, 12 Jul 2021 14:08:27 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ac-lgad]]></category>
+		<category><![CDATA[machine-learning]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=740</guid>
+
+					<description><![CDATA[View document in a new tab.]]></description>
+										<content:encoded><![CDATA[
+<p><a href="https://sengerm.github.io/html-github-hosting/210712_linear_scan_big_foot_AC-LGAD/210712_linear_scan_big_foot_AC-LGAD.html" data-type="URL" data-id="https://sengerm.github.io/html-github-hosting/210712_linear_scan_big_foot_AC-LGAD/210712_linear_scan_big_foot_AC-LGAD.html" target="_blank" rel="noreferrer noopener">View document in a new tab</a>.</p>
+
+
+
+<iframe style="width: 100%; height: 90vh; border-style: solid; border-width: 3px;" src="https://sengerm.github.io/html-github-hosting/210712_linear_scan_big_foot_AC-LGAD/210712_linear_scan_big_foot_AC-LGAD.html"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>First time-space characterization of an AC-LGAD</title>
+		<link>https://msenger.web.cern.ch/first-time-space-characterization-of-an-ac-lgad/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Mon, 01 Mar 2021 22:11:15 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ac-lgad]]></category>
+		<category><![CDATA[machine-learning]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=484</guid>
+
+					<description><![CDATA[After a lot of assembling, programming, measuring, analyzing and calibrating, today I finally arrived to my very first results of spacial and temporal resolution in an AC-LGAD. Though it was a lot of work until I reached here, the methods still have to be improved. The results I obtained, however, are pretty good. In this &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/first-time-space-characterization-of-an-ac-lgad/"> <span class="screen-reader-text">First time-space characterization of an AC-LGAD</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>After a lot of assembling, programming, measuring, analyzing and calibrating, today I finally arrived to my very first results of spacial and temporal resolution in an AC-LGAD. Though it was a lot of work until I reached here, the methods still have to be improved. The results I obtained, however, are pretty good. In this post I will summarize my current results so I don&#8217;t forget.</p>
+
+
+
+
+
+<h2 class="wp-block-heading">Introduction</h2>
+
+
+
+<p>AC-LGADs<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_1');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_1');" ><sup id="footnote_plugin_tooltip_484_4_1" class="footnote_plugin_tooltip_text">[1]</sup></a><span id="footnote_plugin_tooltip_text_484_4_1" class="footnote_tooltip">AC coupled LGAD.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_1').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_1', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> (also known as RSDs<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_2');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_2');" ><sup id="footnote_plugin_tooltip_484_4_2" class="footnote_plugin_tooltip_text">[2]</sup></a><span id="footnote_plugin_tooltip_text_484_4_2" class="footnote_tooltip">Resistive AC-Coupled Silicon Detectors.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_2').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_2', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>) are one of the candidates for the implementation of the 4D pixels capable of measuring both time and position of impact of particles with resolution of \(\mathcal{O}(10 \text{ ps})\) for the time and \(\mathcal{O}(10 \text{ µm})\) for position. We have a number of these devices in our lab and since some months ago I have been playing with them using our TCT setup<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_3');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_3');" ><sup id="footnote_plugin_tooltip_484_4_3" class="footnote_plugin_tooltip_text">[3]</sup></a><span id="footnote_plugin_tooltip_text_484_4_3" class="footnote_tooltip">See my other posts on AC-LGADs <a href="https://msenger.web.cern.ch/tag/ac-lgad/" data-type="URL" data-id="https://msenger.web.cern.ch/tag/ac-lgad/">here</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_3').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_3', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. In this post I will only be using the device labeled</p>
+
+
+
+<ul><li>RSD1 W8-A -2,5 3×3 100, alias Paul.</li></ul>
+
+
+
+<p>This is a device from the first RSD production (RSD1) which was characterized by its creators in <a href="https://arxiv.org/abs/2003.04838" data-type="URL" data-id="https://arxiv.org/abs/2003.04838">this paper</a>. You can ignore the alias, it is just a name by me to easily identify the devices in the lab. This is how a similar device looks like under the microscope:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img fetchpriority="high" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/photo_2021-03-01_17-54-22-1024x770.jpg" alt="" class="wp-image-494" width="706" height="530" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/photo_2021-03-01_17-54-22-1024x770.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/photo_2021-03-01_17-54-22-300x226.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/photo_2021-03-01_17-54-22-768x578.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/photo_2021-03-01_17-54-22.jpg 1077w" sizes="(max-width: 706px) 100vw, 706px" /><figcaption>Picture of an AC-LGAD under the microscope.</figcaption></figure></div>
+
+
+
+<p>Today I performed a series of measurements and analyses, described below, to get a first number for the spatial and the temporal resolution of this device.</p>
+
+
+
+<h3 class="wp-block-heading">Setup description</h3>
+
+
+
+<p>All the measurements were taken using our TCT at UZH. It is a <a href="http://particulars.si/products.php?prod=LargeScanTCT.html" data-type="URL" data-id="http://particulars.si/products.php?prod=LargeScanTCT.html">Particulars large scanning TCT</a> to which we have added a <a href="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/" data-type="URL" data-id="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/">laser splitting-delay line</a> to do time measurements. Below there are two block diagrams of the setup:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_e5c873-df"><div class="kb-gallery-ul kb-gallery-type-carousel kb-gallery-id-_e5c873-df kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="false"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-gallery-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-columns-xxl="2" data-columns-xl="2" data-columns-md="2" data-columns-sm="2" data-columns-xs="1" data-columns-ss="1" data-slider-anim-speed="400" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/3-6.svg" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1024px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit"><img decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/3-6.svg" width="1024" height="1024" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/3-6.svg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/3-6.svg" data-id="452" data-link="https://msenger.web.cern.ch/first-timing-measurement-with-tct/3-6/" class="wp-image-452 skip-lazy"/></div><div class="kadence-blocks-gallery-item__caption">Block diagram of the setup.</div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/1.svg" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1024px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit"><img decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/1.svg" width="1024" height="1024" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/1.svg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/1.svg" data-id="496" data-link="https://msenger.web.cern.ch/?attachment_id=496" class="wp-image-496 skip-lazy"/></div><div class="kadence-blocks-gallery-item__caption">Block diagram of the electrical connections of the setup.</div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<h4 class="wp-block-heading">Laser intensity calibration</h4>
+
+
+
+<p>One important aspect to determine the spatial and temporal resolution is to correctly adjust the laser intensity in order to produce a ionization equivalent to that of a MIP<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_4');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_4');" ><sup id="footnote_plugin_tooltip_484_4_4" class="footnote_plugin_tooltip_text">[4]</sup></a><span id="footnote_plugin_tooltip_text_484_4_4" class="footnote_tooltip">For more details see <a href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-theory/">this</a> and <a href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/">this</a> posts.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_4').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_4', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. For this I used as a reference a PIN diode &#8220;AIDA V2 RUN 12916 IP47 W3-DB45&#8221; which has a thickness of 50 µm, the same as the AC-LGADs from the RSD1 production<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_5');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_5');" ><sup id="footnote_plugin_tooltip_484_4_5" class="footnote_plugin_tooltip_text">[5]</sup></a><span id="footnote_plugin_tooltip_text_484_4_5" class="footnote_tooltip">Mandurrino M., et al. “High Performance Picosecond- and Micron-Level 4D Particle Tracking with 100% Fill-Factor Resistive AC-Coupled Silicon Detectors (RSD).” ArXiv:2003.04838 [Physics], March&nbsp;&#x2026; <span class="footnote_tooltip_continue"  onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_5');">Continue reading</span></span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_5').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_5', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. The laser intensity was calibrated against a radioactive beta source using the PIN diode<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_6');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_6');" ><sup id="footnote_plugin_tooltip_484_4_6" class="footnote_plugin_tooltip_text">[6]</sup></a><span id="footnote_plugin_tooltip_text_484_4_6" class="footnote_tooltip">See in <a href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/#tct-vs-beta-source-mip-calibration" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/#tct-vs-beta-source-mip-calibration">this post</a>. To be specific, a &#8220;laser pulse width&#8221; of 64.8 % was used.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_6').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_6', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> and then the same laser intensity was used for the AC-LGAD. </p>
+
+
+
+<h4 class="wp-block-heading">Amplifiers gain calibration</h4>
+
+
+
+<p>In order to maintain the symmetry between the four pads, the gain of each of the amplifiers connected to each channel in the oscilloscope must be as equal as possible. The four amplifiers were carefully selected from a group of more than 4 amplifiers in order to match as much as possible the gain and keeping as low as possible the noise floor. </p>
+
+
+
+<p>Furthermore, an offline gain correction for each channel was applied. For this I first performed a high granularity (1 µm) scan of the device throughout the whole active area of interest, which I will here refer to as &#8220;scan 1&#8221; (the full reference to this scan is &#8220;20210224075953_AC-LGAD_Paul_MIP_10um_555trigs&#8221; as seen in the title of the plots below). Then I adjusted the gain of each channel until the total collected charge inside a &#8220;Swiss flag region&#8221; (see plot below) was the same for all channels. While doing this I varied the size of the Swiss flag region and optimized its center. As a result both the gain of each channel and also the center of the structure were found. After this procedure was completed I ended up with this &#8220;fitted Swiss flag&#8221;: </p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Swiss%20flag%20after%20optimization.html" width="100%" height="555"></iframe>
+
+
+
+<p>where the colormap is the sum of the average collected charge by each channel after applying the gain correction. The average charge share after the gain correction was performed for each channel looks like this:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_e6bec6-b5"><ul class="kb-gallery-ul kb-gallery-type-grid kb-gallery-id-_e6bec6-b5 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:962px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:86.38253638253637%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03.png" width="962" height="831" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03.png" data-id="511" data-link="https://msenger.web.cern.ch/?attachment_id=511" class="wp-image-511undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03.png 962w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03-300x259.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-32-03-768x663.png 768w" sizes="(max-width: 962px) 100vw, 962px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:966px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:86.23188405797102%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54.png" width="966" height="833" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54.png" data-id="510" data-link="https://msenger.web.cern.ch/?attachment_id=510" class="wp-image-510undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54.png 966w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54-300x259.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-54-768x662.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:979px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:86.92543411644536%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29.png" width="979" height="851" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29.png" data-id="508" data-link="https://msenger.web.cern.ch/?attachment_id=508" class="wp-image-508undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29.png 979w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29-300x261.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-29-768x668.png 768w" sizes="(max-width: 979px) 100vw, 979px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:966px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:85.71428571428571%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45.png" width="966" height="828" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45.png" data-id="509" data-link="https://msenger.web.cern.ch/?attachment_id=509" class="wp-image-509undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45.png 966w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45-300x257.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_19-31-45-768x658.png 768w" sizes="(max-width: 966px) 100vw, 966px" /></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>The small black cross is the center of the fitted Swiss flag. Due to the symmetry of the structure we expect that exactly in the center the charge is shared in equal parts by the four channels, i.e. we expect this quantity to be 0.25 for all the channels. As can be seen in these plots, the 0.25 contour line passes just under this marker for the four channels <strong>✓</strong>. The corrections to the gain of each channel were in the order from 5 to 8 %, though not a big corrections it can be appreciated in these plots before and after this correction (not shown here the plots before the correction). </p>
+
+
+
+<h2 class="wp-block-heading">Spacial characterization</h2>
+
+
+
+<p>With the gain calibration completed I performed a second scan on the same device which I will call &#8220;scan 2&#8221; (full reference is &#8220;20210224075953_AC-LGAD_Paul_MIP_10um_555trigs&#8221;). In this scan I increased the granularity to 10 µm and at each point I captured 555 laser shots. In this scan I kept only the first of the two light pulses. So basically it is the same as &#8220;scan 1&#8221; but with a different granularity and with 555 laser shots at each xy point. As an example, below there are four plots showing the mean amplitude of each channel:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_5769c5-52"><ul class="kb-gallery-ul kb-gallery-type-grid kb-gallery-id-_5769c5-52 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean.png" data-id="520" data-link="https://msenger.web.cern.ch/?attachment_id=520" class="wp-image-520undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH4-pulse-1-mean-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean.png" data-id="519" data-link="https://msenger.web.cern.ch/?attachment_id=519" class="wp-image-519undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH3-pulse-1-mean-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean.png" data-id="517" data-link="https://msenger.web.cern.ch/?attachment_id=517" class="wp-image-517undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH1-pulse-1-mean-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean.png" data-id="518" data-link="https://msenger.web.cern.ch/?attachment_id=518" class="wp-image-518undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Amplitude-CH2-pulse-1-mean-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>I used this scan to train the &#8220;machine learning likelihood algorithm&#8221; I presented in <a href="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/" data-type="URL" data-id="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/">this post</a>. Then I applied this algorithm to reconstruct the position using the &#8220;scan 1&#8221; data. This is what I obtained:</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Reconstruction%20error%20mean.html" width="100%" height="555"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Reconstruction%20error%20std.html" width="100%" height="555"></iframe>
+</div>
+</div>
+
+
+
+<p>These plots show the mean and the standard deviation of the reconstruction error defined as </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[\text{Reconstruction error} = \sqrt{(x_\text{TCT} &#8211; x_\text{Reconstructed})^2 + (y_\text{TCT} &#8211; y_\text{Reconstructed})^2}\]<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script  async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" id="mathjax-js"></script>
+</div>
+
+
+
+<p>where \(x_\text{TCT},y_\text{TCT}\) are the coordinates where the laser was shined according to the TCT software. In both plots the black dots show the points where the reconstruction algorithm was trained (you can switch off these points by clicking the &#8220;Training points&#8221; legend). The scan used to reconstruct has high granularity but only two events at each point. Thus, it lacks the desired statistics to obtain a precise spacial resolution at each single point. However, we can plot the distribution of the reconstruction error inside the &#8220;Swiss flag region&#8221; denoted in the plots.</p>
+
+
+
+<div class="wp-block-columns alignfull is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/x%20reconstruction%20error%20distribution.html" width="100%" height="444"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/y%20reconstruction%20error%20distribution.html" width="100%" height="444"></iframe>
+</div>
+</div>
+
+
+
+<p>The blue curve shows the distribution of ALL the data, including when the laser was shined on top of the metallic pads (i.e. the laser could not reach the silicon). The green curve shows the distribution for events outside the Swiss flag region and, finally and more interesting, the red curve is the distribution of reconstruction error for events within the Swiss flag region. A Gaussian fit was made, shown in the plots. As can be seen in both cases the spacial resolution according to this fit is \(\lesssim\) 4 µm. A plot of the \(\text{Reconstruction error}\) as defined above looks like this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Reconstruction%20error%20distribution.html" width="100%" height="444"></iframe>
+
+
+
+<p></p>
+
+
+
+<p>A curious fact: The machine learning algorithm learned to reconstruct the hit position even when the laser shined onto one of the metallic pads, which is supposed to block the light and so the detector does not work in this regions (with photons). We can see this fact in the previous distribution for the events outside the Swiss flag region (green curve). Despite being a big tail of events with bad spacial resolution (greater than 20 µm) there is a lobe with maximum around 7 µm. </p>
+
+
+
+<h2 class="wp-block-heading">Temporal characterization</h2>
+
+
+
+<p>For the temporal characterization I performed a third scan, &#8220;scan 3&#8221; (&#8220;20210225005001_AC-LGAD_Paul_MIP_10um_555trigs_2_pulses&#8221;), which was basically identical to &#8220;scan 2&#8221; but taking data from both the two light pulses coming one with and the other without the 100 ns delay produced by the optic fiber. Using this data I proceeded with a very rudimentary analysis: I considered each pad as a simple LGAD and I performed the timing analysis we usually do with the single pad (common) LGADs. So basically for each pad and each x,y I did the same as in <a href="https://msenger.web.cern.ch/first-timing-measurement-with-tct/">this post</a> was done for a regular LGAD. </p>
+
+
+
+<p>Let me start exposing the results. The plots below show the time resolution at each x,y point I got for each channel:</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Time%20resolution%20vs%20position%20channel%202.html" width="100%" height="555"></iframe>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Time%20resolution%20vs%20position%20channel%201.html" width="100%" height="555"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Time%20resolution%20vs%20position%20channel%203.html" width="100%" height="555"></iframe>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Time%20resolution%20vs%20position%20channel%204.html" width="100%" height="555"></iframe>
+</div>
+</div>
+
+
+
+<p>This time resolution is \(1/\sqrt{2}\) times the standard deviation of the time difference at some optimized value of the constant fraction discriminator \(k_\text{CFD}\). So basically if we chose some particular x,y, say the very first point starting from the bottom left in the previous plots, we have (for channel 1 which is the one with high amplitude due to proximity to this point):</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210301%20First%20time-space%20analysis%20of%20an%20AC-LGAD/Time%20resolution%20vs%20k_CFD%20map%20for%20channel%201%20at%20nx%200%20ny%200.html" width="100%" height="555"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_21-34-38-1024x749.png" alt="" class="wp-image-534" width="663" height="484" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_21-34-38-1024x749.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_21-34-38-300x220.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_21-34-38-768x562.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/03/Screenshot_2021-03-01_21-34-38.png 1175w" sizes="(max-width: 663px) 100vw, 663px" /></figure></div>
+</div>
+</div>
+
+
+
+<p>The plot on the left shows the time resolution for different combinations of the CFD constant for the pulse 1 and the pulse 2. The plot on the right shows the time difference distribution specifically for 90 % of both CFD constants (which gives the best result, it is indicated with a red point in the plot on the left). In this plot on the right we can see that the mean value es 98 ns (the ~100 ns from the fiber optic delay line) and the standard deviation, assumed to be only attributable to the AC-LGAD itself, of 18.24 ps which when divided by sqrt(2) gives the 12.9 ps that go to the time resolution as a function of x,y for channel 1 in the previous plots. The channels 2, 3 and 4 have very bad time resolution in this point so they are not even shown.</p>
+
+
+
+<p>In the regions close to the pads the time resolution is on the order of 14 ps which is remarkable. &#8220;Far from the pads&#8221;, e.g. in the center of the four pads, the time resolution gets worse up to ~25 ps. It has to be noted that this time resolution was obtained treating each pad as a completely independent device, i.e. without any combination of information from the four pads. If information from the four pads is used to reconstruct the time this is expected to improve<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_7');" onkeypress="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_7');" ><sup id="footnote_plugin_tooltip_484_4_7" class="footnote_plugin_tooltip_text">[7]</sup></a><span id="footnote_plugin_tooltip_text_484_4_7" class="footnote_tooltip">Mandurrino M., et al. “High Performance Picosecond- and Micron-Level 4D Particle Tracking with 100% Fill-Factor Resistive AC-Coupled Silicon Detectors (RSD).” ArXiv:2003.04838 [Physics], March&nbsp;&#x2026; <span class="footnote_tooltip_continue"  onclick="footnote_moveToReference_484_4('footnote_plugin_reference_484_4_7');">Continue reading</span></span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_484_4_7').tooltip({ tip: '#footnote_plugin_tooltip_text_484_4_7', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusions</h2>
+
+
+
+<ul><li>I performed my first time-space characterization of an AC-LGAD using the TCT at UZH. </li><li>The spacial resolution obtained today is on the order of 4 µm (slightly better). This analysis used the same detector for training and evaluation. This is valid, though, because the two data sets used are different. The evaluation data set has even a granularity 10 times higher than the training data set and the algorithm is still performing very well. </li><li>Variations in the spacial resolution from one detector to another still have to be determined.</li><li>The temporal analysis I made today is very basic and does not combine in any way the information from the different readout pads. Despite this, the time resolution I obtained is between 13-16 ps which is really nice. A more refined analysis can only improve this time resolution, I think.</li></ul>
+<div class="speaker-mute footnotes_reference_container"> <div class="footnote_container_prepare"><p><span role="button" tabindex="0" class="footnote_reference_container_label pointer" onclick="footnote_expand_collapse_reference_container_484_4();">References</span><span role="button" tabindex="0" class="footnote_reference_container_collapse_button" style="display: none;" onclick="footnote_expand_collapse_reference_container_484_4();">[<a id="footnote_reference_container_collapse_button_484_4">+</a>]</span></p></div> <div id="footnote_references_container_484_4" style=""><table class="footnotes_table footnote-reference-container"><caption class="accessibility">References</caption> <tbody> 
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_1');"><a id="footnote_plugin_reference_484_4_1" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>1</a></th> <td class="footnote_plugin_text">AC coupled LGAD.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_2');"><a id="footnote_plugin_reference_484_4_2" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>2</a></th> <td class="footnote_plugin_text">Resistive AC-Coupled Silicon Detectors.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_3');"><a id="footnote_plugin_reference_484_4_3" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>3</a></th> <td class="footnote_plugin_text">See my other posts on AC-LGADs <a href="https://msenger.web.cern.ch/tag/ac-lgad/" data-type="URL" data-id="https://msenger.web.cern.ch/tag/ac-lgad/">here</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_4');"><a id="footnote_plugin_reference_484_4_4" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>4</a></th> <td class="footnote_plugin_text">For more details see <a href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-theory/">this</a> and <a href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/">this</a> posts.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi" ><a id="footnote_plugin_reference_484_4_5" class="footnote_backlink" onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_5');"><span class="footnote_index_arrow">&#8593;</span>5,</a> <a id="footnote_plugin_reference_484_4_7" class="footnote_backlink" onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_7');"><span class="footnote_index_arrow">&#8593;</span>7</a></th> <td class="footnote_plugin_text"><a href="https://arxiv.org/abs/2003.04838" data-type="URL" data-id="https://arxiv.org/abs/2003.04838">Mandurrino M., et al. “High Performance Picosecond- and Micron-Level 4D Particle Tracking with 100% Fill-Factor Resistive AC-Coupled Silicon Detectors (RSD).” <em>ArXiv:2003.04838 [Physics]</em>, March 24, 2020</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_484_4('footnote_plugin_tooltip_484_4_6');"><a id="footnote_plugin_reference_484_4_6" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>6</a></th> <td class="footnote_plugin_text">See in <a href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/#tct-vs-beta-source-mip-calibration" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/#tct-vs-beta-source-mip-calibration">this post</a>. To be specific, a &#8220;laser pulse width&#8221; of 64.8 % was used.</td></tr>
+
+ </tbody> </table> </div></div><script type="text/javascript"> function footnote_expand_reference_container_484_4() { jQuery('#footnote_references_container_484_4').show(); jQuery('#footnote_reference_container_collapse_button_484_4').text('−'); } function footnote_collapse_reference_container_484_4() { jQuery('#footnote_references_container_484_4').hide(); jQuery('#footnote_reference_container_collapse_button_484_4').text('+'); } function footnote_expand_collapse_reference_container_484_4() { if (jQuery('#footnote_references_container_484_4').is(':hidden')) { footnote_expand_reference_container_484_4(); } else { footnote_collapse_reference_container_484_4(); } } function footnote_moveToReference_484_4(p_str_TargetID) { footnote_expand_reference_container_484_4(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } } function footnote_moveToAnchor_484_4(p_str_TargetID) { footnote_expand_reference_container_484_4(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } }</script>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>First application of the empirical likelihood function to position reconstruction in AC-LGAD detectors</title>
+		<link>https://msenger.web.cern.ch/first-application-of-the-empirical-likelihood-function-to-position-reconstruction-in-ac-lgad-detectors/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 14 Jan 2021 01:11:12 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[ac-lgad]]></category>
+		<category><![CDATA[machine-learning]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=176</guid>
+
+					<description><![CDATA[During the last days I was working on the application of the maximum &#8220;empirical likelihood&#8221; estimator for the hit position of a particle in an AC-LGAD. To get an introduction to this method, please have a look at this previous post. Today I am going to write about how I am applying this method to &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/first-application-of-the-empirical-likelihood-function-to-position-reconstruction-in-ac-lgad-detectors/"> <span class="screen-reader-text">First application of the empirical likelihood function to position reconstruction in AC-LGAD detectors</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>During the last days I was working on the application of the maximum &#8220;empirical likelihood&#8221; estimator for the hit position of a particle in an AC-LGAD. To get an introduction to this method, please have a look at this <a href="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/" data-type="URL" data-id="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/">previous post</a>. Today I am going to write about how I am applying this method to the position reconstruction and I will show the first results. </p>
+
+
+
+
+
+<h2 class="wp-block-heading">Setup</h2>
+
+
+
+<p>I am using an AC-LGAD detector that has the following inscription: &#8220;RSD 1 W8-A &#8211; 2,5 3×3 100&#8221;. This is a picture of it:</p>
+
+
+
+<div class="wp-block-image is-style-rounded"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/photo_2021-01-13_23-27-03-1024x953.jpg" alt="" class="wp-image-178" width="407" height="378" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/photo_2021-01-13_23-27-03-1024x953.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/photo_2021-01-13_23-27-03-300x279.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/photo_2021-01-13_23-27-03-768x715.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/photo_2021-01-13_23-27-03.jpg 1080w" sizes="(max-width: 407px) 100vw, 407px" /><figcaption>An AC-LGAD wire bonded to a carrier board.</figcaption></figure></div>
+
+
+
+<p>The detector is attached and wire bonded to a board to which I connect an oscilloscope and measure the signal coming out from each of the four channels. The board is mounted inside a TCT like the one in <a href="http://particulars.si/products.php?prod=LargeScanTCT.html" data-type="URL" data-id="http://particulars.si/products.php?prod=LargeScanTCT.html">this link</a>. The intensity of the laser was not tuned against a MIP.</p>
+
+
+
+<h2 class="wp-block-heading">The position reconstruction algorithm</h2>
+
+
+
+<p> The general idea of the algorithm was presented in <a href="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/" data-type="URL" data-id="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/">this post</a> some days ago. Today I want to give some specific details of the current implementation.  </p>
+
+
+
+<p>So, there is an AC-LGAD that basically looks like this:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/tct-detector-drawing.svg" alt="" class="wp-image-60" width="532" height="213"/></figure></div>
+
+
+
+<p>and what I want to do is to use information measured at each pad \(i \in \{1,2,3,4\}\) to reconstruct the position \(x_0,y_0\). Throughout today&#8217;s post the only quantities used to reconstruct the impact position are the four collected charges \( Q_1, Q_2, Q_3 \) and \( Q_4 \). I used only the charge because it is the most sensitive quantity to the position. I did not normalized the charge and/or used the charge share fraction for each pad, which would have been better, because this requires some criterion in order to normalize the charge collected by each pad, and this is not trivial. Today I just wanted to test the algorithm applied to this problem, not to obtain the best reconstruction method.</p>
+
+<p>The &#8220;likelihood function&#8221; was defined as </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \mathscr{L}( q_1, q_2, q_3, q_4 | x, y ) := \prod_{i=1}^4 f_{Q_i}(q_i | x,y) \]</div>
+
+
+
+<p> where \( f_{Q_i} \) is the empirical distribution function for the collected charge of the \( i \)-th channel. Some remarks:</p>
+<ul>
+<li>I refer to this distribution functions as &#8220;empirical&#8221; since I don&#8217;t have an analytical expression for them, but instead they were approximated to measured data using the Gaussian KDE approximation, as detailed in the previously referred post. To this approximation process I will refer to as &#8220;training&#8221;.</li>
+<li>Note that I have also placed quotation marks in <emph>&#8220;likelihood function&#8221;</emph>. The reason for this is that, despite the function defined above resembles a likelihood function, it is not so in a strict sense because the four random variables \( Q_i \) are not independent (in fact are strongly correlated) and thus the joint distribution is not the product of the marginal distributions.</li>
+<li>I have built the &#8220;likelihood function&#8221; without any pre-processing of the data, I just fed the collected charge from each channel to the training algorithm and then used it to reconstruct the position. This is not the best approach since it will probably be highly dependent on the gain for each channel and maybe some other factors too.</li>
+</ul>
+<p> Today, however, I am working in a proof of concept of this idea. Improvements will come later. </p>
+<p> After the algorithm was trained, i.e. after the empirical &#8220;likelihood function&#8221; was constructed, the position estimation is done by maximizing this function in \( x \) and \( y \) for some particular observation of \( Q_i \). This maximization comes associated with some difficulties which I will show and discuss later on. The result of the maximization is the estimated impact point \( x_\text{estimated} , y_\text{estimated} \). </p>
+
+
+
+<h2 class="wp-block-heading">Training the position reconstruction algorithm</h2>
+
+
+
+<p> I call &#8220;training the algorithm&#8221; to the process of feeding measured data to it with both the impact position \( x,y \) and the collected charge \( Q_i \) for each of the four channels. Using this information, the algorithm creates approximations for the distribution functions \( f_{Q_i} \) at each \( x,y \) and then performs an interpolation to get it approximated to any \( x,y \). </p>
+
+
+
+<h3 class="wp-block-heading">Training data</h3>
+
+
+
+<p>To produce the training data I shined the TCT&#8217;s pulsed laser into many different \( x,y \) positions of the AC-LGAD detector. In each \( x,y \) point I measured the collected charge for each of the 4 channels for 333 different laser shots. The average collected charge for each of the four channels can be seen in the plots below:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_c2f7d7-f9"><ul class="kb-gallery-ul kb-gallery-type-grid kb-gallery-id-_c2f7d7-f9 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value.png" data-id="189" data-link="https://msenger.web.cern.ch/?attachment_id=189" class="wp-image-189undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value.png" data-id="188" data-link="https://msenger.web.cern.ch/?attachment_id=188" class="wp-image-188undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value.png" data-id="186" data-link="https://msenger.web.cern.ch/?attachment_id=186" class="wp-image-186undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value.png" data-id="187" data-link="https://msenger.web.cern.ch/?attachment_id=187" class="wp-image-187undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>The areas with low collected charge are each of the four metallic pads which prevent the laser to reaching the silicon. The cross-shaped region with higher values of collected charge is the active area where the semiconductor is exposed to the light of the laser.</p>
+<p>This data was fed into the training algorithm. At each \( x,y \) point the algorithm used the 333 samples to produce a set of four \( f_{Q_i} \) functions by using a Gaussian KDE approximation. Then, via the interpolation method described in <a href="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/" data-type="URL" data-id="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/">the previous post</a>, the distribution functions were extended to the whole \( x,y \) region and the &#8220;likelihood function&#8221; was constructed.</p>
+
+
+
+<h2 class="wp-block-heading">Position reconstruction</h2>
+
+
+
+<p>Having the algorithm trained, the reconstruction process is very simple: Just take the &#8220;likelihood function&#8221; \( \mathscr{L} \) and replace \( Q_i \) by the observed values for some particle hit, maximize this function in \( x,y \) and you obtain the position estimation.</p>
+
+
+
+<h3 class="wp-block-heading">Data for position reconstruction evaluation</h3>
+
+
+
+<p>To evaluate the performance of the algorithm for position reconstruction I took new data. The data acquisition process was identical to the one for training, but I took it at different \( x,y \) points. Below I expose the average collected charge at each point using the data for position reconstruction:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_b93ddd-b5"><ul class="kb-gallery-ul kb-gallery-type-grid kb-gallery-id-_b93ddd-b5 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1.png" data-id="196" data-link="https://msenger.web.cern.ch/?attachment_id=196" class="wp-image-196undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH4-mean-value-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1.png" data-id="195" data-link="https://msenger.web.cern.ch/?attachment_id=195" class="wp-image-195undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH3-mean-value-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1.png" data-id="193" data-link="https://msenger.web.cern.ch/?attachment_id=193" class="wp-image-193undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH1-mean-value-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-inherit"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:640px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-inherit" style="padding-bottom:75%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1.png" width="640" height="480" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1.png" data-id="194" data-link="https://msenger.web.cern.ch/?attachment_id=194" class="wp-image-194undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1.png 640w, https://msenger.web.cern.ch/wp-content/uploads/2021/01/Collected-charge-a.u.-CH2-mean-value-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></div></div></a></figure></div></li></ul></div>
+
+
+
+<h3 class="wp-block-heading">Maximization of the &#8220;likelihood function&#8221;</h3>
+
+
+
+<p>Although this position reconstruction process is quite simple, and very straightforward using any modern scientific toolkit, the &#8220;likelihood function&#8221; constructed the way I did has one major problem that complicates the task. The function becomes very peaked around its maximum value and quickly drops down to \( \equiv 0 \), making it a flat function along most of the \( x,y \) space. This makes the maximization process harder since many algorithms work by doing small variations and observing changes in the objective function, but if the function is constant then there are no changes at all and the maximization fails. Possible solutions to this are</p>
+<ul>
+<li>Use a &#8220;brute force&#8221; maximization method which will eventually find the maximum, but it may take longer time to find it.</li>
+<li>Redefine the empirical distribution functions \( f_{Q_i} \) such that they have small tails that do not contribute to the probability distribution and avoid the &#8220;likelihood function&#8221; to drop down to \( \equiv 0 \).</li>
+</ul>
+<p>Here I opted for the quick&#8217;n dirty solution, i.e. for a &#8220;brute force&#8221; maximization method to approximately locate the maximum and then feed this into a more sophisticated maximization algorithm to perform a fine search.</p>
+
+
+
+<h3 class="wp-block-heading">Some position reconstruction examples</h3>
+
+
+
+<p>Here I present some examples of how the algorithm reconstructs the impact position of the TCT&#8217;s laser. Let&#8217;s begin with a beautiful example:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_1.html" width="100%" height="555"></iframe>
+
+
+
+<p>In this plot the color map is the &#8220;likelihood function&#8221; \( \mathscr{L} \), the big white cross shows where the active area is (outside this cross there are the metallic pads), the small light crosses show the points where the training data was acquired, the empty circle is the position of the TCT and the filled circle is the reconstructed position. (Please zoom in to see more details, the plot is interactive, just draw a square around the area you want to zoom in.) There is also a line joining the laser position with the reconstructed position that is the reconstruction error, in this case around 0.93 µm. As can be seen in this example, the algorithm was capable to provide a reasonable good estimation. In this case, however, the laser was shined exactly in one of the spots that was used for training.</p>
+
+
+
+<p>Let&#8217;s see now another example in which the laser was not shined into one of the training points:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_2.html" width="100%" height="555"></iframe>
+
+
+
+<p>In this case the laser was shined in the middle of four training points. The reconstructed position is, again, quite good. </p>
+
+
+
+<p>There are other examples that are not so happy, though. Consider the following two plots:</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-5 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_3.html" width="100%" height="555"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_4.html" width="100%" height="555"></iframe>
+</div>
+</div>
+
+
+
+<p>Both of these plots have relatively big reconstruction errors, 11 µm and 5.5 µm respectively. Despite both errors are big, their source is clearly different. For the case in the left we can see that the maximization failed, because the reconstructed point is far away from the maximum of \( \mathscr{L} \). So in this case the error is not a problem of the method presented here but from the maximization algorithm, and should, in principle, have some &#8220;easy solution&#8221;. For the plot in the right we see that there was no maximization problem, but the maximum of \( \mathscr{L} \) is indeed far away from the position where the laser was shined. I still don&#8217;t know why this happens.</p>
+
+
+
+<h2 class="wp-block-heading">First estimations of position resolution</h2>
+
+
+
+<p>Using this data I have already done some first estimations on the position resolution. In the plot below I show the distribution for the reconstruction error at a single \( xy \) point (see below the plot with the point indicated). </p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/Reconstructed%20point%20distribution%20for%20nx%20%3D%203%2C%20ny%20%3D%204.html" width="100%" height="555"></iframe>
+
+
+
+<p>In this histogram we see a peaked distribution around 550 nm with a width of the order of 1 µm (please zoom in the plot), which I believe (without an in-depth analysis/thinking yet) can be considered as the spacial resolution of the system <em>detector+reconstruction algorithm</em>. It is also possible to see many bins at random positions &gt; 7 µm with one, two or 3 entries. These are, probably, due to errors in the maximization algorithm of the likelihood function.</p>
+
+
+
+<p>The plots below are two reconstruction examples from this data set. In the left we see a &#8220;good example&#8221; while in the right there is one in which the maximization of the &#8220;likelihood function&#8221; failed.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-6 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_6.html" width="100%" height="555"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210114%20first%20results%20on%20position%20resolution%20with%20empirical%20likelihood%20post/reconstruction_example_5.html" width="100%" height="555"></iframe>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<p>The &#8220;empirical likelihood function method&#8221; from my previous post was successfully applied for the first time to the reconstruction of the impact position of the TCT&#8217;s laser in an AC-LGAD. The method is working and yielding good results, at least for a first test of concept implementation. There are some points to work on in order to improve results which were already identified, such as do some pre-processing of the data before feeding it into the reconstruction algorithm, improving the maximization of the &#8220;likelihood function&#8221; and trying to implement the actual likelihood function taking into account that variables are not independent. Furthermore, more variables can be added to the likelihood function to increase its power, such as the amplitude, the arrival time and the time over threshold, which are quantities that demonstrated to have interesting dependence with the position.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Empirical likelihood function with continuous parameters</title>
+		<link>https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2021 11:53:44 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[machine-learning]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=55</guid>
+
+					<description><![CDATA[Introduction Currently I am working with a new type of particle detectors, still in development, called AC-LGADs (also RSD). These detectors promise to provide both spacial and temporal measurements for particles hits. Today I am not interested in the details of these detectors or how to use them, but in obtaining a method to infer &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/empirical-likelihood-function-with-continuous-parameters/"> <span class="screen-reader-text">Empirical likelihood function with continuous parameters</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+
+
+<h2 class="kt-adv-heading_7f6535-00 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_7f6535-00">Introduction</h2>
+
+
+
+<p>Currently I am working with a new type of particle detectors, still in development, called <a rel="noreferrer noopener" href="https://www.google.com/search?client=ubuntu&amp;hs=uyX&amp;channel=fs&amp;sxsrf=ALeKk00aAHMwLEvEtaHi1A_-af6suRb35A%3A1610022596888&amp;ei=xP72X_zVNemDi-gPmdSu8AE&amp;q=ac-lgad+rsd&amp;oq=ac-lgad+rsd&amp;gs_lcp=CgZwc3ktYWIQAzoECCMQJzoECAAQEzoICAAQDRAeEBM6BggAEA0QHlDEdljbfGCLhgFoAHAAeACAAaoCiAGhCpIBAzItNZgBAKABAaoBB2d3cy13aXrAAQE&amp;sclient=psy-ab&amp;ved=0ahUKEwj8x97H6YnuAhXpwQIHHRmqCx4Q4dUDCAw&amp;uact=5" data-type="URL" data-id="https://www.google.com/search?client=ubuntu&amp;hs=uyX&amp;channel=fs&amp;sxsrf=ALeKk00aAHMwLEvEtaHi1A_-af6suRb35A%3A1610022596888&amp;ei=xP72X_zVNemDi-gPmdSu8AE&amp;q=ac-lgad+rsd&amp;oq=ac-lgad+rsd&amp;gs_lcp=CgZwc3ktYWIQAzoECCMQJzoECAAQEzoICAAQDRAeEBM6BggAEA0QHlDEdljbfGCLhgFoAHAAeACAAaoCiAGhCpIBAzItNZgBAKABAaoBB2d3cy13aXrAAQE&amp;sclient=psy-ab&amp;ved=0ahUKEwj8x97H6YnuAhXpwQIHHRmqCx4Q4dUDCAw&amp;uact=5" target="_blank">AC-LGADs (also RSD)</a>. These detectors promise to provide both spacial and temporal measurements for particles hits. Today I am not interested in the details of these detectors or how to use them, but in obtaining a method to infer the hit position of the particle (and also the time in future work) by maximizing the likelihood of the observation.</p>
+
+
+
+<p>My current setup is composed by an AC-LGAD detector mounted in a scanning TCT, like <a rel="noreferrer noopener" href="http://particulars.si/products.php?prod=LargeScanTCT.html" data-type="URL" data-id="http://particulars.si/products.php?prod=LargeScanTCT.html" target="_blank">this one</a>, and can be depicted like this:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/tct-detector-drawing.svg" alt="" class="wp-image-60" width="676" height="271"/></figure></div>
+
+
+
+<p> The detector (light gray square) has 4 readout pads to each of which I connect an oscilloscope. The detector is mounted such that a pulsed laser can be shined on an arbitrary \( x_0,y_0 \) position. In this way, I shine the laser at some point and register the signals coming out from the detector. </p>
+
+
+
+<p>From these signals I can get different quantities such as the amplitude, the collected charge, etc. So, for example, from pad 1 at some position I have this (you can zoom horizontally to better appreciate the details):</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/parsed_signal_example.html" width="100%" height="555"></iframe>
+
+
+
+<p>and something similar for each of the other 3 pads. </p>
+
+
+
+<p> Repeating this for many \( x,y \) positions I can see how each of these quantities varies as a function of the impact point. So for example the amplitude of the signal seen in pad 1 (channel 1 in the oscilloscope) looks like this: </p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/amplitude_colormap_example_one_channel.html" width="100%" height="555"></iframe>
+
+
+
+<p></p>
+
+
+
+<p> As can be seen, the amplitude is highly dependent with the impact position. There are other quantities such as the collected charge and the time over threshold that also have an interesting dependence on \(x\) and \(y\). </p>
+
+
+
+<p>Since the electron-hole pairs produced by a particle in a silicon detector is an inherently stochastic process, all the signals (and so the amplitude, collected charge, etc) are going to have a random nature with some distribution. So now the question is: How can I use this information to reconstruct the impact position of a particle in this detector?</p>
+
+
+
+<h2 class="kt-adv-heading_d5b53d-76 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_d5b53d-76">Likelihood maximization</h2>
+
+
+
+<p>A very powerful way to estimate quantities when there are random fluctuations involved is to maximize the likelihood function. This is called the <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation" data-type="URL" data-id="https://en.wikipedia.org/wiki/Maximum_likelihood_estimation" target="_blank">maximum likelihood estimator</a> and it is extremely general and also has many nice properties.</p>
+
+
+
+<p> So, suppose I measure some quantities \(c_i \in \mathcal{C}\) where \(i \in \{ 1,2,3,4 \} \) denotes the pad number and \( \mathcal{C}\) is a set of these quantities that I consider have a nice dependence with the impact point, for example amplitude and/or collected charge. If I have a single observation of each of the quantities \( c_i \), which will I say it was the \( x \) and the \( y \) coordinates of the particle? Here is where the <em>likelihood function</em> comes into play. It is defined as </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \mathscr{L}(c_i | x, y) := \prod_{C_i \in \mathcal{C}} f_{C_i} (c_i | x, y) \]</div>
+
+
+
+<p> with \( f_{C_i}(c_i | x,y) \) the probability density function for the quantity \( C_i \) for which I have measured the value \( c_i \) at point \( (x,y) \). Note that \( x \) and \( y \) are the free variables of this function, because I don&#8217;t know the impact point of the particle. I only know the values of each of the \( c_i \)&#8217;s. </p>
+<p> According to the <em>principle of maximum likelihood</em> my best choice for \( x \) and \( y \) would be that that maximizes \( \mathscr{L} \). Okay, let&#8217;s do that! </p>
+
+
+
+<p> The problem with this is that I don&#8217;t know the (analytic expression for the) functions \( f_{C_i}(c_i | x,y) \). To make it worse, \( x \) and \( y \) are continuous parameters (if they were discrete I could try to measure \( f_{C_i}(c_i | x,y) \) at each possible  \( x \) and \( y \)). So now the problem is how to determine the distribution function for each \( C_i \) and its dependence with the impact position. </p>
+
+
+
+<h2 class="kt-adv-heading_1882fd-a4 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_1882fd-a4">Construction of an experimental likelihood function</h2>
+
+
+
+<p>Let&#8217;s see here how to determine experimentally a likelihood function to later using it to determine the impact position of a particle.</p>
+
+
+
+<h3 class="kt-adv-heading_191173-ef wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_191173-ef">Measuring a distribution function at a single point</h3>
+
+
+
+<p> The first step towards the construction of an experimental likelihood function is to be able to determine a single distribution function \( f_{C_i}(c_i | x_0,y_0) \) at some fixed point \(x_0,y_0\). It is possible to do this using the <code> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html" target="_blank" rel="noreferrer noopener">gaussian_kde</a> </code> function from the SciPy module. For this the first step is to have samples of the distribution we want to &#8220;measure&#8221; and then it is as simple as giving these samples to the <code>gaussian_kde</code> function to obtain an approximation of the probability density function. </p>
+
+
+
+<h5 class="kt-adv-heading_bbef72-40 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_bbef72-40">Example</h5>
+
+
+
+<p>Below there is a <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Minimal_working_example" data-type="URL" data-id="https://en.wikipedia.org/wiki/Minimal_working_example" target="_blank">MWE</a> that uses <code>gaussian_kde</code> to approximate an arbitrary distribution that was sampled. The samples are artificially generated inside the computer, but in &#8220;real life&#8221; they would be the result of a physical measurement. The code:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; title: ; quick-code: false; notranslate">
+import numpy as np
+from scipy.stats.kde import gaussian_kde
+import myplotlib as mpl # https://github.com/SengerM/myplotlib
+
+def generate_samples(x,y):
+	return list(np.random.randn(99999)*(1+x)+y+x) + list((np.random.rand(9999)-.5)*3*(1+x)+y+x)
+
+samples = generate_samples(5,3)
+pdf = gaussian_kde(samples)
+
+fig = mpl.manager.new(
+	title = &#039;Example of gaussian_kde&#039;,
+	xlabel = &#039;Random variable&#039;,
+	ylabel = &#039;Probability density&#039;,
+)
+fig.hist(
+	samples,
+	density = True,
+	label = &#039;Measured samples&#039;,
+)
+q = np.linspace(min(samples),max(samples))
+fig.plot(
+	q,
+	pdf(q),
+	label = &#039;Gaussian KDE approximation&#039;,
+)
+fig.show()
+</pre></div>
+
+
+<p>and the output plot looks like this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/example_of_gaussian_kde.html" width="100%" height="555"></iframe>
+
+
+
+<p>As can be seen we have an approximation of the distribution. Of course this approximation is not perfect and will be different for each realization of the samples (the measured values). But it is better than nothing. And actually looks really good.</p>
+
+
+
+<p> Now we can repeat this process for many different \(x,y\) points. In the end we will have the distribution \( f_{C_i}(c_i | x_0,y_0) \) sampled at many different \(x_0,y_0\). </p>
+
+
+
+<h3 class="kt-adv-heading_45e329-f0 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_45e329-f0">From discrete \(x,y\) to continuous \(x,y\)</h3>
+
+
+
+<p> Once the distribution \( f_{C_i}(c_i | x,y) \) was sampled at many \( x,y \) points the next step is to somehow interpolate for any intermediate \( x,y \). This is not trivial, or at least I have not found any package that solves this in a single line of code. In fact, as we will see, this has not a unique answer and depends on the criterion we want to use. </p>
+
+
+
+<p>For this we first need to define some interpolation method, and this requires &#8220;human input&#8221; in order to decide how to do it. Consider for example the following distributions:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/how_to_interpolate_drawing_1.svg" alt="" class="wp-image-89" width="500" height="330"/></figure></div>
+
+
+
+<p> These can be two measured distributions at two different \( x \) values (let&#8217;s ignore \( y \) for simplicity). Now let&#8217;s think of how the distribution should look like for an intermediate \( x \) : </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/how_to_interpolate_drawing_2.svg" alt="" class="wp-image-90" width="500" height="330"/></figure></div>
+
+
+
+<p>As can be seen there are many different options, and depending on what we want to do any can be the correct answer. In my current case, however, the green one seems to be the correct answer. I.e. the distribution should somehow move and transform smoothly from one to another instead of &#8220;disappearing here and appearing there&#8221; as in the violet drawing. Even after deciding this, there are probably many different ways (which yield slightly different results) of implementing this. Below I will share my procedure.</p>
+
+
+
+<p> To perform the interpolation between the different discrete \( x,y\) points I proceeded in two steps: 
+</p><ol>
+    <li>Interpolate the mean values \( \mu_0 \) and \( \mu_1 \) to obtain a new \( \mu \). In 1D this is very easy: Just interpolate using a straight line between the two points. In 2D (as in my case) it is not as trivial as using a plane, but fortunately the Python community has already solved this problem. Of course there is more than one approach here, but let&#8217;s keep it simple and use an easy and reasonable solution.</li>
+    <li>Interpolate the profile of the density function. By this I mean the shape of the function itself. Again, here there are many different options on how to do this. I will discuss it late onr.</li>
+</ol>
+<p>The following drawings should help in visualizing this process. In the first drawing I show a straight-line-interpolation for the mean value \( \mu \) of the interpolated distribution: </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/how_to_interpolate_drawing_3.svg" alt="" class="wp-image-97" width="610" height="430"/></figure></div>
+
+
+
+<p>In the second drawing (below) I show one possibility for interpolating the profile of the distribution. As can be seen the two distributions were shifted such that they share the same mean value and in this condition a weighted average is performed. Details will come later.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/how_to_interpolate_drawing_4-1.svg" alt="" class="wp-image-121" width="610" height="320"/></figure></div>
+
+
+
+<p> These drawings show the case for a unique parameter \( x \). For a two dimensional parameters space \( x,y \) it is the same idea. First I performed the interpolation of the mean value and then the interpolation of the function profile. This time, however, there are 4 distributions to &#8220;mix&#8221; in order to obtain the interpolated distribution (I assumed a rectangular grid of sampled points). For the interpolation of the mean value I used the <code><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp2d.html" data-type="URL" data-id="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp2d.html" target="_blank" rel="noreferrer noopener">scipy.interpolate.interp2d</a></code> function which performs a interpolation using splines. So: </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \mu=\text{scipy.interpolate.interp2d}\left(\left[\begin{matrix}x_{0} &amp; x_{0} &amp; x_{1} &amp; x_{1}\end{matrix}\right],\left[\begin{matrix}y_{0} &amp; y_{1} &amp; y_{0} &amp; y_{1}\end{matrix}\right],\left[\begin{matrix}\mu_{00} &amp; \mu_{01} &amp; \mu_{10} &amp; \mu_{11}\end{matrix}\right]\right) (x,y) \]</div>
+
+
+
+<p>where each of the sub indices denotes which of the four points is being considered:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/01/rectangular_grid_for_interpolation.svg" alt="" class="wp-image-101" width="401" height="245"/></figure></div>
+
+
+
+<p> For the interpolation of the function profile I proceeded manually. First I shifted the functions such that their mean value was \( \mu \) and then I performed an average weighted by the area of the &#8220;opposite rectangle&#8221;: </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ f\left(q|x,y\right)=\sum_{i\in\left\{ 0,1\right\} }\sum_{j\in\left\{ 0,1\right\} }f_{ij}\left(q+\mu_{ij}-\mu\right)\frac{\left|x-x_{1-i}\right|\left|y-y_{1-j}\right|}{\left(x_{1}-x_{0}\right)\left(y_{1}-y_{0}\right)} \]</div>
+
+
+
+<p> where \(f_{ij} \) is the measured distribution at point \( x_i,y_j \) and \( q \equiv c_i \) is just a relabeling. </p>
+
+
+
+<h5 class="kt-adv-heading_88d109-5a wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_88d109-5a">Example</h5>
+
+
+
+<p>The results of applying these formulae look pretty good, here is an example:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/interpolation_example.html" width="100%" height="555"></iframe>
+
+
+
+<h3 class="kt-adv-heading_995d5d-82 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_995d5d-82">Finally, the empirical likelihood</h3>
+
+
+
+<p> Combining all the previous stuff I am finally able to construct the &#8220;empirical likelihood&#8221; in order to use it for parameter estimation. From here on it is just a problem about how to implement this in a computer. Fortunately, although not trivial, this is not so hard with to do in Python. The code below simulates a fake data set that represents some measured quantity at different \( x,y \) positions, then it builds approximates the distribution at each point using KDE estimation, after this it produces an interpolation to get continuous parameters, and finally it builds the likelihood function and maximizes it: </p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; title: ; quick-code: false; notranslate">
+import numpy as np
+from scipy.stats.kde import gaussian_kde
+from scipy import interpolate
+
+def check_number_or_numpy_array(var, name: str):
+	if not (isinstance(var,int) or isinstance(var,float) or isinstance(var, np.ndarray)):
+		raise TypeError(f&#039;&lt;{name}&gt; must be a number (int or float) or a numpy array, received instead &lt;{name}&gt; of type {type(var)}.&#039;)
+
+class ExperimentalParametricDensity:
+	def __init__(self, samples: dict):
+		# &lt;samples&gt; is a dict that contains the data in each xy sampled point, for example samples&#91;x]&#91;y] = samples_array_at_x_y.
+		# Assuming that the x,y points are distributed in a rectangular mesh, i.e. it is just a matrix.
+		self._samples = samples
+		self._x_vals = sorted(&#91;x for x in samples])
+		self._y_vals = sorted(&#91;y for y in samples&#91;self._x_vals&#91;0]]]) # Here I am using that the x,y points are distributed in a rectangular mesh.
+		
+	@property
+	def means(self):
+		if not hasattr(self, &#039;_means&#039;):
+			self._means = np.zeros((len(self._y_vals), len(self._x_vals)))
+			self._means&#91;:] = float(&#039;NaN&#039;)
+			for nx,x in enumerate(self._x_vals):
+				for ny,y in enumerate(self._y_vals):
+					self._means&#91;ny,nx] = np.nanmean(self._samples&#91;x]&#91;y])
+		return self._means
+	
+	@property
+	def xx(self):
+		if not hasattr(self, &#039;_xx&#039;):
+			xx,yy = np.meshgrid(self._x_vals, self._y_vals)
+			self._xx = xx
+			self._yy = yy
+		return self._xx
+	
+	@property
+	def yy(self):
+		if not hasattr(self, &#039;_yy&#039;):
+			self.xx
+		return self._yy
+	
+	@property
+	def kde(self):
+		# Returns a dictionary with the KDE at each sampled x,y. This means that returns the same as self._samples but instead of having samples it has the KDE functions. Each KDE function has the signature KDE(q).
+		if not hasattr(self, &#039;_kde&#039;):
+			self._kde = {}
+			for x in self._x_vals:
+				self._kde&#91;x] = {}
+				for y in self._y_vals:
+					self._kde&#91;x]&#91;y] = gaussian_kde(self._samples&#91;x]&#91;y])
+		return self._kde
+	
+	def __call__(self, q, x, y):
+		if not (isinstance(x,int) or isinstance(x,float)):
+			raise TypeError(f&#039;&lt;x&gt; must be a number (int or float), received instead &lt;x&gt; of type {type(x)}.&#039;)
+		if not (isinstance(y,int) or isinstance(y,float)):
+			raise TypeError(f&#039;&lt;y&gt; must be a number (int or float), received instead &lt;y&gt; of type {type(y)}.&#039;)
+		if not min(self._x_vals) &lt;= x &lt;= max(self._x_vals):
+			raise ValueError(f&#039;&lt;x&gt; must be bounded within the sampling region. The minimum value for &lt;x&gt; is {min(self._x_vals)} and the maximum {max(self._x_vals)}, received x = {x}.&#039;)
+		if not min(self._y_vals) &lt;= y &lt;= max(self._y_vals):
+			raise ValueError(f&#039;&lt;y&gt; must be bounded within the sampling region. The minimum value for &lt;y&gt; is {min(self._y_vals)} and the maximum {max(self._y_vals)}, received y = {y}.&#039;)
+		check_number_or_numpy_array(q, &#039;q&#039;)
+		# If we are here is because x,y are both numbers and within the sampling range.
+		if x == self._x_vals&#91;0]: idx_prev_x = 0
+		else: idx_prev_x = np.where((np.array(self._x_vals)&lt;x))&#91;0]&#91;-1]
+		if y == self._y_vals&#91;0]: idx_prev_y = 0
+		else: idx_prev_y = np.where((np.array(self._y_vals)&lt;y))&#91;0]&#91;-1]
+		x0 = self._x_vals&#91;idx_prev_x]
+		y0 = self._y_vals&#91;idx_prev_y]
+		x1 = self._x_vals&#91;idx_prev_x+1]
+		y1 = self._y_vals&#91;idx_prev_y+1]
+		µ00 = self.means&#91;idx_prev_y,idx_prev_x]
+		µ01 = self.means&#91;idx_prev_y+1,idx_prev_x]
+		µ10 = self.means&#91;idx_prev_y,idx_prev_x+1]
+		µ11 = self.means&#91;idx_prev_y+1,idx_prev_x+1]
+		f00 = self.kde&#91;x0]&#91;y0]
+		f01 = self.kde&#91;x0]&#91;y1]
+		f10 = self.kde&#91;x1]&#91;y0]
+		f11 = self.kde&#91;x1]&#91;y1]
+		µ = interpolate.interp2d(x=&#91;x0,x0,x1,x1], y=&#91;y0,y1,y0,y1], z=&#91;µ00,µ01,µ10,µ11])(x,y)
+		return (f00(q+µ00-µ)*(x1-x)*(y1-y) + f01(q+µ01-µ)*(x1-x)*(y-y0) + f10(q+µ10-µ)*(x-x0)*(y1-y) + f11(q+µ11-µ)*(x-x0)*(y-y0))/(x1-x0)/(y1-y0)
+	
+	def likelihood(self, x, y, q):
+		if not (isinstance(q,int) or isinstance(q,float)):
+			raise TypeError(f&#039;&lt;q&gt; must be a number (int or float), received instead &lt;q&gt; of type {type(q)}.&#039;)
+		check_number_or_numpy_array(x, &#039;x&#039;)
+		check_number_or_numpy_array(y, &#039;y&#039;)
+		if isinstance(x, float) or isinstance(x, int):
+			x = np.array(&#91;x])
+		if isinstance(y, float) or isinstance(y, int):
+			y = np.array(&#91;y])
+		if x.shape != y.shape:
+			raise ValueError(f&#039;The shape of &lt;x&gt; and &lt;y&gt; must be the same. Received x.shape = {x.shape} and y.shape = {y.shape}.&#039;)
+		ll = &#91;]
+		for xx,yy in zip(x.ravel(),y.ravel()):
+			ll.append(self(q,xx,yy))
+		ll = np.reshape(np.array(ll),x.shape)
+		if x.shape == 1:
+			ll = ll&#91;0]
+		return ll
+		
+
+if __name__ == &#039;__main__&#039;:
+	import myplotlib as mpl # https://github.com/SengerM/myplotlib
+	import lmfit
+	import palettable
+	
+	def generate_samples(x,y):
+		return list(np.random.randn(99999)*(1+x)+y+x) + list((np.random.rand(9999)-.5)*3*(1+x)+y+x)
+
+	X_VALS = &#91;0,1,2,3]
+	Y_VALS = &#91;0,1,2,3]
+
+	data = {}
+	qmin = 0
+	qmax = 0
+	for x in X_VALS:
+		data&#91;x] = {}
+		for y in Y_VALS:
+			data&#91;x]&#91;y] = generate_samples(x,y)
+			qmin = min(qmin, min(data&#91;x]&#91;y]))
+			qmax = max(qmax, max(data&#91;x]&#91;y]))
+
+	epd = ExperimentalParametricDensity(data)
+	
+	fig = mpl.manager.new(
+		title = &#039;Measured and estimated distributions at each x,y&#039;,
+		xlabel = &#039;q&#039;,
+		ylabel = &#039;Probability density&#039;,
+	)
+	qaxis = np.linspace(qmin, qmax,99)
+	x0 = 1.1
+	y0 = 2.6
+	n = 0
+	for x in X_VALS:
+		for y in Y_VALS:
+			n += 1
+			color = tuple(np.array(palettable.tableau.Tableau_20.colors&#91;n%20])/255)
+			fig.hist(
+				data&#91;x]&#91;y],
+				label = f&#039;Measured q at x={x}, y={y}&#039;,
+				density = True,
+				color = color
+			)
+			fig.plot(
+				qaxis,
+				epd.kde&#91;x]&#91;y](qaxis),
+				label = f&#039;KDE at x={x}, y={y}&#039;,
+				color = color,
+				linestyle = &#039;--&#039;,
+			)
+	fig.plot(
+		qaxis,
+		epd(qaxis, x0, y0),
+		label = f&#039;Interpolation example at x={x0}, y={y0}&#039;,
+	)
+
+	q0 = 6
+	xaxis = np.linspace(min(X_VALS), max(X_VALS))
+	yaxis = np.linspace(min(Y_VALS), max(Y_VALS))
+	xx,yy = np.meshgrid(xaxis,yaxis)
+	fig = mpl.manager.new(
+		title = f&#039;Likelihood plot&#039;,
+		xlabel = &#039;x&#039;,
+		ylabel = &#039;y&#039;,
+		aspect = &#039;equal&#039;,
+	)
+	fig.contour(
+		x = xx,
+		y = yy,
+		z = epd.likelihood(xx, yy, q0),
+		colorscalelabel = f&#039;Likelihood(q={q0}|x,y)&#039;,
+	)
+	
+	# Now let&#039;s find the maximum of the likelihood:
+	params = lmfit.Parameters()
+	params.add(&#039;x&#039;, value = 0, min = min(X_VALS), max = max(X_VALS))
+	params.add(&#039;y&#039;, value = 0, min = min(Y_VALS), max = max(Y_VALS))
+	def func2minimize(pars):
+		parvals = pars.valuesdict()
+		return 1/epd.likelihood(parvals&#91;&#039;x&#039;],parvals&#91;&#039;y&#039;],q0)
+	minimizer = lmfit.Minimizer(
+		func2minimize,
+		params,
+	)
+	minimizer_result = minimizer.minimize(method = &#039;nelder&#039;)
+	print(minimizer_result.params)
+	
+	fig.plot(
+		&#91;minimizer_result.params&#91;&#039;x&#039;].value],
+		&#91;minimizer_result.params&#91;&#039;y&#039;].value],
+		marker = &#039;.&#039;,
+	)
+
+	mpl.manager.show()
+
+</pre></div>
+
+
+<p>As a result of running this script we obtain the following plots:</p>
+
+
+
+<p>First this plot that shows all the &#8220;measured&#8221; (simulated) distributions as histograms along with the corresponding KDE estimation for this distribution (you can enable/hide traces by clicking in the legend):</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/final_example_1.html" width="100%" height="555"></iframe>
+
+
+
+<div class="wp-block-columns alignfull is-layout-flex wp-container-core-columns-layout-7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%"></div>
+</div>
+
+
+
+<p> and secondly this color map with the likelihood function for the particular realization \( q = q_0 = 6 \) :</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210107%20empirical%20likelihood%20post/final_example_2.html" width="100%" height="555"></iframe>
+
+
+
+<p> The black points are the \( x,y \) points where the distribution of \( q \) was measured (simulated). The red point is the maximum of the likelihood function, this means that \( x_\text{red},y_\text{red} \) is the estimated point when \( q = q_0 = 6 \) according to the <em>maximum likelihood principle</em>. </p>
+
+
+
+<p>Of course it is possible to use this likelihood function for whatever we want, for example to construct other estimators such as the <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Likelihood-ratio_test" data-type="URL" data-id="https://en.wikipedia.org/wiki/Likelihood-ratio_test" target="_blank">likelihood ratio test</a>.</p>
+
+
+
+<h2 class="kt-adv-heading_2f2a18-34 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading_2f2a18-34">Conclusion</h2>
+
+
+
+<p>I presented a way to obtain an estimation of the likelihood function, i.e. an experimental likelihood function, for continuous parameters based only in measurements. This method employs a sampling of the distribution function in discrete points for the parameters and then performs a specific interpolation to go from discrete to continuous values.</p>
+
+
+
+<p>My <a href="https://msenger.web.cern.ch/first-application-of-the-empirical-likelihood-function-to-position-reconstruction-in-ac-lgad-detectors/#the-position-reconstruction-algorithm" data-type="URL" data-id="https://msenger.web.cern.ch/first-application-of-the-empirical-likelihood-function-to-position-reconstruction-in-ac-lgad-detectors/#the-position-reconstruction-algorithm">next post</a> will show the application of this method to real data coming out of the detectors.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

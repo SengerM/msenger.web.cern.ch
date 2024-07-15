@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>lgad &#8211; e a la i por pi</title>
+	<atom:link href="https://msenger.web.cern.ch/tag/lgad/feed/" rel="self" type="application/rss+xml" />
+	<link>https://msenger.web.cern.ch</link>
+	<description></description>
+	<lastBuildDate>Wed, 16 Aug 2023 16:47:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+
+<image>
+	<url>https://msenger.web.cern.ch/wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg</url>
+	<title>lgad &#8211; e a la i por pi</title>
+	<link>https://msenger.web.cern.ch</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>16 channels readout board</title>
+		<link>https://msenger.web.cern.ch/16-channels-readout-board/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Wed, 16 Aug 2023 15:10:42 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=1046</guid>
+
+					<description><![CDATA[I developed a 16 channel readout board for LGADs, with the help of the electronics workshop from UZH. This board opens the possibility to measure 4×4 pixelated structures. It is, in essence, a replication of the Chubut 2 board, which has 4 channels, so the performance is very similar. More information about this board can &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/16-channels-readout-board/"> <span class="screen-reader-text">16 channels readout board</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>I developed a 16 channel readout board for LGADs, with the help of the electronics workshop from UZH. This board opens the possibility to measure 4×4 pixelated structures. It is, in essence, a replication of the <a href="https://msenger.web.cern.ch/chubut-2-readout-board/" data-type="link" data-id="https://msenger.web.cern.ch/chubut-2-readout-board/">Chubut 2 board</a>, which has 4 channels, so the performance is very similar. More information about this board can be found below or in <a href="https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/main.html" data-type="link" data-id="https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/main.html">this link</a>.</p>
+
+
+
+<iframe style="width: 100%; height: 80vh; border-width: 2; border: solid;" src="https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/main.html"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Charge measurement on radiation silicon detectors with poor SNR</title>
+		<link>https://msenger.web.cern.ch/charge-measurement-on-radiation-silicon-detectors-with-poor-snr/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 09 Mar 2023 12:15:07 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-source]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[pin-diode]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=1028</guid>
+
+					<description><![CDATA[Recently I came across the problem of having to precisely measure the charge produced by a PIN detector from the RD50 FBK TI-LGAD production. As we know, PINs have no internal gain and since this one is from the TI-LGAD production it is only 45 micrometers thick. Thus, the signals are really small and the &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/charge-measurement-on-radiation-silicon-detectors-with-poor-snr/"> <span class="screen-reader-text">Charge measurement on radiation silicon detectors with poor SNR</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>Recently I came across the problem of having to precisely measure the charge produced by a PIN detector from the RD50 FBK TI-LGAD production. As we know, PINs have no internal gain and since this one is from the TI-LGAD production it is only 45 micrometers thick. Thus, the signals are really small and the Landau distribution partially overlaps with the noise, making it very difficult to precisely perform the fit. Fortunately, I came across with a method to actually perform the fit, which is probably a common technique for those doing their PhDs on data analysis but it is the first time I apply such kind of technique to LGADs (or PINs actually) so I want to keep a record of it. I developed this method while characterizing the gain of the new Chubut 2 board (soon more info &#8217;bout it) but it will be useful when dealing with irradiated LGADs as well, since they tend to loose the gain.</p>
+
+
+
+<p>Full screen version <a href="https://sengerm.github.io/html-github-hosting/230309_charge_measurement_when_poor_SNR/index.html" data-type="URL" data-id="https://sengerm.github.io/html-github-hosting/230309_charge_measurement_when_poor_SNR/index.html" target="_blank" rel="noreferrer noopener">here</a>.</p>
+
+
+
+<iframe style="width: 100%; height: 80vh; border-width: 2; border: solid;" src="https://sengerm.github.io/html-github-hosting/230309_charge_measurement_when_poor_SNR/index.html"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Chubut 2 board prototype</title>
+		<link>https://msenger.web.cern.ch/chubut-2-board-prototype/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Sun, 20 Nov 2022 10:31:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=1000</guid>
+
+					<description><![CDATA[So far, for all sensor studies, I have been using either a single channel active board (Santa Cruz or Chubut) or a multi channel passive readout board. Though this works, it is not ideal. Firstly, the passive readout board is not the best because usually the amplifier is installed as close as possible to the &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/chubut-2-board-prototype/"> <span class="screen-reader-text">Chubut 2 board prototype</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>So far, for all sensor studies, I have been using either a single channel active board (Santa Cruz or <a href="https://msenger.web.cern.ch/the-chubut-board/" data-type="post" data-id="752">Chubut</a>) or a multi channel passive readout board. Though this works, it is not ideal. Firstly, the passive readout board is not the best because usually the amplifier is installed as close as possible to the readout board. Moreover, if the board is changed for different studies then it is an additional variable to take into account when looking at the results. The ideal case would be a multi channel readout board with amplifiers integrated on the board itself. So I decided to solve this and implemented the &#8220;Chubut 2 prototype&#8221;.</p>
+
+
+
+<p>Below there are some pictures of this prototype:</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="768" height="1024" data-id="1003" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-40-768x1024.jpg" alt="" class="wp-image-1003" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-40-768x1024.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-40-225x300.jpg 225w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-40.jpg 960w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="768" data-id="1001" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-42-1024x768.jpg" alt="" class="wp-image-1001" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-42-1024x768.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-42-300x225.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-42-768x576.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-42.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="768" height="1024" data-id="1002" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-58-768x1024.jpg" alt="" class="wp-image-1002" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-58-768x1024.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-58-225x300.jpg 225w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/photo_2022-11-20_10-45-58.jpg 960w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+</figure>
+
+
+
+<p>This prototype has two active channels with integrated amplifiers close to the DUT. It also features a Sensirion humidity and temperature sensor close to the sample to precisely monitor the conditions and, if needed, implement a temperature control (for example in the TCT setup). Additionally, I went for a design that combines a &#8220;main board&#8221; with a &#8220;carrier board&#8221;, which can be seen in the pictures. This I made because to ease the life of the guy that is in the lab testing the devices (i.e. me). The size of this prototype is almost identical to the size of the current <a href="https://msenger.web.cern.ch/the-chubut-board/" data-type="post" data-id="752">Chubut board</a> and I switched to using MMCX connectors because SMA just don&#8217;t fit.</p>
+
+
+
+<p>After assembling everything together I verified that not only the board works but it seems to be a bit better than our current boards. Since the design has a carrier board, I mounted a few detectors and tested that it is easy to swap between one another. Then I went for a &#8220;full test&#8221; in the beta setup, for which I installed a TI-LGAD with two out of the four pads connected to the outputs and installed it in the <a href="https://msenger.web.cern.ch/the-robocold-beta-setup/" data-type="post" data-id="944">Robocold setup</a>.</p>
+
+
+
+<p>Below there is an example of a signal from a beta particle:</p>
+
+
+
+<iframe style="width: 100%; height: 80vh; min-width: 888px; min-height: 444px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/n_trigger-871-signal_name-DUT.html"></iframe>
+
+
+
+<p>The only detail I don&#8217;t like is the long tail of the signal, but anyway it does not affect our tests because we only look at the rising edge, and for the charge it only changes the proportionally factor to convert to Coulomb. I still don&#8217;t know where is it coming from.</p>
+
+
+
+<p>So far I only measured rigorously one of the two channels, but I verified that both of them work similarly.</p>
+
+
+
+<p>If we look at the time resolution measured with our <a href="https://msenger.web.cern.ch/the-robocold-beta-setup/" data-type="post" data-id="944">Robocold setup</a>, we get this:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="702" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-02-24-1024x702.png" alt="" class="wp-image-1006" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-02-24-1024x702.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-02-24-300x206.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-02-24-768x527.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-02-24.png 1194w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>which is pretty good.</p>
+
+
+
+<p>The collected charge (in arbitrary units) also looks quite good, despite the long tails in the signals:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_63e152-b8"><div class="kb-gallery-ul kb-gallery-type-fluidcarousel kb-gallery-id-_63e152-b8 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="false"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-blocks-fluid-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-slider-anim-speed="400" data-slider-type="fluidcarousel" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27-1024x697.png" width="1024" height="697" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27.png" data-id="1008" data-link="https://msenger.web.cern.ch/?attachment_id=1008" data-custom-link="" data-custom-link-target="" data-sponsored="" class="wp-image-1008 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27-1024x697.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27-300x204.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27-768x522.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-09-27.png 1195w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><div class="kadence-blocks-gallery-item__caption">Most probable value of Landau component from the Langauss fit at each voltage tested.</div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31-1024x652.png" width="1024" height="652" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31.png" data-id="1009" data-link="https://msenger.web.cern.ch/?attachment_id=1009" data-custom-link="" data-custom-link-target="" data-sponsored="" class="wp-image-1009 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31-1024x652.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31-300x191.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31-768x489.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-31.png 1308w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><div class="kadence-blocks-gallery-item__caption">Example of charge distribution and fit at a fixed voltage.</div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41-1024x647.png" width="1024" height="647" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41.png" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41.png" data-id="1010" data-link="https://msenger.web.cern.ch/?attachment_id=1010" data-custom-link="" data-custom-link-target="" data-sponsored="" class="wp-image-1010 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41-1024x647.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41-300x189.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41-768x485.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-11-41.png 1322w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><div class="kadence-blocks-gallery-item__caption">Example of charge distribution and fit at a fixed voltage.</div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p>The Signal to Noise Ratio (SNR) is also amazingly good. For example, at the highest voltage for the device I tested it became even better than for the MCP-PMT in our setup, which is usually not the case. See the plot below.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="645" src="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-21-12-1024x645.png" alt="" class="wp-image-1013" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-21-12-1024x645.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-21-12-300x189.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-21-12-768x484.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/11/Screenshot_2022-11-20_11-21-12.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Signal to Noise Ratio distribution (<a href="https://en.wikipedia.org/wiki/Empirical_distribution_function">ECDF</a>) for the DUT and also the MCP-PMT which is the trigger and time reference in our <a href="https://msenger.web.cern.ch/the-robocold-beta-setup/" data-type="post" data-id="944">Robocold setup</a>.</figcaption></figure>
+
+
+
+<p>To conclude, just to mention that this design should be easily scalable to an arbitrary number of channels, as long as there is space in the board to put the components.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The  Robocold beta setup</title>
+		<link>https://msenger.web.cern.ch/the-robocold-beta-setup/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Mon, 22 Aug 2022 13:02:55 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-source]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=944</guid>
+
+					<description><![CDATA[In this post I will present the Robocold beta setup a.k.a. the LGAD long term test setup, LGAD stability test setup, etc. The first presentation of this setup I made it about one year ago in this link. After that, other projects appeared, also the climate chamber was failing, so I ended up delaying the &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/the-robocold-beta-setup/"> <span class="screen-reader-text">The  Robocold beta setup</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>In this post I will present <em>the Robocold beta setup</em> a.k.a. <em>the LGAD long term test setup</em>, <em>LGAD stability test setup</em>, etc. The first presentation of this setup I made it about one year ago in <a href="https://sengerm.github.io/html-github-hosting/210805_long_term_measurements_setup_commisioning/setup_commissioning.html" data-type="URL" data-id="https://sengerm.github.io/html-github-hosting/210805_long_term_measurements_setup_commisioning/setup_commissioning.html">this link</a>. After that, other projects appeared, also the climate chamber was failing, so I ended up delaying the development of this setup a bit. But it is finally here!</p>
+
+
+
+<p>The goal of this setup is to host up to 8 DUTs (LGADs) simultaneously, all mounted in readout boards and biased all the time at operating voltage. While in these conditions, periodically perform beta scans on each DUT to study their behavior, mainly charge and time resolution, and monitor at all the time the bias voltage and current of each. All this without having to open the climate chamber, so they can be kept cold at low temperatures and operating continuously during a long period of time (several months). Below there is a picture of the setup:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/robocold_setup_parts.svg" style="max-height: 80vh;"><figcaption>A picture of the whole setup with its parts.</figcaption></figure>
+
+
+
+<p>The setup is composed by</p>
+
+
+
+<ul><li>Robocold: 2 axes motorized stages holding the boards with the DUTs in fixed positions and moving the beta source and the MCP-PMT to any position. It has a controller to connect it to a PC and control it remotely.</li><li>The Castle: This is the 8 channel RF multiplexer. 8 inputs, one for each DUT, 1 output to the oscilloscope. It is connected via USB to the computer so it can be controlled remotely.</li><li>Two CAEN high voltage power supplies which are controlled by the computer and implement 8 independent high voltage bias channels.</li><li>A <sup>90</sup>Sr beta source.</li><li>A Photonis MCP-PMT which is used as a trigger below the DUTs.</li><li>A LeCroy WaveRunner oscilloscope to digitize the signals.</li><li>A climate chamber to go to low temperatures for tests on irradiated detectors.</li><li>A computer that is in charge of controlling the whole setup automatically.</li></ul>
+
+
+
+<p>A simplified block diagram of the setup is shown below.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" style="height: 80vh;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/robocold_setup_blocks-1.svg"><figcaption>Simplified block diagram of the Robocold setup. Not shown: the computer, the climate chamber, Robocold himself.</figcaption></figure>
+
+
+
+<p>The beta source and the PMT are mounted such that they move together, as can be seen in the video below:</p>
+
+
+
+<figure class="wp-block-video"><video style="height: 50vh;" autoplay="" loop="" muted="" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/video_2022-08-22_13-27-09.mp4"></video></figure>
+
+
+
+<figure class="wp-block-gallery alignwide has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" data-id="961" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24-1024x768.jpg" alt="" class="wp-image-961" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24-1024x768.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24-300x225.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24-768x576.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>This is Robocold, outside the climate chamber and holding 8 DUTs (not ocnnected).</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" data-id="978" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-23_08-23-44-1024x768.jpg" alt="" class="wp-image-978" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-23_08-23-44-1024x768.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-23_08-23-44-300x225.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-23_08-23-44-768x576.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-23_08-23-44.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Robocold controller. It allows manual control through the buttons and remote control via the USB connector.</figcaption></figure>
+</figure>
+
+
+
+<p>As of now, the setup is fully operational. I am running it since two weeks in &#8220;test mode&#8221;, i.e. doing a series of tests to validate it. Also refining the software in charge of the automatic control and data processing.</p>
+
+
+
+<h2 class="wp-block-heading">First testing results</h2>
+
+
+
+<p>The plots below show some measurements that were taken with the setup during the last weeks. As this post is about the setup and not the devices, I will not pay much attention to them. Only to say that all the devices named <code>LTT__</code> are irradiated while the device <code>MS33</code> is not irradiated.</p>
+
+
+
+<p>The first plot shows the bias current and voltage of each device as a function of time:</p>
+
+
+
+<iframe style="height: 90vh; min-height: 666px; width: 100%; min-width: 999px" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/bias_voltage_and_current.html"></iframe>
+
+
+
+<p>This data was taken during a period of 2.5 weeks. Both the voltage and the current are measured periodically in a time interval that can be configured individually for each device (as some are much more stable than others). The setup measures both the mean value and the fluctuations of both the voltage and the current each time. The plot contains error bars for each point, which can be better appreciated by zooming in. The big fluctuations that can be seen here e.g. in the beginning or on August 17 as well are because I was doing some other tests. E.g. on August 17 the craziness is because I measured a set of IV curves, which are shown below.</p>
+
+
+
+<iframe style="height: 90vh; min-height: 666px; width: 100%; min-width: 999px" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/iv_curves.html"></iframe>
+
+
+
+<p>As seen, the setup is capable of measuring the IV curve of irradiated devices (all the <code>LTT__</code> ones) as they have a bigger current, and it can also measure the breakdown voltage of a non irradiated device (the <code>MS33</code>).</p>
+
+
+
+<p>During this period of time a number of beta scans were performed also, but only on the <code>MS33</code> device which is non irradiated and was also characterized in the past. The plot below shows the collected charge measured for each of these scans. Here we see that the results are consistent between themselves and also persistent along the time, as the first beta scan (blue) was taken on August 16 and the last one (light blue) on August 21.</p>
+
+
+
+<iframe style="height: 90vh; min-height: 666px; width: 100%; min-width: 999px" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/collected_charge_vs_bias_voltage_comparison.html"></iframe>
+
+
+
+<p>For the aforementioned beta scans, the time resolution of the DUT (i.e. <code>MS33</code>) was computed, and is shown below. Here we see that the DUT achieves a time resolution of ~(32±2) ps, which seems to be consistent with previous results. For the time resolution of the <code>reference_trigger</code>, which is the MPC-PMT, a value of 17±2 ps was considered. This number comes from a previous measurement I performed on it.</p>
+
+
+
+<iframe style="height: 90vh; min-height: 666px; width: 100%; min-width: 999px" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/time_resolution_vs_bias_voltage_comparison.html"></iframe>
+
+
+
+<h2 class="wp-block-heading">Further development</h2>
+
+
+
+<p>As the setup is ready to start working, the only remaining part is the readout board. I designed <a href="https://msenger.web.cern.ch/the-chubut-board/" data-type="post" data-id="752">the Chubut board</a> an year ago for this, which is actually the board in use right now. However, soon I discovered that the available space to fit the samples is very small (I had to do some dirty tricks for the Market Survey samples, and also other samples are not fitting now). So recently I made a version of such board<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_944_8('footnote_plugin_reference_944_8_1');" onkeypress="footnote_moveToReference_944_8('footnote_plugin_reference_944_8_1');" ><sup id="footnote_plugin_tooltip_944_8_1" class="footnote_plugin_tooltip_text">[1]</sup></a><span id="footnote_plugin_tooltip_text_944_8_1" class="footnote_tooltip">Version 220815 found <a href="https://github.com/SengerM/ChubutBoard" data-type="URL" data-id="https://github.com/SengerM/ChubutBoard">here</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_944_8_1').tooltip({ tip: '#footnote_plugin_tooltip_text_944_8_1', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> which has a lot more space for the samples. </p>
+
+
+
+<p>As the new version of the board is still single channel, and for many applications it would be nice to have multi channel boards, I am also developing the Chubut 2 board which should be similar but with two channels. I also want to include a few other features that will make the life of that guy who is in the lab (i.e. me) much easier, the main one is to aim to a design with a carrier board to mount the samples which in RF is far from trivial.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/08/Screenshot_2022-08-22_15-00-07-1024x659.png" alt="" class="wp-image-975" width="464" height="299" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/08/Screenshot_2022-08-22_15-00-07-1024x659.png 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/Screenshot_2022-08-22_15-00-07-300x193.png 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/Screenshot_2022-08-22_15-00-07-768x494.png 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/08/Screenshot_2022-08-22_15-00-07.png 1085w" sizes="(max-width: 464px) 100vw, 464px" /><figcaption>Prototype design for the Chubut 2 testing boards.</figcaption></figure>
+<div class="speaker-mute footnotes_reference_container"> <div class="footnote_container_prepare"><p><span role="button" tabindex="0" class="footnote_reference_container_label pointer" onclick="footnote_expand_collapse_reference_container_944_8();">References</span><span role="button" tabindex="0" class="footnote_reference_container_collapse_button" style="display: none;" onclick="footnote_expand_collapse_reference_container_944_8();">[<a id="footnote_reference_container_collapse_button_944_8">+</a>]</span></p></div> <div id="footnote_references_container_944_8" style=""><table class="footnotes_table footnote-reference-container"><caption class="accessibility">References</caption> <tbody> 
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_944_8('footnote_plugin_tooltip_944_8_1');"><a id="footnote_plugin_reference_944_8_1" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>1</a></th> <td class="footnote_plugin_text">Version 220815 found <a href="https://github.com/SengerM/ChubutBoard" data-type="URL" data-id="https://github.com/SengerM/ChubutBoard">here</a>.</td></tr>
+
+ </tbody> </table> </div></div><script type="text/javascript"> function footnote_expand_reference_container_944_8() { jQuery('#footnote_references_container_944_8').show(); jQuery('#footnote_reference_container_collapse_button_944_8').text('−'); } function footnote_collapse_reference_container_944_8() { jQuery('#footnote_references_container_944_8').hide(); jQuery('#footnote_reference_container_collapse_button_944_8').text('+'); } function footnote_expand_collapse_reference_container_944_8() { if (jQuery('#footnote_references_container_944_8').is(':hidden')) { footnote_expand_reference_container_944_8(); } else { footnote_collapse_reference_container_944_8(); } } function footnote_moveToReference_944_8(p_str_TargetID) { footnote_expand_reference_container_944_8(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } } function footnote_moveToAnchor_944_8(p_str_TargetID) { footnote_expand_reference_container_944_8(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } }</script>]]></content:encoded>
+					
+		
+		<enclosure url="https://msenger.web.cern.ch/wp-content/uploads/2022/08/video_2022-08-22_13-27-09.mp4" length="1767279" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>Validation of our beta setup with Torino&#8217;s</title>
+		<link>https://msenger.web.cern.ch/validation-of-our-beta-setup-with-torinos/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 28 Jul 2022 07:52:39 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-setup]]></category>
+		<category><![CDATA[chubut-board]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=926</guid>
+
+					<description><![CDATA[In the later months we have engaged in the market survey for the sensors of the CMS MTD. A long time has passed since my previous post focused on the beta setup and I have learned a lot. However, I was still not able to reach the final expected time resolution for the detectors. After &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/validation-of-our-beta-setup-with-torinos/"> <span class="screen-reader-text">Validation of our beta setup with Torino&#8217;s</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>In the later months we have engaged in the market survey for the sensors of <a href="http://cds.cern.ch/record/2667167?ln=en" data-type="URL" data-id="http://cds.cern.ch/record/2667167?ln=en">the CMS MTD</a>. A long time has passed since <a href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" data-type="post" data-id="25">my previous post focused on the beta setup</a> and I have learned a lot. However, I was still not able to reach the final expected time resolution for the detectors. After Federico from Torino spent a few days in our lab, for which I am very thankful, we finally were able to set everything up and reach results compatible with theirs (Torino&#8217;s) in our setup. The plot below shows the time resolution obtained for a pair of identical detectors (FBK, UFSD4, T10, GR3_0, deep gain layer):</p>
+
+
+
+<iframe style="width: 1000px; height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/07/time_resolution_vs_bias_voltage.html"></iframe>
+
+
+
+<p>Two additional points were measured at higher voltages but one of the detectors went into breakdown. As seen, at 180&nbsp;V a time resolution of (31.2±1.5)&nbsp;ps was achieved, which is compatible with Torino.</p>
+
+
+
+<p>The two devices were mounted in two <a href="https://msenger.web.cern.ch/the-chubut-board/" data-type="post" data-id="752">Chubut boards</a>, respectively, placed one on top of the other such that the betas can go through the two detectors. The first stage amplifier is in the boards themselves, while as second stage amplifier our EBay amplifiers were used. After this, straight into the oscilloscope. The devices were placed inside the climate chamber and the temperature was set to -30 °C.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2022/07/photo_2022-07-28_09-34-05-1024x837.jpg" alt="" class="wp-image-937" width="367" height="300" srcset="https://msenger.web.cern.ch/wp-content/uploads/2022/07/photo_2022-07-28_09-34-05-1024x837.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2022/07/photo_2022-07-28_09-34-05-300x245.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2022/07/photo_2022-07-28_09-34-05-768x628.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2022/07/photo_2022-07-28_09-34-05.jpg 1080w" sizes="(max-width: 367px) 100vw, 367px" /><figcaption>One of the EBay amplifiers.</figcaption></figure>
+
+
+
+<p>There were several reasons why we could not reach the expected time resolution, but among  the most important, and this was a surprise to me, was the vertical scale in our LeCroy WaveRunner 9254M oscilloscope. Surprisingly, if the vertical scale is greater than 100 mV/DIV the noise increases considerably. This is because of some circuitry internal to the oscilloscope, as one can hear a relay switching when this vertical scale value is crossed. Other contributions were the ambient light, the temperature, and we using a reference trigger that was not good enough.</p>
+
+
+
+<p>For reference, <a href="https://indico.cern.ch/event/1171132/contributions/4918989/attachments/2461286/4220136/MS_FBK_UFSD4.pdf#page=14">here</a> are the results from Torino:</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; border-style: solid; border-width: 2px;" src="https://indico.cern.ch/event/1171132/contributions/4918989/attachments/2461286/4220136/MS_FBK_UFSD4.pdf#page=14"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Characterization of the new MCP-PMT as a timing detector for beta particles</title>
+		<link>https://msenger.web.cern.ch/characterization-of-the-new-mcp-pmt-as-a-timing-detector-for-beta-particles/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Wed, 26 Jan 2022 19:50:09 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-source]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[MCP-PMT]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=884</guid>
+
+					<description><![CDATA[Recently we received our new MCP-PMT of which I presented a first test in this post. Today I am posting the first serious characterization of the device. All the details can be found in this document which I embed below: As a summary, I measured a time resolution of about 22-24 ps for the MCP-PMT &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/characterization-of-the-new-mcp-pmt-as-a-timing-detector-for-beta-particles/"> <span class="screen-reader-text">Characterization of the new MCP-PMT as a timing detector for beta particles</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>Recently we received our new MCP-PMT of which I presented a first test in <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/first-test-of-mcp-pmt-as-a-mip-detector/" data-type="URL" data-id="https://msenger.web.cern.ch/first-test-of-mcp-pmt-as-a-mip-detector/" target="_blank">this post</a>. Today I am posting the first serious characterization of the device. All the details can be found in <a href="https://sengerm.github.io/html-github-hosting/220126_Photonis_PMT_time_resolution/index.html" data-type="URL" data-id="https://sengerm.github.io/html-github-hosting/220126_Photonis_PMT_time_resolution/index.html">this document</a> which I embed below:</p>
+
+
+
+<iframe style="width: 100%; height: 90vh; border-style: solid; border-width: 3px;" src="https://sengerm.github.io/html-github-hosting/220126_Photonis_PMT_time_resolution/index.html"></iframe>
+
+
+
+<p>As a summary, I measured a time resolution of about 22-24 ps for the MCP-PMT as a beta particle time tagger.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Chubut board</title>
+		<link>https://msenger.web.cern.ch/the-chubut-board/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 22 Jul 2021 00:04:37 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[hardware]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[pin-diode]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=752</guid>
+
+					<description><![CDATA[I designed a new &#8220;flavor&#8221; of the Santa Cruz board that is basically the same circuit but with a smaller layout, such that I can place more of them simultaneously in the climate chamber, and also thinking in an easier mounting in the TCT with cooling. In the first tests I made yesterday, the board &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/the-chubut-board/"> <span class="screen-reader-text">The Chubut board</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>I designed a new &#8220;flavor&#8221; of the <a rel="noreferrer noopener" href="https://twiki.cern.ch/twiki/bin/view/Main/UcscSingleChannel" data-type="URL" data-id="https://twiki.cern.ch/twiki/bin/view/Main/UcscSingleChannel" target="_blank">Santa Cruz board</a> that is basically the same circuit but with a smaller layout, such that I can place more of them simultaneously in the climate chamber, and also thinking in an easier mounting in the TCT with cooling. </p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_3b3bc5-74"><div class="kb-gallery-ul kb-gallery-type-fluidcarousel kb-gallery-id-_3b3bc5-74 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="false"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-blocks-fluid-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-slider-anim-speed="400" data-slider-type="fluidcarousel" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48.jpg" width="720" height="974" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48.jpg" data-id="754" data-link="https://msenger.web.cern.ch/?attachment_id=754" class="wp-image-754 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48.jpg 720w, https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-48-222x300.jpg 222w" sizes="(max-width: 720px) 100vw, 720px" /></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49.jpg" width="720" height="968" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49.jpg" data-id="755" data-link="https://msenger.web.cern.ch/?attachment_id=755" class="wp-image-755 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49.jpg 720w, https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-49-223x300.jpg 223w" sizes="(max-width: 720px) 100vw, 720px" /></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50.jpg" width="720" height="974" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50.jpg" data-id="756" data-link="https://msenger.web.cern.ch/?attachment_id=756" class="wp-image-756 skip-lazy" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50.jpg 720w, https://msenger.web.cern.ch/wp-content/uploads/2021/07/photo_2021-07-22_02-00-50-222x300.jpg 222w" sizes="(max-width: 720px) 100vw, 720px" /></div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p>In the first tests I made yesterday, the board performed really well as compared with the original Santa Cruz board. Since the circuit is almost the same, I was expecting this. </p>
+
+
+
+<p>Below I left a document with more details on the first tests. It can be read in a new tab following <a href="https://sengerm.github.io/html-github-hosting/210721_Commissioning_of_Chubut_board/210721_Commissioning_of_Chubut_board.html" data-type="URL" data-id="https://sengerm.github.io/html-github-hosting/210721_Commissioning_of_Chubut_board/210721_Commissioning_of_Chubut_board.html" target="_blank" rel="noreferrer noopener">this link</a>.</p>
+
+
+
+<iframe src="https://sengerm.github.io/html-github-hosting/210721_Commissioning_of_Chubut_board/210721_Commissioning_of_Chubut_board.html" style="width: 100%; height: 90vh; border-style: solid; border-width: 3px;"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>First timing measurement with TCT</title>
+		<link>https://msenger.web.cern.ch/first-timing-measurement-with-tct/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Fri, 12 Feb 2021 22:46:16 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=446</guid>
+
+					<description><![CDATA[Today I was able to finally perform the very first timing measurement with our TCT at UZH. In this post I will describe the setup and the results. Setup description Below there is a block diagram of the setup: The pulsed infrared laser[1]1064 nm, part of our Particulars TCT. is coupled to an optic fiber. &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/first-timing-measurement-with-tct/"> <span class="screen-reader-text">First timing measurement with TCT</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>Today I was able to finally perform the very first timing measurement with our TCT at UZH. In this post I will describe the setup and the results.</p>
+
+
+
+
+
+<h2 class="wp-block-heading">Setup description</h2>
+
+
+
+<p>Below there is a block diagram of the setup:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/3-6.svg" alt="" class="wp-image-452" width="758" height="253"/><figcaption>Block diagram of the timing setup using the TCT.</figcaption></figure></div>
+
+
+
+<p>The pulsed infrared laser<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_1');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_1');" ><sup id="footnote_plugin_tooltip_446_16_1" class="footnote_plugin_tooltip_text">[1]</sup></a><span id="footnote_plugin_tooltip_text_446_16_1" class="footnote_tooltip">1064 nm, part of our <a rel="noreferrer noopener" href="http://particulars.si/products.php?prod=LargeScanTCT.html" data-type="URL" data-id="http://particulars.si/products.php?prod=LargeScanTCT.html" target="_blank">Particulars TCT</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_1').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_1', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> is coupled to an optic fiber. This optic fiber then reaches a 50 %/50 % splitter. One of the outputs of this splitter is sent to a 20 meters long optic fiber and then to a mixer, the other output is directly fed in the mixer. As a result we obtain two &#8220;identical&#8221; pulses with a time difference of 100 ns<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_2');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_2');" ><sup id="footnote_plugin_tooltip_446_16_2" class="footnote_plugin_tooltip_text">[2]</sup></a><span id="footnote_plugin_tooltip_text_446_16_2" class="footnote_tooltip">For more details on this laser splitting system please see <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/" data-type="URL" data-id="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/" target="_blank">this post</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_2').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_2', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. After this, the laser is shined onto the LGAD. The readout is done using an amplifier<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_3');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_3');" ><sup id="footnote_plugin_tooltip_446_16_3" class="footnote_plugin_tooltip_text">[3]</sup></a><span id="footnote_plugin_tooltip_text_446_16_3" class="footnote_tooltip">4 GHz, 36 dB, in-house design.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_3').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_3', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> and an oscilloscope<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_4');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_4');" ><sup id="footnote_plugin_tooltip_446_16_4" class="footnote_plugin_tooltip_text">[4]</sup></a><span id="footnote_plugin_tooltip_text_446_16_4" class="footnote_tooltip">Lecroy WaveRunner 9254M, 4 GHz, 40 GS/s.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_4').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_4', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>.</p>
+
+
+
+<p>The device I used for this measurement was</p>
+
+
+
+<ul><li>LGAD AIDA-2020 V1 RUN 11478 W5-DA11 (alias Speedy Gonzalez).</li></ul>
+
+
+
+<p>This LGAD was characterized previously using the beta setup and it showed a time resolution of 27 ps<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_5');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_5');" ><sup id="footnote_plugin_tooltip_446_16_5" class="footnote_plugin_tooltip_text">[5]</sup></a><span id="footnote_plugin_tooltip_text_446_16_5" class="footnote_tooltip">More details on this characterization in <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" target="_blank">this post</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_5').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_5', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. </p>
+
+
+
+<h2 class="wp-block-heading">Calibration of laser intensity</h2>
+
+
+
+<p>In order to perform a realistic timing measurement, the laser intensity has to be properly selected. The reason for this is that the response of the device is different if the number of electron-hole pairs produced changes. The LGADs are intended to be used with minimum ionizing particles (MIP) which are charged particles with \(\beta \gamma \gtrsim 3\) where \(\beta\) and \(\gamma\) are the <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Lorentz_factor" data-type="URL" data-id="https://en.wikipedia.org/wiki/Lorentz_factor" target="_blank">Lorentz factors</a>. Photons are by no means MIP particles since they have no electric charge. Thus, with the laser we can only mimic the scenario of a MIP particle, but it will never be exactly the same<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_6');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_6');" ><sup id="footnote_plugin_tooltip_446_16_6" class="footnote_plugin_tooltip_text">[6]</sup></a><span id="footnote_plugin_tooltip_text_446_16_6" class="footnote_tooltip">For more details on MIP particles vs pulsed infrared laser see <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" target="_blank">this post</a> and <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" target="_blank">this post</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_6').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_6', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>.</p>
+
+
+
+<p>To perform the laser intensity calibration, I first exposed the LGAD to beta radiation from an Sr-90 source. After this, the device was exposed to the pulsed infrared laser without changing anything else but the type of radiation. So basically I recorded data in the following two conditions:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_26b301-b8"><ul class="kb-gallery-ul kb-gallery-type-grid kb-gallery-id-_26b301-b8 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption kb-has-image-ratio-land21"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/1-5.svg" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land21"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/1-5.svg" width="1024" height="1024" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/1-5.svg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/1-5.svg" data-id="447" data-link="https://msenger.web.cern.ch/first-timing-measurement-with-tct/1-5/" class="wp-image-447undefined"/></div><div class="kadence-blocks-gallery-item__caption">Setup with beta source to characterize the LGAD response to MIP particles.</div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-has-caption kb-has-image-ratio-land21"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/2-5.svg" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land21"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/2-5.svg" width="1024" height="1024" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/2-5.svg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/2-5.svg" data-id="448" data-link="https://msenger.web.cern.ch/first-timing-measurement-with-tct/2-5/" class="wp-image-448undefined"/></div><div class="kadence-blocks-gallery-item__caption">Setup with pulsed laser (adjusted to replicate the response of a MIP).</div></div></a></figure></div></li></ul></div>
+
+
+
+<p>Note that everything is the same with the exception of the radiation used to excite the LGAD. Using the data from both configurations I calculated the collected charge and obtained these results<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_7');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_7');" ><sup id="footnote_plugin_tooltip_446_16_7" class="footnote_plugin_tooltip_text">[7]</sup></a><span id="footnote_plugin_tooltip_text_446_16_7" class="footnote_tooltip">This plot was taken from <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" target="_blank">this post</a> where I compared the response of silicon devices when exposed to MIP radiation and to a laser.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_7').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_7', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-vs-beta-lgad.html" width="100%" height="555"></iframe>
+
+
+
+<p>The distribution of the collected charge with the beta source is shown in black. It follows something similar to a Landau distribution. The other three distributions were obtained with different laser intensities. The laser intensity is controlled by a parameter called &#8220;laser pulse width&#8221; (LPW), it ranges from 0 % to 100 %, and high values decrease the intensity of the pulse (yes, it is not intuitive). These distributions have a Gaussian shape (please zoom into the plot). From this plot we see that the pink and blue distributions, with LPW of 66.2 % and 66.3 % respectively, provide the best approximation to the distribution with the beta source. Thus, for the timing measurement I decided to use 66.2 %.</p>
+
+
+
+<h2 class="wp-block-heading">Results</h2>
+
+
+
+<p>I measured the time resolution in two ways:</p>
+
+
+
+<ol><li>A quick &#8220;on the fly&#8221; measurement using the oscilloscope.</li><li>A full offline analysis like we do for the beta setup.</li></ol>
+
+
+
+<h3 class="wp-block-heading">Quick measurement using the oscilloscope</h3>
+
+
+
+<p>Having set a laser intensity corresponding to LPW = 66.2 %, I proceeded with the timing measurement. I configured the oscilloscope in order to capture the two pulses with 100 ns time separation at each trigger. This is shown below:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/4-2.svg" alt="" class="wp-image-461" width="937" height="628"/><figcaption>Screenshot of the oscilloscope showing the two laser pulses impinging on the LGAD. The time difference between the rising edge of these two pulses was measured with the oscilloscope, as seen.</figcaption></figure></div>
+
+
+
+<p>For a quick test I set up a timing measurement in the oscilloscope (shown also in the previous image). This was configured to measure the time difference between the rising edge of each pulse, as seen. The time resolution is given by the fluctuations of this time. If we assume that the fluctuations in the time it takes the light to travel through the 20 m optic fiber are negligible then all the fluctuations in the measured time difference are due to the LGAD itself<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_8');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_8');" ><sup id="footnote_plugin_tooltip_446_16_8" class="footnote_plugin_tooltip_text">[8]</sup></a><span id="footnote_plugin_tooltip_text_446_16_8" class="footnote_tooltip">Here I am also assuming that the fluctuations due to the electronics (amplifier and oscilloscope) are negligible.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_8').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_8', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. Assuming also that the two laser pulses are identical<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_9');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_9');" ><sup id="footnote_plugin_tooltip_446_16_9" class="footnote_plugin_tooltip_text">[9]</sup></a><span id="footnote_plugin_tooltip_text_446_16_9" class="footnote_tooltip">This is not strictly true since the second pulse is attenuated after having traveled 20 m extra in optic fiber. The attenuation with respect to the first pulse is around 20 %.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_9').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_9', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script> then the fluctuations due to the LGAD are simply </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \sigma_\text{LGAD} = \frac{\sigma_\text{measured}}{\sqrt{2}} \]<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="https://msenger.web.cern.ch/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script  async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" id="mathjax-js"></script>
+</div>
+
+
+
+<p>Using \(\sigma_\text{measured} = 40.6 \text{ ps} \) (see previous image) the time resolution of this LGAD is \(\text{time resolution} = \sigma_\text{LGAD} = 28.7 \text{ ps}\).</p>
+
+
+
+<p>This is really close to the \(27 \text{ ps}\) obtained previously with the beta setup<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_10');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_10');" ><sup id="footnote_plugin_tooltip_446_16_10" class="footnote_plugin_tooltip_text">[10]</sup></a><span id="footnote_plugin_tooltip_text_446_16_10" class="footnote_tooltip">See <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" target="_blank">this post</a>.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_10').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_10', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. The advantage of the measurement with the laser is that it takes much less time (if the intensity does not has to be calibrated for each new device).</p>
+
+
+
+<h3 class="wp-block-heading">Full offline analysis </h3>
+
+
+
+<p>I also performed a &#8220;full offline analysis&#8221; of this data. For this I just used the &#8220;auto save&#8221; function of the oscilloscope to record each waveform. Then I performed the typical procedure we use when we measure two detectors in the beta setup. I looked at the distribution of the time difference for different values of the &#8220;constant fraction discriminator&#8221; and observed the fluctuations. I obtained this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210212%20first%20timing%20measurement%20with%20TCT/Time%20resolution%20at%20TCT.html" width="100%" height="555"></iframe>
+
+
+
+<p>The minimum value is for \(k_\text{CFD} = 0.9\) for both the first and the second pulse<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_11');" onkeypress="footnote_moveToReference_446_16('footnote_plugin_reference_446_16_11');" ><sup id="footnote_plugin_tooltip_446_16_11" class="footnote_plugin_tooltip_text">[11]</sup></a><span id="footnote_plugin_tooltip_text_446_16_11" class="footnote_tooltip">This is consistent with our previous characterization of this LGAD using the beta source.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_446_16_11').tooltip({ tip: '#footnote_plugin_tooltip_text_446_16_11', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. The time resolution at this point is \(27.9 \text{ ps}\) as shown in the previous plot. The time difference at this point is distributed like this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210212%20first%20timing%20measurement%20with%20TCT/Time%20difference%20for%20kcfd1%3D90%20and%20kcfd2%3D90.html" width="100%" height="555"></iframe>
+
+
+
+<p>This result is, again, in very good agreement with our previous characterization of this LGAD using the beta setup.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusions</h2>
+
+
+
+<p>The first timing measurement of an LGAD device using a TCT (in our lab at UZH) was done. The measurement was done on a device which was previously characterized with the beta source in order to compare both results. The agreement between the two methods is quite good; we obtained a time resolution of \(27.3 \text{ ps}\) using the beta setup and today a time resolution of \(27.9 \text{ ps}\) using the TCT setup. The advantage of the TCT is that it is much faster in doing this measurement as compared to the beta setup (10 minutes vs 3-4 hours), and also that it does not require two identical devices: It can be used to measure on a single device. This result opens the door to perform spacial-timing measurements in 4D pixel detectors.</p>
+<div class="speaker-mute footnotes_reference_container"> <div class="footnote_container_prepare"><p><span role="button" tabindex="0" class="footnote_reference_container_label pointer" onclick="footnote_expand_collapse_reference_container_446_16();">References</span><span role="button" tabindex="0" class="footnote_reference_container_collapse_button" style="display: none;" onclick="footnote_expand_collapse_reference_container_446_16();">[<a id="footnote_reference_container_collapse_button_446_16">+</a>]</span></p></div> <div id="footnote_references_container_446_16" style=""><table class="footnotes_table footnote-reference-container"><caption class="accessibility">References</caption> <tbody> 
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_1');"><a id="footnote_plugin_reference_446_16_1" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>1</a></th> <td class="footnote_plugin_text">1064 nm, part of our <a rel="noreferrer noopener" href="http://particulars.si/products.php?prod=LargeScanTCT.html" data-type="URL" data-id="http://particulars.si/products.php?prod=LargeScanTCT.html" target="_blank">Particulars TCT</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_2');"><a id="footnote_plugin_reference_446_16_2" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>2</a></th> <td class="footnote_plugin_text">For more details on this laser splitting system please see <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/" data-type="URL" data-id="https://msenger.web.cern.ch/laser-delay-system-for-the-scanning-tct/" target="_blank">this post</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_3');"><a id="footnote_plugin_reference_446_16_3" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>3</a></th> <td class="footnote_plugin_text">4 GHz, 36 dB, in-house design.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_4');"><a id="footnote_plugin_reference_446_16_4" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>4</a></th> <td class="footnote_plugin_text">Lecroy WaveRunner 9254M, 4 GHz, 40 GS/s.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_5');"><a id="footnote_plugin_reference_446_16_5" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>5</a></th> <td class="footnote_plugin_text">More details on this characterization in <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" target="_blank">this post</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_6');"><a id="footnote_plugin_reference_446_16_6" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>6</a></th> <td class="footnote_plugin_text">For more details on MIP particles vs pulsed infrared laser see <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" target="_blank">this post</a> and <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" target="_blank">this post</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_7');"><a id="footnote_plugin_reference_446_16_7" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>7</a></th> <td class="footnote_plugin_text">This plot was taken from <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/" target="_blank">this post</a> where I compared the response of silicon devices when exposed to MIP radiation and to a laser.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_8');"><a id="footnote_plugin_reference_446_16_8" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>8</a></th> <td class="footnote_plugin_text">Here I am also assuming that the fluctuations due to the electronics (amplifier and oscilloscope) are negligible.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_9');"><a id="footnote_plugin_reference_446_16_9" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>9</a></th> <td class="footnote_plugin_text">This is not strictly true since the second pulse is attenuated after having traveled 20 m extra in optic fiber. The attenuation with respect to the first pulse is around 20 %.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_10');"><a id="footnote_plugin_reference_446_16_10" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>10</a></th> <td class="footnote_plugin_text">See <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" target="_blank">this post</a>.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_446_16('footnote_plugin_tooltip_446_16_11');"><a id="footnote_plugin_reference_446_16_11" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>11</a></th> <td class="footnote_plugin_text">This is consistent with our previous characterization of this LGAD using the beta source.</td></tr>
+
+ </tbody> </table> </div></div><script type="text/javascript"> function footnote_expand_reference_container_446_16() { jQuery('#footnote_references_container_446_16').show(); jQuery('#footnote_reference_container_collapse_button_446_16').text('−'); } function footnote_collapse_reference_container_446_16() { jQuery('#footnote_references_container_446_16').hide(); jQuery('#footnote_reference_container_collapse_button_446_16').text('+'); } function footnote_expand_collapse_reference_container_446_16() { if (jQuery('#footnote_references_container_446_16').is(':hidden')) { footnote_expand_reference_container_446_16(); } else { footnote_collapse_reference_container_446_16(); } } function footnote_moveToReference_446_16(p_str_TargetID) { footnote_expand_reference_container_446_16(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } } function footnote_moveToAnchor_446_16(p_str_TargetID) { footnote_expand_reference_container_446_16(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } }</script>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Beta source vs TCT: Real life</title>
+		<link>https://msenger.web.cern.ch/beta-source-vs-tct-real-life/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Tue, 09 Feb 2021 08:46:10 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-source]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[pin-diode]]></category>
+		<category><![CDATA[tct]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=393</guid>
+
+					<description><![CDATA[In a previous post I presented a brief bibliographical research on what is supposed to happen in a silicon detector when 1) a MIP particle passes through it and 2) when an infrared laser pulse is shined onto it. Today I want to bring this to real life and see what I get. I am &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/beta-source-vs-tct-real-life/"> <span class="screen-reader-text">Beta source vs TCT: Real life</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>In <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" target="_blank">a previous post</a> I presented a brief bibliographical research on what is supposed to happen in a silicon detector when 1) a MIP particle passes through it and 2) when an infrared laser pulse is shined onto it. Today I want to bring this to real life and see what I get. I am also interested in performing some kind of calibration of the TCT setup such that we know &#8220;how many MIPs we are shining into the detector&#8221;, this however will probably go into a different post.</p>
+
+
+
+
+
+<h2 class="wp-block-heading">Introduction</h2>
+
+
+
+<p>All the results I am presenting here were obtained by using the following two detectors:</p>
+
+
+
+<ol><li>PIN diode: <ul><li>AIDA V2 RUN 12916 IP47 W3-DB45. </li><li>Thickness = 50 µm.</li><li>V<sub>bias</sub> = 99 V.</li></ul></li><li>LGAD diode: <ul><li>AIDA-2020 V1 CNM RUN 11478 W5-DA11 (alias Speedy Gonzalez). </li><li>Thickness = 35 µm.</li><li>Vbias = 100 V.</li></ul></li></ol>
+
+
+
+<p>Ideally, the <a href="https://en.wikipedia.org/wiki/PIN_diode" data-type="URL" data-id="https://en.wikipedia.org/wiki/PIN_diode">PIN diode</a> is better for this comparison/calibration because it is a simpler device and it has no gain or strange things that can affect the results. I proceeded with both devices, however, because I am learning new stuff with every single thing I do with these things. The objective of this post is to see if the theory I wrote in <a href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/">this post</a> is valid. I want to use this understanding to later perform a MIP calibration for the intensity of the laser in the TCT to do a timing characterization of the TCT (a future post, not today). For this purpose I want to use our &#8220;best LGADs&#8221; which are the Speedy Gonzalez brothers<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_1');" onkeypress="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_1');" ><sup id="footnote_plugin_tooltip_393_18_1" class="footnote_plugin_tooltip_text">[1]</sup></a><span id="footnote_plugin_tooltip_text_393_18_1" class="footnote_tooltip">The &#8220;Speedy Gonzalez brothers&#8221; are two LGAD diodes which had a temporal resolution of around 27 ps. See <a href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/">this post</a> for more detailed information.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_393_18_1').tooltip({ tip: '#footnote_plugin_tooltip_text_393_18_1', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>. Unfortunately we have no PIN diodes with the same thickness to compare, so the plan is to do the MIP calibration specifically with the LGAD detector.</p>
+
+
+
+<p>A block diagram of the setup for today would be like this:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/1-4.svg" alt="" class="wp-image-396" width="417" height="139"/></figure></div>
+
+
+
+<p>The &#8220;amplifier → oscilloscope&#8221; part was left unchanged during the measurements. The silicon detector was installed in the TCT, even for the beta source measurements, in order to have as most as possible the same conditions for both cases. Here some photos of the setup inside the TCT with the radioactive source on top:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_8b9412-13"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_8b9412-13 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="false" data-columns-xxl="3" data-columns-xl="3" data-columns-lg="3" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1024px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:56.25%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33-1024x576.jpg" width="1024" height="576" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33.jpg" data-id="397" data-link="https://msenger.web.cern.ch/?attachment_id=397" class="wp-image-397undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33-1024x576.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33-300x169.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33-768x432.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-33.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1024px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:56.25%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34-1024x576.jpg" width="1024" height="576" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34.jpg" data-id="398" data-link="https://msenger.web.cern.ch/?attachment_id=398" class="wp-image-398undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34-1024x576.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34-300x169.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34-768x432.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-34.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35.jpg" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1024px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:56.25%"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35-1024x576.jpg" width="1024" height="576" alt="" data-full-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35.jpg" data-light-image="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35.jpg" data-id="399" data-link="https://msenger.web.cern.ch/?attachment_id=399" class="wp-image-399undefined" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35-1024x576.jpg 1024w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35-300x169.jpg 300w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35-768x432.jpg 768w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/photo_2021-02-04_13-12-35.jpg 1280w" sizes="(max-width: 1024px) 100vw, 1024px" /></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>To switch to the TCT, I just removed the radioactive source and the metallic cap, and moved the stages such that the optic window of the PIN/LGAD was in the focus of the laser. The PIN diode (and also the LGAD) looks like this:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/2-4.svg" alt="" class="wp-image-400" width="461" height="346"/><figcaption>Microscopy picture of the PIN diode.</figcaption></figure></div>
+
+
+
+<p>The material that is surrounding the optical window is the metallic pad on top of the device. In <a href="https://msenger.web.cern.ch/strange-bipolar-current-pulses-in-pin-diode-with-beta-source/" data-type="URL" data-id="https://msenger.web.cern.ch/strange-bipolar-current-pulses-in-pin-diode-with-beta-source/">this post</a> there are more details on the structure of these devices.</p>
+
+
+
+<h2 class="wp-block-heading">Beta source in real life</h2>
+
+
+
+<h3 class="wp-block-heading">Beta source with PIN diode</h3>
+
+
+
+<p>Let&#8217;s start with the beta source, which is a Sr-90 source of beta particles. A typical signal coming out of the PIN diode due to a beta particle looks like this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/Signal%20number%204596.html" width="100%" height="555"></iframe>
+
+
+
+<p>Some quantities that are calculated from this signal are indicated in the plot, you can zoom in for more detail. Today we are mainly interested in the distribution of the collected charge. This distribution (in arbitrary units because I have no knowledge of the exact amplifier&#8217;s gain) looks like this:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/beta-pin-collected%20charge.html" width="100%" height="555"></iframe>
+
+
+
+<p>As can be seen, it resembles a Landau distribution. I have fitted a <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.moyal.html" data-type="URL" data-id="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.moyal.html">Moyal distribution</a>, wich apparently is a good approximation to the Landau distribution<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_2');" onkeypress="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_2');" ><sup id="footnote_plugin_tooltip_393_18_2" class="footnote_plugin_tooltip_text">[2]</sup></a><span id="footnote_plugin_tooltip_text_393_18_2" class="footnote_tooltip">Kolanoski, Hermann, and Norbert Wermes. Particle Detectors: Fundamentals and Applications. Particle Detectors. Oxford University Press, 2020. <a rel="noreferrer noopener" href="https://cds.cern.ch/record/2721300" target="_blank"><span class="footnote_url_wrap">https://cds.cern.ch/record/2721300</span></a>. Sec. 3.2.3.2.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_393_18_2').tooltip({ tip: '#footnote_plugin_tooltip_text_393_18_2', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>, in order to qualitatively check the &#8220;Landauness of the collected charge&#8221;. Though the fit is not perfect, it looks reasonable to me.</p>
+
+
+
+<h3 class="wp-block-heading">Beta source with LGAD</h3>
+
+
+
+<p>In the LGAD diode the number of electron-hole pairs should follow exactly the same distribution as for the PIN. The collected charge, however, will be different due to the presence of the gain layer in the LGAD. In this layer a gain of around 10-20 is achieved by an avalanche process. Since this process has a random component too, the expected Landau distribution for the collected charge may be distorted. I did not stop to think on how should it be distorted, I just measured it and compared it to the Moyal distribution. Here are the results:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/beta-lgad-collected%20charge.html" width="100%" height="555"></iframe>
+
+
+
+<p>In this case we clearly see that the fit is not as good as for the PIN diode. </p>
+
+
+
+<p>Though the LGAD and the PIN have a different thickness, we can still roughly estimate the gain of the LGAD diode as </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \begin{aligned}\text{LGAD gain} &amp; =\left.\frac{\text{Collected charge by LGAD}}{\text{Collected charge by PIN}}\right|_{\text{both have the same thickness}}\\
+ &amp; \sim\frac{\text{Collected charge by LGAD}}{\text{Collected charge by PIN}}\times\frac{\text{PIN thickness}}{\text{LGAD thickness}}\\
+ &amp; =\frac{397\text{ pico a.u.}}{60\text{ pico a.u.}}\times\frac{35\text{ µm}}{50\text{ µm}}\\
+ &amp; \approx9.5.
+\end{aligned}
+ \]</div>
+
+
+
+<p>This should be approximately true since the number of electron-hole pairs produced by a MIP is &#8220;approximately proportional&#8221; to the thickness of the device assuming that the fraction of energy lost by the MIP in the device is negligible<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_3');" onkeypress="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_3');" ><sup id="footnote_plugin_tooltip_393_18_3" class="footnote_plugin_tooltip_text">[3]</sup></a><span id="footnote_plugin_tooltip_text_393_18_3" class="footnote_tooltip">Kolanoski, Hermann, and Norbert Wermes. Particle Detectors: Fundamentals and Applications. Particle Detectors. Oxford University Press, 2020. <a rel="noreferrer noopener" href="https://cds.cern.ch/record/2721300" target="_blank"><span class="footnote_url_wrap">https://cds.cern.ch/record/2721300</span></a>. Chapter 3.</span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_393_18_3').tooltip({ tip: '#footnote_plugin_tooltip_text_393_18_3', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>, which for thin detectors should be the case.</p>
+
+
+
+<h2 class="wp-block-heading">TCT in real life</h2>
+
+
+
+<h3 class="wp-block-heading">TCT with PIN diode</h3>
+
+
+
+<p>Now let&#8217;s move to the TCT. According to my (not necessarily correct) theoretical analysis in <a href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-theory/">this post</a>, the collected charge should follow a Gaussian distribution </p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ Q\sim\text{Gaussian}\left(\mu=gnp,\sigma=g\sqrt{np\left(1-p\right)}\right) \]</div>
+
+
+
+<p>where \(n\) is the number of photons in each pulse, \(p\sim1-\exp\left(\frac{\text{detector thickness}}{1\text{ mm}}\right)\approx5\text{ %}\), and \(g\) is a factor that converts the number of electron-hole pairs produced to the measured collected charge, i.e. \(g \approx e \times \text{amplifier gain}\) with \(e\) the electron charge. To verify if \(Q\) has such distribution it is possible to proceed like this: Measure the distribution of \(Q\) for different values of \(n\), estimate \(\mu_i\) and \(\sigma_i\) for each \(n_i\) and then observe the ratio</p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \frac{\mu_{i}}{\sigma_{i}^{2}}=\frac{1}{g(1-p)} \]</div>
+
+
+
+<p>which turns out to be a constant. To vary \(n\) I basically used the &#8220;LASER pulse width&#8221; in the Particulars LASER control software, for which a screenshot is shown below. I don&#8217;t exactly understand how this parameter works or should be interpreted, in my experience low percentage values yield a large number of photons while high percentage values yield a low number of photons. I have also observed that for \(\text{LASER pulse width} \gtrsim 66 \text{ %}\) the signal coming out of the detector completely disappears.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/02/Screenshot_2021-02-08_14-04-09.png" alt="" class="wp-image-411" width="253" height="331" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/02/Screenshot_2021-02-08_14-04-09.png 341w, https://msenger.web.cern.ch/wp-content/uploads/2021/02/Screenshot_2021-02-08_14-04-09-229x300.png 229w" sizes="(max-width: 253px) 100vw, 253px" /><figcaption>Screenshot of Particulars LASER control software.</figcaption></figure></div>
+
+
+
+<p>The collected charge by the PIN diode for different values of the parameter \(\text{LASER pulse width}\) looks like this (please click/double click on the legend to hide/show traces):</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-pin-collected%20charge%20for%20many%20laser%20pulse%20widths.html" width="100%" height="555"></iframe>
+
+
+
+<p>I have plotted, along with the measured distributions, fits of Gaussian functions too. From this fits we see that the collected charge is effectively very Gaussian, as opposed to the &#8220;Landau-ian&#8221; shape with the beta source. Can we say that these Gaussian distributions come from a binomial distribution with very high \(n\), as &#8220;the theory says&#8221;? Let&#8217;s have a look at how the quantity \(\mu/\sigma^2\) varies as the \(\text{LASER pulse width}\) is changed. The two plots below show the parameters \(\mu\) and \(\sigma\) for the fitted Gaussians as a function of \(\text{LASER pulse width}\), and also the ratio \( \mu/\sigma^2 \):</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-pin-fitted%20parameters.html" width="100%" height="366"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-pin-binomial%20analysis.html" width="100%" height="366"></iframe>
+</div>
+</div>
+
+
+
+<p>As said before, if these Gaussian distributions are due to a binomial with big \(n\), the quantity \(\mu/\sigma^2\) should be a constant, independent of \(n\), i.e. independent of \(\text{LASER pulse width}\). We observe here that this is not the case. I still don&#8217;t have an explanation for this result. Possible reasons that come to my mind:</p>
+
+
+
+<ul><li>The number of photons delivered by the laser has non-negligible fluctuations.</li><li>The number of photons in each pulse is very high such that the electron-hole pairs produced in the detector is high enough to saturate it, making the absorption of each photon no longer independent from the others.</li><li>Other reasons?</li></ul>
+
+
+
+<h3 class="wp-block-heading">TCT with LGAD </h3>
+
+
+
+<p>Let&#8217;s now have a look at the exact same process but replacing the PIN diode by the LGAD. The collected charge for different values of \(\text{LASER pulse width}\) is:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-lgad-collected%20charge%20for%20many%20laser%20pulse%20widths.html" width="100%" height="555"></iframe>
+
+
+
+<p>At a first glance this behavior looks different from the one with the PIN. If we look at the dependence of \(\mu/\sigma^2\) with \(\text{LASER pulse width}\)</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-lgad-fitted%20parameters.html" width="100%" height="366"></iframe>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-lgad-binomial%20analysis.html" width="100%" height="366"></iframe>
+</div>
+</div>
+
+
+
+<p>we now see that there are two regions; specifically for \(\text{LASER pulse width} &gt; 65.8\text{ %}\) this ratio seems to be constant, pointing towards the binomial distribution. As I said before, higher values of \(\text{LASER pulse width}\) imply less number of photons (via shorter pulses). The binomial characteristic, thus, seems to be present when the number of photons in the pulse is smaller, and something opaques this behavior for pulses with higher number of photons. In fact, for the PIN diode the binomial characteristic was not observed and now I realize that \(\text{LASER pulse width}\) was measured far outside the range where it shows the binomial characteristic with the LGAD. When setting up the measurement these ranges were chosen based on signal to noise considerations. It seems that the internal gain of the LGAD allows for bigger values of \(\text{LASER pulse width}\) to be used (i.e. less photons).</p>
+
+<p>Is it possible that the laser is sending such a big number of photons when \(\text{LASER pulse width} \lesssim 65.8 \text{ %}\) that the silicon gets saturated and can no longer absorb photons in an independent way? Still don&#8217;t know, this will require an estimation of the number of electron-hole pairs that silicon can produce per unit volume per unit time, an estimation of the number of photons delivered by the laser and an estimation of the pulse width in time. The pulse size in space has already been estimated, see <a href="https://msenger.web.cern.ch/a-spacial-characterization-of-the-tct/#obtaining-the-beam-shape-by-deconvolution-" data-type="URL" data-id="https://msenger.web.cern.ch/a-spacial-characterization-of-the-tct/#obtaining-the-beam-shape-by-deconvolution-" target="_blank" rel="noreferrer noopener">this post</a>.</p>
+
+
+
+<h2 class="wp-block-heading">TCT vs beta source (MIP calibration)</h2>
+
+
+
+<p>Now I want to compare the collected charge in each setup, and find a value of \(\text{LASER pulse width}\) such that the TCT becomes &#8220;equivalent&#8221; to the beta source. As I analyzed in my <a href="https://msenger.web.cern.ch/beta-source-vs-tct-theory/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-source-vs-tct-theory/">previous post</a>, this is possible because the absorption length for \(1064 \text{ nm}\) photons in silicon is \(\sim 1 \text{ mm}\) and our devices are \(\sim 50 \text{ µm}\). The laser beam, thus, makes its way through the whole thickness of the device and the charge carriers are produced approximately uniformly along all the height of the device<span class="footnote_referrer"><a role="button" tabindex="0" onclick="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_4');" onkeypress="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_4');" ><sup id="footnote_plugin_tooltip_393_18_4" class="footnote_plugin_tooltip_text">[4]</sup></a><span id="footnote_plugin_tooltip_text_393_18_4" class="footnote_tooltip">This &#8220;infrared laser scenario&#8221; is the opposite case to a red laser which has an absorption length \(\sim 5 \text{ µm}\) and so the carriers are produced very close to the surface of the&nbsp;&#x2026; <span class="footnote_tooltip_continue"  onclick="footnote_moveToReference_393_18('footnote_plugin_reference_393_18_4');">Continue reading</span></span></span><script type="text/javascript"> jQuery('#footnote_plugin_tooltip_393_18_4').tooltip({ tip: '#footnote_plugin_tooltip_text_393_18_4', tipClass: 'footnote_tooltip', effect: 'fade', predelay: 0, fadeInSpeed: 200, delay: 400, fadeOutSpeed: 200, position: 'top center', relative: true, offset: [-7, 0], });</script>, in a similar way as it happens for a MIP. There are some important differences, however, that make the signals have different distributions.</p>
+
+
+
+<p>The plot below compares the distribution of the collected charge with the PIN diode both with the beta source and with the TCT, for some different values of \(\text{LASER pulse width}\).</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-vs-beta-pin.html" width="100%" height="555"></iframe>
+
+
+
+<p>We see that no matter which \(\text{LASER pulse width}\) the signals will always have a different distribution. The most appropriate value for \(\text{LASER pulse width}\) I think is the one that makes the most probable value for both distributions to coincide.</p>
+
+
+
+<p>If we do this comparison for the LGAD detector:</p>
+
+
+
+<iframe loading="lazy" src="https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/210207%20beta%20source%20vs%20TCT:%20Real%20life/tct-vs-beta-lgad.html" width="100%" height="555"></iframe>
+
+
+
+<p>we see that the distribution with the beta source is less &#8220;Landau-ian&#8221;, as pointed out before, making smaller the difference between the radioactive source and the TCT.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusions</h2>
+
+
+
+<ul><li>The distribution of the collected charge in a PIN diode and in an LGAD detector was studied both using a radioactive Sr-90 beta source and an infrared pulsed laser in a TCT setup. </li><li>The collected charge by the PIN diode with the beta source follows clearly a Landau distribution.</li><li>The collected charge by the LGAD detector with the beta source also shows a &#8220;Landau-ian&#8221; distribution but deformed with more weight for small values. Is this related with the gain process?</li><li>In the TCT both devices exhibit a Gaussian distribution, as expected. However, this distribution should be the Gaussian limit of a binomial and this was not observed for the PIN, and was partially observed for the LGAD. The reason for this is yet unknown.</li><li>A comparison between the TCT and the radioactive source was done for both PIN and LGAD. Though the TCT is capable of producing signals with the same &#8220;most probable value&#8221;, the long tail of the Landau distribution produced by the beta source is not possible to obtain (trivially) with the TCT. How will this impact results (timing/space) is unknown.</li></ul>
+<div class="speaker-mute footnotes_reference_container"> <div class="footnote_container_prepare"><p><span role="button" tabindex="0" class="footnote_reference_container_label pointer" onclick="footnote_expand_collapse_reference_container_393_18();">References</span><span role="button" tabindex="0" class="footnote_reference_container_collapse_button" style="display: none;" onclick="footnote_expand_collapse_reference_container_393_18();">[<a id="footnote_reference_container_collapse_button_393_18">+</a>]</span></p></div> <div id="footnote_references_container_393_18" style=""><table class="footnotes_table footnote-reference-container"><caption class="accessibility">References</caption> <tbody> 
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_393_18('footnote_plugin_tooltip_393_18_1');"><a id="footnote_plugin_reference_393_18_1" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>1</a></th> <td class="footnote_plugin_text">The &#8220;Speedy Gonzalez brothers&#8221; are two LGAD diodes which had a temporal resolution of around 27 ps. See <a href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/" data-type="URL" data-id="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/">this post</a> for more detailed information.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_393_18('footnote_plugin_tooltip_393_18_2');"><a id="footnote_plugin_reference_393_18_2" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>2</a></th> <td class="footnote_plugin_text">Kolanoski, Hermann, and Norbert Wermes. Particle Detectors: Fundamentals and Applications. Particle Detectors. Oxford University Press, 2020. <a rel="noreferrer noopener" href="https://cds.cern.ch/record/2721300" target="_blank"><span class="footnote_url_wrap">https://cds.cern.ch/record/2721300</span></a>. Sec. 3.2.3.2.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_393_18('footnote_plugin_tooltip_393_18_3');"><a id="footnote_plugin_reference_393_18_3" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>3</a></th> <td class="footnote_plugin_text">Kolanoski, Hermann, and Norbert Wermes. Particle Detectors: Fundamentals and Applications. Particle Detectors. Oxford University Press, 2020. <a rel="noreferrer noopener" href="https://cds.cern.ch/record/2721300" target="_blank"><span class="footnote_url_wrap">https://cds.cern.ch/record/2721300</span></a>. Chapter 3.</td></tr>
+
+<tr class="footnotes_plugin_reference_row"> <th scope="row" class="footnote_plugin_index_combi pointer"  onclick="footnote_moveToAnchor_393_18('footnote_plugin_tooltip_393_18_4');"><a id="footnote_plugin_reference_393_18_4" class="footnote_backlink"><span class="footnote_index_arrow">&#8593;</span>4</a></th> <td class="footnote_plugin_text">This &#8220;infrared laser scenario&#8221; is the opposite case to a red laser which has an absorption length \(\sim 5 \text{ µm}\) and so the carriers are produced very close to the surface of the silicon.</td></tr>
+
+ </tbody> </table> </div></div><script type="text/javascript"> function footnote_expand_reference_container_393_18() { jQuery('#footnote_references_container_393_18').show(); jQuery('#footnote_reference_container_collapse_button_393_18').text('−'); } function footnote_collapse_reference_container_393_18() { jQuery('#footnote_references_container_393_18').hide(); jQuery('#footnote_reference_container_collapse_button_393_18').text('+'); } function footnote_expand_collapse_reference_container_393_18() { if (jQuery('#footnote_references_container_393_18').is(':hidden')) { footnote_expand_reference_container_393_18(); } else { footnote_collapse_reference_container_393_18(); } } function footnote_moveToReference_393_18(p_str_TargetID) { footnote_expand_reference_container_393_18(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } } function footnote_moveToAnchor_393_18(p_str_TargetID) { footnote_expand_reference_container_393_18(); var l_obj_Target = jQuery('#' + p_str_TargetID); if (l_obj_Target.length) { jQuery( 'html, body' ).delay( 0 ); jQuery('html, body').animate({ scrollTop: l_obj_Target.offset().top - window.innerHeight * 0.2 }, 380); } }</script>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Beta Timing Setup and Data Processing at UZH</title>
+		<link>https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Mon, 14 Dec 2020 18:29:35 +0000</pubDate>
+				<category><![CDATA[presentations]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[beta-source]]></category>
+		<category><![CDATA[lgad]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=25</guid>
+
+					<description><![CDATA[NOTE: This post was originally published in this link. Matías Senger(matias.senger@cern.ch)On behalf of the UZH group: Anna Macchiolo, Riccardo del Burgo, Daniel Hernandez, Yuta Takahashi, Prof. Ben Kilminster 37th RD50 WorkshopNovember 20, 2020 UZH beta timing setup The UZH beta timing setup has the following block diagram: Hardware elements of the setup Bias voltage: CAEN &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/beta-timing-setup-and-data-processing-at-uzh/"> <span class="screen-reader-text">Beta Timing Setup and Data Processing at UZH</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-color has-background" style="background-color:#fff9c2;color:#ff0000"><strong>NOTE: This post was originally published <a href="http://ealaiporpi.byethost7.com/home-page/2020/11/20/beta-timing-setup-and-data-processing-at-uzh/" data-type="URL" data-id="http://ealaiporpi.byethost7.com/home-page/2020/11/20/beta-timing-setup-and-data-processing-at-uzh/">in this link</a>. </strong></p>
+
+
+
+<p class="has-text-align-center">Matías Senger<br>(<a href="mailto:matias.senger@cern.ch">matias.senger@cern.ch</a>)<br>On behalf of the UZH group: <br>Anna Macchiolo, Riccardo del Burgo, Daniel Hernandez, Yuta Takahashi, Prof. Ben Kilminster</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://www.physik.uzh.ch/en/groups/kilminster.html" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/2000px-universitat_zurich_logo.svg_.png?w=1024" alt="" class="wp-image-378" width="298" height="134"/></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://rd50.web.cern.ch/" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/logo-2.jpg?w=1024" alt="" class="wp-image-381" width="160" height="94"/></a></figure></div>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center"><a href="https://indico.cern.ch/event/896954/contributions/4106457/" target="_blank" rel="noreferrer noopener">37<sup>th</sup> RD50 Workshop</a><br>November 20, 2020</p>
+
+
+
+<hr class="wp-block-separator is-style-default"/>
+
+
+
+
+
+<h2 class="wp-block-heading">UZH beta timing setup</h2>
+
+
+
+<p>The UZH beta timing setup has the following block diagram:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/2.png?w=1024" alt="" class="wp-image-37"/></figure></div>
+
+
+
+<h3 class="wp-block-heading">Hardware elements of the setup</h3>
+
+
+
+<ul><li>Bias voltage: CAEN DT1419ET voltage supply.</li><li>LGADs: Mounted in <a rel="noreferrer noopener" href="https://twiki.cern.ch/twiki/bin/view/Main/UcscSingleChannel" target="_blank">UCSC single channel board</a> (Santa Cruz board).</li><li>Amplifiers: UZH house made, 36 dB @ 4 GHz.</li><li>Oscilloscope: Lecroy WaveRunner 9254M (or 640Zi).</li><li>Holder: Self made plastic holder to align the two boards and the radioactive source.</li></ul>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_c8b305-d9"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_c8b305-d9 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="3" data-columns-xl="3" data-columns-lg="3" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:771px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:86.7704280155642%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" width="771" height="669" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" data-id="34" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=34" class="wp-image-34undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:426px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:178.63849765258215%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" width="426" height="761" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" data-id="30" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=30" class="wp-image-30undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:422px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:181.27962085308056%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" width="422" height="765" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" data-id="31" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=31" class="wp-image-31undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:425px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:179.76470588235293%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" width="425" height="764" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" data-id="32" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=32" class="wp-image-32undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:690px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:101.7391304347826%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" width="690" height="702" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" data-id="33" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=33" class="wp-image-33undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1000px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:92.9%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" width="1000" height="929" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" data-id="29" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=29" class="wp-image-29undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:841px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:71.93816884661118%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" width="841" height="605" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" data-id="35" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=35" class="wp-image-35undefined"/></div></div></a></figure></div></li></ul></div>
+</div></div>
+
+
+
+<p>The setup assembled:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/photo_2020-11-13_15-50-10.jpg?w=811" alt="" class="wp-image-72"/></figure>
+
+
+
+<p>A typical signal looks like this:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Signal%2001191-B.html&#8221;]</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>The measurements shown throughout this presentation belong to the &#8220;Speedy Gonzalez measurement series&#8221; and all of them were made with the devices </p>
+
+
+
+<ul><li>AIDA-2020 V1 RUN 11478 W5-DA11</li><li>AIDA-2020 V1 RUN 11478 W5-DA12</li></ul>
+
+
+
+<p>These devices are 35 µm thickness with medium doping.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_16-24-09.png?w=643" alt="" class="wp-image-416"/></figure></div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<h3 class="wp-block-heading">Data acquisition</h3>
+
+
+
+<ul><li>Oscilloscope trigger configuration:<ul><li>Trigger type: Pattern</li><li>Operator: And</li></ul></li></ul>
+
+
+
+<figure class="wp-block-gallery alignwide columns-1 is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_16-40-14.png?w=1024" alt="" data-id="419" data-link="https://ealaiporpi.wordpress.com/screenshot_2020-11-19_16-40-14/" class="wp-image-419"/></figure></li></ul></figure>
+
+
+
+<ul><li>Auto save function produces one file per trigger:</li></ul>
+
+
+
+<figure class="wp-block-gallery alignwide columns-1 is-cropped wp-block-gallery-4 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/6.png?w=906" alt="" data-id="82" class="wp-image-82"/></figure></li></ul></figure>
+
+
+
+<ul><li>Wait some hours to get between 3000 and 6000 shots. Typicaly the rate is about 1 trigger every 7 seconds.</li></ul>
+
+
+
+<p>After this I end up with two directories <code>A</code> and <code>B</code>, one for each LGAD, each containing N files with each of the signals. So, for example, files <code>raw/A/00000.txt</code> and <code>raw/B/00000.txt</code> go together because they belong to the same trigger.</p>
+
+
+
+<pre class="wp-block-code"><code>raw
++--- A
+|    +--- 00000.txt
+|    +--- 00001.txt
+|    +--- 00002.txt
+|    ...
++--- B
+     +--- 00000.txt
+     +--- 00001.txt
+     +--- 00002.txt
+     ...</code></pre>
+
+
+
+<h5 class="wp-block-heading">Noise</h5>
+
+
+
+<p>The setup is quite sensitive to Wi-Fi and cellphone noise! This spoils many triggers in the oscilloscope that have to be filtered in the offline analysis.</p>
+
+
+
+<p>The best solution was to place it far from Wi-Fi antennas and have the cellphone in airplane mode when taking data.</p>
+
+
+
+<h2 class="wp-block-heading">Data processing</h2>
+
+
+
+<p>I use <a href="https://www.python.org/" target="_blank" rel="noreferrer noopener">Python</a> due to versatility, portability and ease of use. </p>
+
+
+
+<h4 class="wp-block-heading">Basics of data processing</h4>
+
+
+
+<p>In development: <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools" target="_blank">lgadtools Python package</a> which provides the <code>LGADSignal</code> class for easy manipulation and processing of the data. (Please feel free to try it, use it and/or contribute!)</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; gutter: false; title: ; notranslate">
+from lgadtools.LGADSignal import LGADSignal # https://github.com/SengerM/lgadtools
+my_signal = LGADSignal( # Create LGADSignal object with the data.
+  time = time_values_array,
+  samples = samples_array,
+)
+my_signal.worth # If this is False, the signal is probably only noise.
+my_signal.amplitude # Returns amplitude.
+my_signal.noise # Returns noise STD.
+my_signal.risetime # Returns 10%→90% rise time.
+my_signal.SNR # Returns amplitude/noise.
+my_signal.baseline # Returns signal base line.
+my_signal.plot_myplotlib(myplotlib_figure) # Produces a plot like those shown in this presentation.
+</pre></div>
+
+
+<p>In the plot below I show each of the quantities returned by the <code>LGADSignal</code> class. The plot was actually made by the last line in the previous code example.</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Signal%2001191-B.html&#8221;]</p>
+
+
+
+<h4 class="wp-block-heading">The actual processing of data</h4>
+
+
+
+<p>Using the <code>LGADSignal</code> class I extract the parameters for each pair of signals and produce histograms for amplitude, SNR and rise time:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Rise%20times%20distribution.html&#8221;]</p>
+
+
+
+<p>I usually do not apply any cuts in the offline analysis.</p>
+
+
+
+<h5 class="wp-block-heading">Extracting time information</h5>
+
+
+
+<p>For each signal I go over some predefined values of k<sub>CFD</sub>, the constant fraction discriminator, and for each value of k<sub>CFD</sub> I store the corresponding time, as shown in the next images:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery alignwide kb-gallery-wrap-id-_096acb-99"><div class="kb-gallery-ul kb-gallery-type-carousel kb-gallery-id-_096acb-99 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="true"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-gallery-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-columns-xxl="2" data-columns-xl="2" data-columns-md="2" data-columns-sm="2" data-columns-xs="1" data-columns-ss="1" data-slider-anim-speed="400" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1-768x523.png" width="768" height="523" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" data-id="48" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=48" class="wp-image-48 skip-lazy"/></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08-768x512.png" width="768" height="512" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" data-id="49" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=49" class="wp-image-49 skip-lazy"/></div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p></p>
+
+
+
+<p>Using the <code>LGADSignal</code> class from the <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools" target="_blank">lgadtools package</a> this is something like:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; first-line: 1; gutter: false; title: ; notranslate">
+for kCFD in &#91;10,15,20,...,90]:
+    t1 = signal_from_lgad_1.time_at(kCFD)
+    t2 = signal_from_lgad_2.time_at(kCFD)
+    Delta_t = t1 - t2
+</pre></div>
+
+
+<p>So for each pair of signals I obtain:</p>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong>k<sub>CFD</sub></strong></th><th><strong>t@k<sub>CFD</sub> LGAD 1 (s)</strong></th><th><strong>t@k<sub>CFD</sub> LGAD 2 (s)</strong></th><th><strong>Δt (s)</strong></th></tr></thead><tbody><tr><td>10 %</td><td>-1.39e-9</td><td>-1.49e-9</td><td>100e-12</td></tr><tr><td>15 %</td><td>-1.30e-9</td><td>-1.42e-9</td><td>120e-12</td></tr><tr><td>20 %</td><td>-1.27e-9</td><td>-1.35e-9</td><td>80e-12</td></tr><tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td></tr></tbody></table></figure>
+
+
+
+<p>Now, assuming that the <strong>two detectors are identical</strong>, the standard deviation of \( \Delta t \) divided by \( \sqrt{2} \) is the time resolution for the respective value of \( k_\text{CFD} \), so</p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \text{Time resolution} = \sqrt{\frac{\text{var}(\Delta t)}{2}} \]</div>
+
+
+
+The distribution of \( \Delta t \) looks typically like this:
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Jitter%20at%20kCFD%20%3D%2085%20%25.html&#8221;]</p>
+</div></div>
+
+
+
+<p>Plotting the standard deviation obtained from the gaußian fits in the previous figures as a function of k<sub>CFD</sub> produces:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution.html&#8221;]</p>
+
+
+
+<p>For this pair of detectors we conclude that the time resolution is 27.2 ps.</p>
+
+
+
+<p>All this is done in an automated way by the script in <a rel="noreferrer noopener" href="https://gitlab.com/SengerM/phd-scripts/-/blob/master/lgad/time_resolution_between_two_pulses.py" target="_blank">this link</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Measurement of irradiated devices</h2>
+
+
+
+<p>To measure irradiated devices we use almost an identical setup, but instead of two identical LGADs we place the irradiated device under test (DUT) together with a reference LGAD that we have already characterized:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/9.png?w=1024" alt="" class="wp-image-343"/></figure></div>
+
+
+
+<p>For irradiated devices the bias current is considerably higher so the <strong>measurement has to be done at lower temperature</strong>. Ideally this is done with a climate chamber. As of now we don&#8217;t have one available so we used a common freezer as a &#8220;quick &#8216;n dirty&#8221; solution. Later on the setup will be moved to a climate chamber.</p>
+
+
+
+<h3 class="wp-block-heading">Beta setup at room temperature vs inside freezer</h3>
+
+
+
+<p>The first step is to check whether the freezer is good enough for this purpose. For this we repeated the same measurement both inside and outside the freezer and we compared them. We only changed bias voltage between these measurements:</p>
+
+
+
+<ul><li>130 V outside the freezer.</li><li>110 V and 105 V inside the freezer.</li></ul>
+
+
+
+<p>The temperature inside the freezer was -19 °C.</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_b4991b-0d"><div class="kb-gallery-ul kb-gallery-type-carousel kb-gallery-id-_b4991b-0d kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="true"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-gallery-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-columns-xxl="2" data-columns-xl="2" data-columns-md="2" data-columns-sm="2" data-columns-xs="1" data-columns-ss="1" data-slider-anim-speed="400" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23-1024x571.png" width="1024" height="571" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" data-id="53" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=53" class="wp-image-53 skip-lazy"/></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" width="714" height="489" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" data-id="54" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=54" class="wp-image-54 skip-lazy"/></div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p>The results are shown below. Those outside the freezer are the ones shown before, replicated here for ease of comparison.</p>
+
+
+
+<div class="wp-block-columns alignfull is-layout-flex wp-container-core-columns-layout-5 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
+<h6 class="wp-block-heading">Outside freezer</h6>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Rise%20times%20distribution.html&#8221;]</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
+<h6 class="wp-block-heading">Inside freezer</h6>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution%20Speedy%20Gonzalez%20in%20the%20north%20pole%20with%20more%20chili.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Rise%20times%20distribution.html&#8221;]o</p>
+</div>
+</div>
+
+
+
+<p>On these results:</p>
+
+
+
+<ul><li>The increase of gain in cold was compensated by the lower bias voltage. </li><li>We considered this results as a validation to measure the irradiated devices inside the freezer.</li></ul>
+
+
+
+<h3 class="wp-block-heading">Irradiated devices in the beta timing setup</h3>
+
+
+
+<p>We used the setup previously shown with one DUT and one reference LGAD placed inside the freezer. The devices in the setup were:</p>
+
+
+
+<ul><li>DUT: LGAD HPK 2 L14P10 W31-S2 (8e14 n<sub>eq</sub>/cm²) (45 µm thick)</li><li>Reference: AIDA-2020 V1 RUN 11478 W5-DA12 (the same shown before at room temperature)</li></ul>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/photo_2020-11-19_10-21-58.jpg?w=720" alt="" class="wp-image-346" width="470" height="463"/></figure></div>
+
+
+
+<p>The IV curves measured in the probe station at -20 °C at UZH for the irradiated HPK2 sensors are:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_c40e56-8d"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_c40e56-8d kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="1" data-columns-xl="1" data-columns-lg="1" data-columns-md="1" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1576px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:51.840101522842644%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" width="1576" height="817" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" data-id="61" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=61" class="wp-image-61undefined"/></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>And the timing results for the measured device:</p>
+
+
+
+<figure class="wp-block-gallery aligncenter columns-1 is-cropped wp-block-gallery-5 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_09-53-43.png?w=1024" alt="" data-id="359" class="wp-image-359"/></figure></li></ul></figure>
+
+
+
+<p>To obtain this time resolution we subtracted the resolution from the reference LGAD:</p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \sigma_\text{DUT} = \sqrt{\sigma^2_\text{measured} &#8211; \sigma^2_\text{reference LGAD}} \]</div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-6 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h6 class="wp-block-heading">Example</h6>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_fdc62d-f6"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_fdc62d-f6 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:755px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:64.63576158940397%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" width="755" height="488" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" data-id="63" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=63" class="wp-image-63undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:820px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:58.65853658536585%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" width="820" height="481" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" data-id="64" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=64" class="wp-image-64undefined"/></div></div></a></figure></div></li></ul></div>
+
+
+
+In this case \( \sigma_\text{measured} = 44 \text{ ps} \) and \( \sigma_\text{reference LGAD} = 27.2 \text{ ps} \) so \( \sigma_\text{DUT} = 35.1 \text{ ps} \).
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<ul><li>The beta timing setup at UZH is operative.</li><li>Few house-made hardware pieces were required.</li><li>Noise: The setup is sensitive to Wi-Fi/cell phones.<ul><li>Easy solution: Move away from noise sources.</li></ul></li><li>Software: Portable and reusable software is in development.<ul><li>It is already usable, feel free <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools#installation" target="_blank">to try it</a> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li></ul></li><li>The timing setup was assembled inside a freezer with good results.<ul><li>Measured irradiated device.</li></ul></li></ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

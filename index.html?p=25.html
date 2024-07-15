@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>Beta Timing Setup and Data Processing at UZH &#8211; e a la i por pi</title>
+<link rel='stylesheet' id='kadence-glightbox-css' href='wp-content/plugins/kadence-blocks/includes/assets/css/kb-glightbox.min.css%3Fver=3.1.22.css' media='all' />
+<link rel='stylesheet' id='kadence-kb-splide-css' href='wp-content/plugins/kadence-blocks/includes/assets/css/kadence-splide.min.css%3Fver=3.1.22.css' media='all' />
+<link rel='stylesheet' id='kadence-blocks-splide-css' href='wp-content/plugins/kadence-blocks/includes/assets/css/kb-blocks-splide.min.css%3Fver=3.1.22.css' media='all' />
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="e a la i por pi &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="e a la i por pi &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="e a la i por pi &raquo; Beta Timing Setup and Data Processing at UZH Comments Feed" href="beta-timing-setup-and-data-processing-at-uzh/feed/index.html" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/msenger.web.cern.ch\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='mci-footnotes-jquery-tooltips-pagelayout-none-css' href='wp-content/plugins/footnotes/css/footnotes-jqttbrpl0.min.css%3Fver=2.7.3.css' media='all' />
+<link rel='stylesheet' id='astra-theme-css-css' href='wp-content/themes/astra/assets/css/minified/frontend.min.css%3Fver=3.1.2.css' media='all' />
+<style id='astra-theme-css-inline-css'>
+html{font-size:100%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-weight:inherit;font-size:16px;font-size:1rem;}blockquote{color:#000000;}.site-title{font-size:35px;font-size:2.1875rem;}header .custom-logo-link img{max-width:94px;}.astra-logo-svg{width:94px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.5rem;}.site-header .site-description{font-size:15px;font-size:0.9375rem;}.entry-title{font-size:40px;font-size:2.5rem;}h1,.entry-content h1{font-size:40px;font-size:2.5rem;}h2,.entry-content h2{font-size:30px;font-size:1.875rem;}h3,.entry-content h3{font-size:25px;font-size:1.5625rem;}h4,.entry-content h4{font-size:20px;font-size:1.25rem;}h5,.entry-content h5{font-size:18px;font-size:1.125rem;}h6,.entry-content h6{font-size:15px;font-size:0.9375rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:1.875rem;}::selection{background-color:#0274be;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#3a3a3a;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#0274be;background-color:#0274be;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#0274be;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#0274be;background-color:#0274be;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#0274be;border-color:#0274be;}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:#0274be;}.entry-meta,.entry-meta *{line-height:1.45;color:#0274be;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}.widget-title{font-size:22px;font-size:1.375rem;color:#3a3a3a;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#0274be;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#0274be;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#0274be;border-color:#0274be;}.calendar_wrap #today > a{color:#ffffff;}.page-links .page-link,.single .post-navigation a{color:#0274be;}.wp-block-buttons.aligncenter{justify-content:center;}@media (min-width:1200px){.ast-separate-container.ast-right-sidebar .entry-content .wp-block-image.alignfull,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-image.alignfull,.ast-separate-container.ast-right-sidebar .entry-content .wp-block-cover.alignfull,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-cover.alignfull{margin-left:-6.67em;margin-right:-6.67em;max-width:unset;width:unset;}.ast-separate-container.ast-right-sidebar .entry-content .wp-block-image.alignwide,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-image.alignwide,.ast-separate-container.ast-right-sidebar .entry-content .wp-block-cover.alignwide,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-cover.alignwide{margin-left:-20px;margin-right:-20px;max-width:unset;width:unset;}}@media (min-width:1200px){.wp-block-group .has-background{padding:20px;}}@media (min-width:1200px){.ast-no-sidebar.ast-separate-container .entry-content .wp-block-group.alignwide,.ast-no-sidebar.ast-separate-container .entry-content .wp-block-cover.alignwide{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px;}.ast-no-sidebar.ast-separate-container .entry-content .wp-block-cover.alignfull,.ast-no-sidebar.ast-separate-container .entry-content .wp-block-group.alignfull{margin-left:-6.67em;margin-right:-6.67em;padding-left:6.67em;padding-right:6.67em;}}@media (min-width:1200px){.wp-block-cover-image.alignwide .wp-block-cover__inner-container,.wp-block-cover.alignwide .wp-block-cover__inner-container,.wp-block-cover-image.alignfull .wp-block-cover__inner-container,.wp-block-cover.alignfull .wp-block-cover__inner-container{width:100%;}}.ast-plain-container.ast-no-sidebar #primary{margin-top:0;margin-bottom:0;}@media (max-width:921px){.ast-theme-transparent-header #primary,.ast-theme-transparent-header #secondary{padding:0;}}.wp-block-columns{margin-bottom:unset;}.wp-block-image.size-full{margin:2rem 0;}.wp-block-separator.has-background{padding:0;}.wp-block-gallery{margin-bottom:1.6em;}.wp-block-group{padding-top:4em;padding-bottom:4em;}.wp-block-group__inner-container .wp-block-columns:last-child,.wp-block-group__inner-container :last-child,.wp-block-table table{margin-bottom:0;}.blocks-gallery-grid{width:100%;}.wp-block-navigation-link__content{padding:5px 0;}.wp-block-group .wp-block-group .has-text-align-center,.wp-block-group .wp-block-column .has-text-align-center{max-width:100%;}.has-text-align-center{margin:0 auto;}@media (min-width:1200px){.wp-block-cover__inner-container,.alignwide .wp-block-group__inner-container,.alignfull .wp-block-group__inner-container{max-width:1200px;margin:0 auto;}.wp-block-group.alignnone,.wp-block-group.aligncenter,.wp-block-group.alignleft,.wp-block-group.alignright,.wp-block-group.alignwide,.wp-block-columns.alignwide{margin:2rem 0 1rem 0;}}@media (max-width:1200px){.wp-block-group{padding:3em;}.wp-block-group .wp-block-group{padding:1.5em;}.wp-block-columns,.wp-block-column{margin:1rem 0;}}@media (min-width:921px){.wp-block-columns .wp-block-group{padding:2em;}}@media (max-width:544px){.wp-block-cover-image .wp-block-cover__inner-container,.wp-block-cover .wp-block-cover__inner-container{width:unset;}.wp-block-cover,.wp-block-cover-image{padding:2em 0;}.wp-block-group,.wp-block-cover{padding:2em;}.wp-block-media-text__media img,.wp-block-media-text__media video{width:unset;max-width:100%;}.wp-block-media-text.has-background .wp-block-media-text__content{padding:1em;}}@media (max-width:921px){.ast-plain-container.ast-no-sidebar #primary{padding:0;}}@media (min-width:544px){.entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content{padding:0 8% 0 0;}.entry-content .wp-block-media-text .wp-block-media-text__content{padding:0 0 0 8%;}.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-bottom-left > *,.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-bottom-right > *,.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-top-left > *,.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-top-right > *,.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-center-right > *,.ast-plain-container .site-content .entry-content .has-custom-content-position.is-position-center-left > *{margin:0;}}@media (max-width:544px){.entry-content .wp-block-media-text .wp-block-media-text__content{padding:8% 0;}.wp-block-media-text .wp-block-media-text__media img{width:auto;max-width:100%;}}@media (max-width:921px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (max-width:921px){.ast-right-sidebar #primary{padding-right:0;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:922px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-left-sidebar #primary{border-left:1px solid #eee;}}.wp-block-button .wp-block-button__link,{color:#ffffff;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#0274be;background-color:#0274be;color:#ffffff;font-family:inherit;font-weight:inherit;line-height:1;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#0274be;background-color:#0274be;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;font-family:inherit;font-weight:inherit;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}@media (min-width:921px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}}@media (max-width:921px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:921px){html{font-size:91.2%;}}@media (max-width:544px){html{font-size:91.2%;}}@media (min-width:922px){.ast-container{max-width:1589px;}}@font-face {font-family: "Astra";src: url(wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(wp-content/themes/astra/assets/fonts/astra.svg) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (min-width:922px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#44a8ff;}@media (max-width:921px){.ast-builder-grid-row-container.ast-builder-grid-row-tablet-6-equal .ast-builder-grid-row{grid-template-columns:repeat( 6,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-5-equal .ast-builder-grid-row{grid-template-columns:repeat( 5,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-4-equal .ast-builder-grid-row{grid-template-columns:repeat( 4,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-4-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr 1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-4-rheavy .ast-builder-grid-row{grid-template-columns:1fr 1fr 1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-equal .ast-builder-grid-row{grid-template-columns:repeat( 3,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-rheavy .ast-builder-grid-row{grid-template-columns:1fr 1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-cheavy .ast-builder-grid-row{grid-template-columns:1fr 2fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-cwide .ast-builder-grid-row{grid-template-columns:1fr 3fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row{grid-template-columns:1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row > *:first-child{grid-column:1 / -1;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row{grid-template-columns:1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-2-equal .ast-builder-grid-row{grid-template-columns:repeat( 2,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-2-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-2-rheavy .ast-builder-grid-row{grid-template-columns:1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-full .ast-builder-grid-row{grid-template-columns:1fr;}}@media (max-width:544px){.ast-builder-grid-row-container.ast-builder-grid-row-mobile-6-equal .ast-builder-grid-row{grid-template-columns:repeat( 6,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-5-equal .ast-builder-grid-row{grid-template-columns:repeat( 5,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-4-equal .ast-builder-grid-row{grid-template-columns:repeat( 4,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-4-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr 1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-4-rheavy .ast-builder-grid-row{grid-template-columns:1fr 1fr 1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-equal .ast-builder-grid-row{grid-template-columns:repeat( 3,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-rheavy .ast-builder-grid-row{grid-template-columns:1fr 1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-cheavy .ast-builder-grid-row{grid-template-columns:1fr 2fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-cwide .ast-builder-grid-row{grid-template-columns:1fr 3fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row{grid-template-columns:1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row > *:first-child{grid-column:1 / -1;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row{grid-template-columns:1fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-2-equal .ast-builder-grid-row{grid-template-columns:repeat( 2,1fr );}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-2-lheavy .ast-builder-grid-row{grid-template-columns:2fr 1fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-2-rheavy .ast-builder-grid-row{grid-template-columns:1fr 2fr;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row{grid-template-columns:1fr;}}.ast-builder-layout-element[data-section="title_tagline"]{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}.ast-builder-menu-1{font-family:inherit;font-weight:inherit;}.ast-builder-menu-1 .sub-menu,.ast-builder-menu-1 .inline-on-mobile .sub-menu{border-top-width:2px;border-bottom-width:0px;border-right-width:0px;border-left-width:0px;border-color:#0274be;border-style:solid;border-radius:0px;}.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu,.ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper{margin-top:0px;}.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu:before,.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper:before{height:calc( 0px + 5px );}.ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link{border-style:none;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-1 .menu-item-has-children > .menu-link:after{content:unset;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}}.ast-builder-menu-1{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}.site-below-footer-wrap[data-section="section-below-footer-builder"]{background-color:#eeeeee;;min-height:80px;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row{max-width:1549px;margin-left:auto;margin-right:auto;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,.site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section{align-items:flex-start;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-inline .site-footer-section{display:flex;margin-bottom:0;}@media (max-width:921px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-stack .site-footer-section{display:block;margin-bottom:10px;}}@media (max-width:544px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section{display:block;margin-bottom:10px;}}.site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}@media (max-width:921px){.ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}}@media (max-width:544px){.ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}}.ast-footer-copyright{text-align:center;}.ast-footer-copyright {color:#3a3a3a;}@media (max-width:921px){.ast-footer-copyright{text-align:center;}}@media (max-width:544px){.ast-footer-copyright{text-align:center;}}.ast-footer-copyright.ast-builder-layout-element{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-footer-copyright.ast-builder-layout-element{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-footer-copyright.ast-builder-layout-element{display:flex;}}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:922px){.main-header-bar{border-bottom-width:1px;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item, .ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{background-color:#ffffff;;color:#3a3a3a;}.ast-mobile-header-wrap .ast-mobile-header-content{background-color:#ffffff;;}.ast-mobile-popup-content > *, .ast-mobile-header-content > *{padding-top:0px;padding-bottom:0px;}@media (max-width:921px){.content-align-flex-start .ast-builder-layout-element{justify-content:flex-start;}.content-align-flex-start .main-header-menu{text-align:left;}}.ast-mobile-header-wrap .ast-primary-header-bar,.ast-primary-header-bar .site-primary-header-wrap{min-height:70px;}.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item{line-height:70px;}@media (max-width:921px){#masthead .ast-mobile-header-wrap .ast-above-header-bar,#masthead .ast-mobile-header-wrap .ast-primary-header-bar,#masthead .ast-mobile-header-wrap .ast-below-header-bar{padding-left:20px;padding-right:20px;}}.ast-header-break-point .ast-primary-header-bar{border-bottom-width:1px;border-bottom-color:#eaeaea;border-bottom-style:solid;}@media (min-width:922px){.ast-primary-header-bar{border-bottom-width:1px;border-bottom-color:#eaeaea;border-bottom-style:solid;}}.ast-primary-header-bar{background-color:#ffffff;;}.ast-primary-header-bar{display:block;}@media (max-width:921px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}@media (max-width:544px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal{color:#0274be;border:none;background:transparent;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg{width:20px;height:20px;fill:#0274be;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu{color:#0274be;}@media (max-width:921px){.ast-builder-menu-mobile .main-navigation .menu-item > .menu-link{font-family:inherit;font-weight:inherit;}.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-mobile .main-navigation .menu-item-has-children > .menu-link:after{content:unset;}.ast-header-break-point .ast-builder-menu-mobile .main-header-menu, .ast-header-break-point .ast-builder-menu-mobile .main-navigation .menu-item .menu-link, .ast-header-break-point .ast-builder-menu-mobile .main-navigation .menu-item .sub-menu .menu-link{border-style:none;}}@media (max-width:544px){.ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}}.ast-builder-menu-mobile .main-navigation{display:block;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-mobile .main-navigation{display:block;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-mobile .main-navigation{display:block;}}
+</style>
+<link rel='stylesheet' id='astra-menu-animation-css' href='wp-content/themes/astra/assets/css/minified/menu-animation.min.css%3Fver=3.1.2.css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css%3Fver=6.4.3.css' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='kadence-blocks-tableofcontents-css' href='wp-content/plugins/kadence-blocks/dist/style-blocks-tableofcontents.css%3Fver=3.1.22.css' media='all' />
+<link rel='stylesheet' id='kadence-blocks-advancedgallery-css' href='wp-content/plugins/kadence-blocks/dist/style-blocks-advancedgallery.css%3Fver=3.1.22.css' media='all' />
+<style id='kadence-blocks-global-variables-inline-css'>
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<style id='kadence_blocks_css-inline-css'>
+.wp-block-kadence-advancedgallery .kb-gallery-type-masonry.kb-gallery-id-_c8b305-d9{margin:-8px;}.kb-gallery-type-masonry.kb-gallery-id-_c8b305-d9 .kadence-blocks-gallery-item{padding:8px;}.kb-gallery-id-_c8b305-d9 .kadence-blocks-gallery-item .kb-gal-image-radius{border-radius:0px 0px 0px 0px;}.wp-block-kadence-advancedgallery.kb-gallery-wrap-id-_096acb-99{overflow:hidden;}.kb-gallery-type-carousel.kb-gallery-id-_096acb-99 .kt-blocks-carousel .kt-blocks-carousel-init{margin:0 -5px;}.kb-gallery-type-carousel.kb-gallery-id-_096acb-99 .kt-blocks-carousel .kt-blocks-carousel-init .kb-slide-item{padding:4px 5px;}.kb-gallery-type-carousel.kb-gallery-id-_096acb-99 .kt-blocks-carousel .kt-blocks-carousel-init .slick-prev{left:5px;}.kb-gallery-type-carousel.kb-gallery-id-_096acb-99 .kt-blocks-carousel .kt-blocks-carousel-init .slick-next{right:5px;}.wp-block-kadence-advancedgallery.kb-gallery-wrap-id-_b4991b-0d{overflow:hidden;}.kb-gallery-type-carousel.kb-gallery-id-_b4991b-0d .kt-blocks-carousel .kt-blocks-carousel-init{margin:0 -5px;}.kb-gallery-type-carousel.kb-gallery-id-_b4991b-0d .kt-blocks-carousel .kt-blocks-carousel-init .kb-slide-item{padding:4px 5px;}.kb-gallery-type-carousel.kb-gallery-id-_b4991b-0d .kt-blocks-carousel .kt-blocks-carousel-init .slick-prev{left:5px;}.kb-gallery-type-carousel.kb-gallery-id-_b4991b-0d .kt-blocks-carousel .kt-blocks-carousel-init .slick-next{right:5px;}.wp-block-kadence-advancedgallery .kb-gallery-type-masonry.kb-gallery-id-_c40e56-8d{margin:-5px;}.kb-gallery-type-masonry.kb-gallery-id-_c40e56-8d .kadence-blocks-gallery-item{padding:5px;}.wp-block-kadence-advancedgallery .kb-gallery-type-masonry.kb-gallery-id-_fdc62d-f6{margin:-5px;}.kb-gallery-type-masonry.kb-gallery-id-_fdc62d-f6 .kadence-blocks-gallery-item{padding:5px;}
+</style>
+<script src="wp-includes/js/jquery/jquery.min.js%3Fver=3.7.1" id="jquery-core-js"></script>
+<script src="wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.4.1" id="jquery-migrate-js"></script>
+<script src="wp-content/plugins/footnotes/js/jquery.tools.min.js%3Fver=1.2.7.redacted.2" id="mci-footnotes-jquery-tools-js"></script>
+<!--[if IE]>
+<script src="https://msenger.web.cern.ch/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=3.1.2" id="astra-flexibility-js"></script>
+<script id="astra-flexibility-js-after">
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/25" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://msenger.web.cern.ch/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<link rel="canonical" href="index.html%3Fp=25.html" />
+<link rel='shortlink' href='index.html%3Fp=25.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fmsenger.web.cern.ch%252Fbeta-timing-setup-and-data-processing-at-uzh%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fmsenger.web.cern.ch%252Fbeta-timing-setup-and-data-processing-at-uzh%252F&amp;format=xml" />
+<link rel="pingback" href="https://msenger.web.cern.ch/xmlrpc.php">
+<link rel="icon" href="wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" />
+<meta name="msapplication-TileImage" content="https://msenger.web.cern.ch/wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" />
+
+<style type="text/css" media="all">
+.footnotes_reference_container {margin-top: 24px !important; margin-bottom: 0px !important;}
+.footnote_container_prepare > p {border-bottom: 1px solid #aaaaaa !important;}
+.footnote_tooltip { font-size: 13px !important; color: #000000 !important; background-color: #ffffff !important; border-width: 1px !important; border-style: solid !important; border-color: #cccc99 !important; -webkit-box-shadow: 2px 2px 11px #666666; -moz-box-shadow: 2px 2px 11px #666666; box-shadow: 2px 2px 11px #666666; max-width: 450px !important;}
+
+
+</style>
+</head>
+
+<body itemtype='https://schema.org/Blog' itemscope='itemscope' class="post-template-default single single-post postid-25 single-format-standard wp-custom-logo ast-blog-single-style-1 ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent astra-hfb-header ast-desktop ast-separate-container ast-no-sidebar astra-3.1.2 ast-normal-title-enabled">
+<div 
+class="hfeed site" id="page">
+	<a class="skip-link screen-reader-text" href="index.html%3Fp=25.html#content">Skip to content</a>
+			<header
+		class="site-header ast-primary-submenu-animation-fade header-main-layout-3 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead"		>
+			<div id="ast-desktop-header">
+		<div class="ast-main-header-wrap main-header-bar-wrap ">
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar ast-builder-grid-row-container site-header-focus-item" data-section="section-primary-header-builder">
+						<div class="site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-primary-header-builder">
+				<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
+											<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+									<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+											<div
+				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
+					<span class="site-logo-img"><a href="index.html" class="custom-logo-link" rel="home"><img width="231" height="231" src="wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" class="custom-logo" alt="e a la i por pi logo" decoding="async" fetchpriority="high" /></a></span>				</div>
+			<!-- .site-branding -->
+					</div>
+								</div>
+																									<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22"><a href="index.html" class="menu-link">Home</a></li>
+<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="index.html%3Fp=134.html" class="menu-link">About me</a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="index.html%3Fp=142.html" class="menu-link">Contact</a></li>
+</ul></div></nav></div></div>		</div>
+									</div>
+												</div>
+					</div>
+								</div>
+			</div>
+	</div> <!-- Main Header Bar Wrap -->
+<div id="ast-mobile-header" class="ast-mobile-header-wrap " data-type="off-canvas">
+		<div class="ast-main-header-wrap main-header-bar-wrap" >
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-primary-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default" data-section="section-primary-header-builder">
+									<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
+													<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+											<div
+				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
+					<span class="site-logo-img"><a href="index.html" class="custom-logo-link" rel="home"><img width="231" height="231" src="wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg" class="custom-logo" alt="e a la i por pi logo" decoding="async" /></a></span>				</div>
+			<!-- .site-branding -->
+					</div>
+									</div>
+																									<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="section-header-mobile-trigger">
+						<div class="ast-button-wrap">
+				<button type="button" class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-minimal"  aria-expanded="false">
+					<span class="screen-reader-text">Main Menu</span>
+					<span class="mobile-menu-toggle-icon">
+						<span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg aria-labelledby='menu' class='ast-mobile-svg ast-menu-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z'></path></svg></span><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg aria-labelledby='menu-toggle-close' class='ast-mobile-svg ast-close-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z'></path></svg></span>					</span>
+									</button>
+			</div>
+					</div>
+									</div>
+											</div>
+						</div>
+	</div>
+	</div>
+		</header><!-- #masthead -->
+			<div id="content" class="site-content">
+		<div class="ast-container">
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+				
+
+<article
+class="post-25 post type-post status-publish format-standard has-post-thumbnail hentry category-presentations category-uncategorized tag-beta-source tag-lgad tag-temporal-resolution ast-article-single" id="post-25" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+	
+	
+<div class="ast-post-format- single-layout-1">
+
+	
+	<header class="entry-header ast-no-thumbnail">
+
+		
+				<div class="ast-single-post-order">
+			<h1 class="entry-title" itemprop="headline">Beta Timing Setup and Data Processing at UZH</h1><div class="entry-meta"><span class="posted-on"><span class="published" itemprop="datePublished"> December 14, 2020</span><span class="updated" itemprop="dateModified"> February 14, 2021</span></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by Matías Senger" 
+				href="author/admin/index.html" rel="author"
+				class="url fn n" itemprop="url"				>
+				<span 
+				class="author-name" itemprop="name"				>Matías Senger</span>
+			</a>
+		</span>
+
+		</div>		</div>
+		
+		
+	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content clear" 
+	itemprop="text"	>
+
+		
+		
+<p class="has-text-color has-background" style="background-color:#fff9c2;color:#ff0000"><strong>NOTE: This post was originally published <a href="http://ealaiporpi.byethost7.com/home-page/2020/11/20/beta-timing-setup-and-data-processing-at-uzh/" data-type="URL" data-id="http://ealaiporpi.byethost7.com/home-page/2020/11/20/beta-timing-setup-and-data-processing-at-uzh/">in this link</a>. </strong></p>
+
+
+
+<p class="has-text-align-center">Matías Senger<br>(<a href="mailto:matias.senger@cern.ch">matias.senger@cern.ch</a>)<br>On behalf of the UZH group: <br>Anna Macchiolo, Riccardo del Burgo, Daniel Hernandez, Yuta Takahashi, Prof. Ben Kilminster</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://www.physik.uzh.ch/en/groups/kilminster.html" target="_blank" rel="noopener noreferrer"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/2000px-universitat_zurich_logo.svg_.png?w=1024" alt="" class="wp-image-378" width="298" height="134"/></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://rd50.web.cern.ch/" target="_blank" rel="noopener noreferrer"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/logo-2.jpg?w=1024" alt="" class="wp-image-381" width="160" height="94"/></a></figure></div>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center"><a href="https://indico.cern.ch/event/896954/contributions/4106457/" target="_blank" rel="noreferrer noopener">37<sup>th</sup> RD50 Workshop</a><br>November 20, 2020</p>
+
+
+
+<hr class="wp-block-separator is-style-default"/>
+
+
+<nav class="wp-block-kadence-tableofcontents kb-table-of-content-nav kb-table-of-content-id_b5a859-4f kb-toc-smooth-scroll" role="navigation" aria-label="Table of Contents" data-scroll-offset="40"><div class="kb-table-of-content-wrap"><div class="kb-table-of-contents-title-wrap kb-toggle-icon-style-arrow"><span class="kb-table-of-contents-title">Table of Contents</span></div><ul class="kb-table-of-content-list kb-table-of-content-list-columns-1 kb-table-of-content-list-style-disc kb-table-of-content-link-style-underline"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#uzh-beta-timing-setup">UZH beta timing setup</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#hardware-elements-of-the-setup">Hardware elements of the setup</a></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#data-acquisition">Data acquisition</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#noise">Noise</a></li></ul></li></ul></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#data-processing">Data processing</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#basics-of-data-processing">Basics of data processing</a></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#the-actual-processing-of-data">The actual processing of data</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#extracting-time-information">Extracting time information</a></li></ul></li></ul></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#measurement-of-irradiated-devices">Measurement of irradiated devices</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#beta-setup-at-room-temperature-vs-inside-freezer">Beta setup at room temperature vs inside freezer</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#outside-freezer">Outside freezer</a></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#inside-freezer">Inside freezer</a></li></ul></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#irradiated-devices-in-the-beta-timing-setup">Irradiated devices in the beta timing setup</a><ul class="kb-table-of-contents-list-sub"><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#example">Example</a></li></ul></li></ul></li><li><a class="kb-table-of-contents__entry" href="index.html%3Fp=25.html#conclusion">Conclusion</a></li></ul></div></nav>
+
+
+<h2 class="wp-block-heading">UZH beta timing setup</h2>
+
+
+
+<p>The UZH beta timing setup has the following block diagram:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/2.png?w=1024" alt="" class="wp-image-37"/></figure></div>
+
+
+
+<h3 class="wp-block-heading">Hardware elements of the setup</h3>
+
+
+
+<ul><li>Bias voltage: CAEN DT1419ET voltage supply.</li><li>LGADs: Mounted in <a rel="noreferrer noopener" href="https://twiki.cern.ch/twiki/bin/view/Main/UcscSingleChannel" target="_blank">UCSC single channel board</a> (Santa Cruz board).</li><li>Amplifiers: UZH house made, 36 dB @ 4 GHz.</li><li>Oscilloscope: Lecroy WaveRunner 9254M (or 640Zi).</li><li>Holder: Self made plastic holder to align the two boards and the radioactive source.</li></ul>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_c8b305-d9"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_c8b305-d9 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="3" data-columns-xl="3" data-columns-lg="3" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:771px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:86.7704280155642%"><img decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" width="771" height="669" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-07.png" data-id="34" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=34" class="wp-image-34undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:426px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:178.63849765258215%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" width="426" height="761" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-19.png" data-id="30" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=30" class="wp-image-30undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:422px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:181.27962085308056%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" width="422" height="765" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-31.png" data-id="31" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=31" class="wp-image-31undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:425px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:179.76470588235293%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" width="425" height="764" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-41.png" data-id="32" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=32" class="wp-image-32undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:690px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:101.7391304347826%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" width="690" height="702" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-58-55.png" data-id="33" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=33" class="wp-image-33undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1000px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:92.9%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" width="1000" height="929" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Teledyne-Lecroy-WaveRunner-9254M-MS-Oscilloscope-Repair.png" data-id="29" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=29" class="wp-image-29undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:841px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:71.93816884661118%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" width="841" height="605" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_01-59-20.png" data-id="35" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=35" class="wp-image-35undefined"/></div></div></a></figure></div></li></ul></div>
+</div></div>
+
+
+
+<p>The setup assembled:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/photo_2020-11-13_15-50-10.jpg?w=811" alt="" class="wp-image-72"/></figure>
+
+
+
+<p>A typical signal looks like this:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Signal%2001191-B.html&#8221;]</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>The measurements shown throughout this presentation belong to the &#8220;Speedy Gonzalez measurement series&#8221; and all of them were made with the devices </p>
+
+
+
+<ul><li>AIDA-2020 V1 RUN 11478 W5-DA11</li><li>AIDA-2020 V1 RUN 11478 W5-DA12</li></ul>
+
+
+
+<p>These devices are 35 µm thickness with medium doping.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_16-24-09.png?w=643" alt="" class="wp-image-416"/></figure></div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<h3 class="wp-block-heading">Data acquisition</h3>
+
+
+
+<ul><li>Oscilloscope trigger configuration:<ul><li>Trigger type: Pattern</li><li>Operator: And</li></ul></li></ul>
+
+
+
+<figure class="wp-block-gallery alignwide columns-1 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_16-40-14.png?w=1024" alt="" data-id="419" data-link="https://ealaiporpi.wordpress.com/screenshot_2020-11-19_16-40-14/" class="wp-image-419"/></figure></li></ul></figure>
+
+
+
+<ul><li>Auto save function produces one file per trigger:</li></ul>
+
+
+
+<figure class="wp-block-gallery alignwide columns-1 is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/6.png?w=906" alt="" data-id="82" class="wp-image-82"/></figure></li></ul></figure>
+
+
+
+<ul><li>Wait some hours to get between 3000 and 6000 shots. Typicaly the rate is about 1 trigger every 7 seconds.</li></ul>
+
+
+
+<p>After this I end up with two directories <code>A</code> and <code>B</code>, one for each LGAD, each containing N files with each of the signals. So, for example, files <code>raw/A/00000.txt</code> and <code>raw/B/00000.txt</code> go together because they belong to the same trigger.</p>
+
+
+
+<pre class="wp-block-code"><code>raw
++--- A
+|    +--- 00000.txt
+|    +--- 00001.txt
+|    +--- 00002.txt
+|    ...
++--- B
+     +--- 00000.txt
+     +--- 00001.txt
+     +--- 00002.txt
+     ...</code></pre>
+
+
+
+<h5 class="wp-block-heading">Noise</h5>
+
+
+
+<p>The setup is quite sensitive to Wi-Fi and cellphone noise! This spoils many triggers in the oscilloscope that have to be filtered in the offline analysis.</p>
+
+
+
+<p>The best solution was to place it far from Wi-Fi antennas and have the cellphone in airplane mode when taking data.</p>
+
+
+
+<h2 class="wp-block-heading">Data processing</h2>
+
+
+
+<p>I use <a href="https://www.python.org/" target="_blank" rel="noreferrer noopener">Python</a> due to versatility, portability and ease of use. </p>
+
+
+
+<h4 class="wp-block-heading">Basics of data processing</h4>
+
+
+
+<p>In development: <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools" target="_blank">lgadtools Python package</a> which provides the <code>LGADSignal</code> class for easy manipulation and processing of the data. (Please feel free to try it, use it and/or contribute!)</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; gutter: false; title: ; notranslate" title="">
+from lgadtools.LGADSignal import LGADSignal # https://github.com/SengerM/lgadtools
+my_signal = LGADSignal( # Create LGADSignal object with the data.
+  time = time_values_array,
+  samples = samples_array,
+)
+my_signal.worth # If this is False, the signal is probably only noise.
+my_signal.amplitude # Returns amplitude.
+my_signal.noise # Returns noise STD.
+my_signal.risetime # Returns 10%→90% rise time.
+my_signal.SNR # Returns amplitude/noise.
+my_signal.baseline # Returns signal base line.
+my_signal.plot_myplotlib(myplotlib_figure) # Produces a plot like those shown in this presentation.
+</pre></div>
+
+
+<p>In the plot below I show each of the quantities returned by the <code>LGADSignal</code> class. The plot was actually made by the last line in the previous code example.</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Signal%2001191-B.html&#8221;]</p>
+
+
+
+<h4 class="wp-block-heading">The actual processing of data</h4>
+
+
+
+<p>Using the <code>LGADSignal</code> class I extract the parameters for each pair of signals and produce histograms for amplitude, SNR and rise time:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Rise%20times%20distribution.html&#8221;]</p>
+
+
+
+<p>I usually do not apply any cuts in the offline analysis.</p>
+
+
+
+<h5 class="wp-block-heading">Extracting time information</h5>
+
+
+
+<p>For each signal I go over some predefined values of k<sub>CFD</sub>, the constant fraction discriminator, and for each value of k<sub>CFD</sub> I store the corresponding time, as shown in the next images:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery alignwide kb-gallery-wrap-id-_096acb-99"><div class="kb-gallery-ul kb-gallery-type-carousel kb-gallery-id-_096acb-99 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="true"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-gallery-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-columns-xxl="2" data-columns-xl="2" data-columns-md="2" data-columns-sm="2" data-columns-xs="1" data-columns-ss="1" data-slider-anim-speed="400" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1-768x523.png" width="768" height="523" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/8-1.png" data-id="48" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=48" class="wp-image-48 skip-lazy"/></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08-768x512.png" width="768" height="512" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-15_16-47-08.png" data-id="49" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=49" class="wp-image-49 skip-lazy"/></div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p></p>
+
+
+
+<p>Using the <code>LGADSignal</code> class from the <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools" target="_blank">lgadtools package</a> this is something like:</p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; first-line: 1; gutter: false; title: ; notranslate" title="">
+for kCFD in &#91;10,15,20,...,90]:
+    t1 = signal_from_lgad_1.time_at(kCFD)
+    t2 = signal_from_lgad_2.time_at(kCFD)
+    Delta_t = t1 - t2
+</pre></div>
+
+
+<p>So for each pair of signals I obtain:</p>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong>k<sub>CFD</sub></strong></th><th><strong>t@k<sub>CFD</sub> LGAD 1 (s)</strong></th><th><strong>t@k<sub>CFD</sub> LGAD 2 (s)</strong></th><th><strong>Δt (s)</strong></th></tr></thead><tbody><tr><td>10 %</td><td>-1.39e-9</td><td>-1.49e-9</td><td>100e-12</td></tr><tr><td>15 %</td><td>-1.30e-9</td><td>-1.42e-9</td><td>120e-12</td></tr><tr><td>20 %</td><td>-1.27e-9</td><td>-1.35e-9</td><td>80e-12</td></tr><tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td></tr></tbody></table></figure>
+
+
+
+<p>Now, assuming that the <strong>two detectors are identical</strong>, the standard deviation of \( \Delta t \) divided by \( \sqrt{2} \) is the time resolution for the respective value of \( k_\text{CFD} \), so</p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \text{Time resolution} = \sqrt{\frac{\text{var}(\Delta t)}{2}} \]<script src="wp-includes/js/dist/vendor/wp-polyfill-inert.min.js%3Fver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="wp-includes/js/dist/vendor/regenerator-runtime.min.js%3Fver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="wp-includes/js/dist/vendor/wp-polyfill.min.js%3Fver=3.15.0" id="wp-polyfill-js"></script>
+<script src="wp-includes/js/dist/hooks.min.js%3Fver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="wp-includes/js/dist/i18n.min.js%3Fver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script  async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" id="mathjax-js"></script>
+</div>
+
+
+
+The distribution of \( \Delta t \) looks typically like this:
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Jitter%20at%20kCFD%20%3D%2085%20%25.html&#8221;]</p>
+</div></div>
+
+
+
+<p>Plotting the standard deviation obtained from the gaußian fits in the previous figures as a function of k<sub>CFD</sub> produces:</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution.html&#8221;]</p>
+
+
+
+<p>For this pair of detectors we conclude that the time resolution is 27.2 ps.</p>
+
+
+
+<p>All this is done in an automated way by the script in <a rel="noreferrer noopener" href="https://gitlab.com/SengerM/phd-scripts/-/blob/master/lgad/time_resolution_between_two_pulses.py" target="_blank">this link</a>.</p>
+
+
+
+<h2 class="wp-block-heading">Measurement of irradiated devices</h2>
+
+
+
+<p>To measure irradiated devices we use almost an identical setup, but instead of two identical LGADs we place the irradiated device under test (DUT) together with a reference LGAD that we have already characterized:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/9.png?w=1024" alt="" class="wp-image-343"/></figure></div>
+
+
+
+<p>For irradiated devices the bias current is considerably higher so the <strong>measurement has to be done at lower temperature</strong>. Ideally this is done with a climate chamber. As of now we don&#8217;t have one available so we used a common freezer as a &#8220;quick &#8216;n dirty&#8221; solution. Later on the setup will be moved to a climate chamber.</p>
+
+
+
+<h3 class="wp-block-heading">Beta setup at room temperature vs inside freezer</h3>
+
+
+
+<p>The first step is to check whether the freezer is good enough for this purpose. For this we repeated the same measurement both inside and outside the freezer and we compared them. We only changed bias voltage between these measurements:</p>
+
+
+
+<ul><li>130 V outside the freezer.</li><li>110 V and 105 V inside the freezer.</li></ul>
+
+
+
+<p>The temperature inside the freezer was -19 °C.</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_b4991b-0d"><div class="kb-gallery-ul kb-gallery-type-carousel kb-gallery-id-_b4991b-0d kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-image-filter="none" data-lightbox-caption="true"><div class="kt-blocks-carousel kt-carousel-container-dotstyle-dark"><div class="kt-blocks-carousel-init kb-gallery-carousel kt-carousel-arrowstyle-whiteondark kt-carousel-dotstyle-dark" data-columns-xxl="2" data-columns-xl="2" data-columns-md="2" data-columns-sm="2" data-columns-xs="1" data-columns-ss="1" data-slider-anim-speed="400" data-slider-scroll="1" data-slider-arrows="true" data-slider-dots="true" data-slider-hover-pause="false" data-slider-auto="false" data-slider-speed="7000"><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23-1024x571.png" width="1024" height="571" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-23.png" data-id="53" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=53" class="wp-image-53 skip-lazy"/></div></div></a></figure></div></div></div><div class="kb-slide-item kb-gallery-carousel-item"><div class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption kb-has-image-ratio-land32"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic kb-gallery-image-ratio-land32"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" width="714" height="489" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/Screenshot_2020-11-20_02-56-34.png" data-id="54" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=54" class="wp-image-54 skip-lazy"/></div></div></a></figure></div></div></div></div></div></div></div>
+
+
+
+<p>The results are shown below. Those outside the freezer are the ones shown before, replicated here for ease of comparison.</p>
+
+
+
+<div class="wp-block-columns alignfull is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
+<h6 class="wp-block-heading">Outside freezer</h6>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Speedy%20Gonzalez%20distribution%20plots/Rise%20times%20distribution.html&#8221;]</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
+<h6 class="wp-block-heading">Inside freezer</h6>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/Time%20resolution%20Speedy%20Gonzalez%20in%20the%20north%20pole%20with%20more%20chili.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Amplitudes%20and%20noises%20distributions.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Signal%20to%20noise%20ratio%20(SNR)%20distribution.html&#8221;]</p>
+
+
+<p>[advanced_iframe src=&#8221;https://htmlpreview.github.io/?https://github.com/SengerM/html-github-hosting/blob/main/201120%2037th%20RD50%20Workshop/202011081_Speedy_Gonzalez_in_the_North_Pole_with_more_chili/processed_by_script_time_resolution_between_two_pulses/distributions%20plots/Rise%20times%20distribution.html&#8221;]o</p>
+</div>
+</div>
+
+
+
+<p>On these results:</p>
+
+
+
+<ul><li>The increase of gain in cold was compensated by the lower bias voltage. </li><li>We considered this results as a validation to measure the irradiated devices inside the freezer.</li></ul>
+
+
+
+<h3 class="wp-block-heading">Irradiated devices in the beta timing setup</h3>
+
+
+
+<p>We used the setup previously shown with one DUT and one reference LGAD placed inside the freezer. The devices in the setup were:</p>
+
+
+
+<ul><li>DUT: LGAD HPK 2 L14P10 W31-S2 (8e14 n<sub>eq</sub>/cm²) (45 µm thick)</li><li>Reference: AIDA-2020 V1 RUN 11478 W5-DA12 (the same shown before at room temperature)</li></ul>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img loading="lazy" decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/photo_2020-11-19_10-21-58.jpg?w=720" alt="" class="wp-image-346" width="470" height="463"/></figure></div>
+
+
+
+<p>The IV curves measured in the probe station at -20 °C at UZH for the irradiated HPK2 sensors are:</p>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_c40e56-8d"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_c40e56-8d kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="1" data-columns-xl="1" data-columns-lg="1" data-columns-md="1" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:1576px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:51.840101522842644%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" width="1576" height="817" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/path11753-2.png" data-id="61" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=61" class="wp-image-61undefined"/></div></div></a></figure></div></li></ul></div>
+
+
+
+<p>And the timing results for the measured device:</p>
+
+
+
+<figure class="wp-block-gallery aligncenter columns-1 is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" src="https://ealaiporpi.files.wordpress.com/2020/11/screenshot_2020-11-19_09-53-43.png?w=1024" alt="" data-id="359" class="wp-image-359"/></figure></li></ul></figure>
+
+
+
+<p>To obtain this time resolution we subtracted the resolution from the reference LGAD:</p>
+
+
+
+<div class="wp-block-mathml-mathmlblock">\[ \sigma_\text{DUT} = \sqrt{\sigma^2_\text{measured} &#8211; \sigma^2_\text{reference LGAD}} \]</div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h6 class="wp-block-heading">Example</h6>
+
+
+
+<div class="wp-block-kadence-advancedgallery kb-gallery-wrap-id-_fdc62d-f6"><ul class="kb-gallery-ul kb-gallery-type-masonry kb-masonry-init kb-gallery-id-_fdc62d-f6 kb-gallery-caption-style-bottom-hover kb-gallery-filter-none kb-gallery-magnific-init" data-item-selector=".kadence-blocks-gallery-item" data-image-filter="none" data-lightbox-caption="true" data-columns-xxl="2" data-columns-xl="2" data-columns-lg="2" data-columns-md="2" data-columns-sm="1" data-columns-xs="1"><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:755px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:64.63576158940397%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" width="755" height="488" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-51-07.png" data-id="63" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=63" class="wp-image-63undefined"/></div></div></a></figure></div></li><li class="kadence-blocks-gallery-item"><div class="kadence-blocks-gallery-item-inner"><figure class="kb-gallery-figure kb-gallery-item-has-link kadence-blocks-gallery-item-hide-caption"><a href="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" class="kb-gallery-item-link"><div class="kb-gal-image-radius" style="max-width:820px"><div class="kb-gallery-image-contain kadence-blocks-gallery-intrinsic" style="padding-bottom:58.65853658536585%"><img loading="lazy" decoding="async" src="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" width="820" height="481" alt="" data-full-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" data-light-image="http://ealaiporpi.byethost7.com/wp-content/uploads/2020/11/screenshot_2020-11-19_10-52-54.png" data-id="64" data-link="http://ealaiporpi.byethost7.com/home-page/?attachment_id=64" class="wp-image-64undefined"/></div></div></a></figure></div></li></ul></div>
+
+
+
+In this case \( \sigma_\text{measured} = 44 \text{ ps} \) and \( \sigma_\text{reference LGAD} = 27.2 \text{ ps} \) so \( \sigma_\text{DUT} = 35.1 \text{ ps} \).
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<ul><li>The beta timing setup at UZH is operative.</li><li>Few house-made hardware pieces were required.</li><li>Noise: The setup is sensitive to Wi-Fi/cell phones.<ul><li>Easy solution: Move away from noise sources.</li></ul></li><li>Software: Portable and reusable software is in development.<ul><li>It is already usable, feel free <a rel="noreferrer noopener" href="https://github.com/SengerM/lgadtools#installation" target="_blank">to try it</a> 🙂</li></ul></li><li>The timing setup was assembled inside a freezer with good results.<ul><li>Measured irradiated device.</li></ul></li></ul>
+
+		
+		
+			</div><!-- .entry-content .clear -->
+</div>
+
+	
+</article><!-- #post-## -->
+
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="index.html%3Fp=13.html" rel="prev"><span class="ast-left-arrow">&larr;</span> Previous Post</a></div><div class="nav-next"><a href="index.html%3Fp=35.html" rel="next">Next Post <span class="ast-right-arrow">&rarr;</span></a></div></div>
+	</nav>			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+<footer
+class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon">
+			<div class="site-below-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-full ast-builder-grid-row-tablet-full ast-builder-grid-row-mobile-full ast-footer-row-stack ast-footer-row-tablet-stack ast-footer-row-mobile-stack" data-section="section-below-footer-builder">
+	<div class="ast-builder-grid-row-container-inner">
+					<div class="ast-builder-footer-grid-columns site-below-footer-inner-wrap ast-builder-grid-row">
+											<div class="site-footer-below-section-1 site-footer-section site-footer-section-1">
+								<div class="ast-builder-layout-element ast-flex site-footer-focus-item ast-footer-copyright" data-section="section-footer-builder">
+				<div class="ast-footer-copyright"><p>Copyright &copy; 2024 e a la i por pi | Powered by <a href=" https://wpastra.com/" rel="nofollow noopener" target="_blank">Astra WordPress Theme</a></p>
+</div>			</div>
+						</div>
+										</div>
+			</div>
+
+</div>
+	</footer><!-- #colophon -->
+	</div><!-- #page -->
+		<div id="ast-mobile-popup-wrapper">
+			<div id="ast-mobile-popup" class="ast-mobile-popup-drawer content-align-flex-start ast-mobile-popup-right">
+			<div class="ast-mobile-popup-overlay"></div>
+			<div class="ast-mobile-popup-inner">
+					<div class="ast-mobile-popup-header">
+						<button id="menu-toggle-close" class="menu-toggle-close" aria-label="Close menu">
+							<span class="ast-svg-iconset">
+								<span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg aria-labelledby='menu-toggle-close' class='ast-mobile-svg ast-close-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z'></path></svg></span>							</span>
+						</button>
+					</div>
+					<div class="ast-mobile-popup-content">
+								<div class="ast-builder-menu-mobile ast-builder-menu ast-builder-menu-mobile-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-header-mobile-menu">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation" id="site-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope" class="ast-flex-grow-1 navigation-accessibility" aria-label="Site Navigation"><div id="ast-hf-mobile-menu" class="main-navigation"><ul class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li class="page_item page-item-134 menu-item"><a href="index.html%3Fp=134.html" class="menu-link">About me</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span></button></li><li class="page_item page-item-142 menu-item"><a href="index.html%3Fp=142.html" class="menu-link">Contact</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span></button></li><li class="page_item page-item-18 menu-item"><a href="index.html" class="menu-link">Home</a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span></button></li></ul></div></nav></div></div>		</div>
+							</div>
+				</div>
+		</div>
+		</div>
+
+		<script src="wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js%3Fver=3.0.9b" id="syntaxhighlighter-core-js"></script>
+<script src="wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js%3Fver=3.0.9b" id="syntaxhighlighter-brush-python-js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://msenger.web.cern.ch/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.head.appendChild( corecss );
+		var themecssurl = "https://msenger.web.cern.ch/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.head.appendChild( themecss );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-columns-layout-1.wp-container-core-columns-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-layout-2.wp-container-core-columns-layout-2{flex-wrap:nowrap;}.wp-block-gallery.wp-block-gallery-1{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-block-gallery.wp-block-gallery-2{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-container-core-columns-layout-3.wp-container-core-columns-layout-3{flex-wrap:nowrap;}.wp-block-gallery.wp-block-gallery-3{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-container-core-columns-layout-4.wp-container-core-columns-layout-4{flex-wrap:nowrap;}
+</style>
+<script src="wp-includes/js/jquery/ui/core.min.js%3Fver=1.13.2" id="jquery-ui-core-js"></script>
+<script src="wp-includes/js/jquery/ui/tooltip.min.js%3Fver=1.13.2" id="jquery-ui-tooltip-js"></script>
+<script id="astra-theme-js-js-extra">
+var astra = {"break_point":"921","isRtl":""};
+</script>
+<script src="wp-content/themes/astra/assets/js/minified/frontend.min.js%3Fver=3.1.2" id="astra-theme-js-js"></script>
+<script id="kadence-blocks-tableofcontents-js-extra">
+var kadence_blocks_toc = {"headings":"[{\"anchor\":\"uzh-beta-timing-setup\",\"content\":\"UZH beta timing setup\",\"level\":2,\"page\":1},{\"anchor\":\"hardware-elements-of-the-setup\",\"content\":\"Hardware elements of the setup\",\"level\":3,\"page\":1},{\"anchor\":\"data-acquisition\",\"content\":\"Data acquisition\",\"level\":3,\"page\":1},{\"anchor\":\"noise\",\"content\":\"Noise\",\"level\":5,\"page\":1},{\"anchor\":\"data-processing\",\"content\":\"Data processing\",\"level\":2,\"page\":1},{\"anchor\":\"basics-of-data-processing\",\"content\":\"Basics of data processing\",\"level\":4,\"page\":1},{\"anchor\":\"the-actual-processing-of-data\",\"content\":\"The actual processing of data\",\"level\":4,\"page\":1},{\"anchor\":\"extracting-time-information\",\"content\":\"Extracting time information\",\"level\":5,\"page\":1},{\"anchor\":\"measurement-of-irradiated-devices\",\"content\":\"Measurement of irradiated devices\",\"level\":2,\"page\":1},{\"anchor\":\"beta-setup-at-room-temperature-vs-inside-freezer\",\"content\":\"Beta setup at room temperature vs inside freezer\",\"level\":3,\"page\":1},{\"anchor\":\"outside-freezer\",\"content\":\"Outside freezer\",\"level\":6,\"page\":1},{\"anchor\":\"inside-freezer\",\"content\":\"Inside freezer\",\"level\":6,\"page\":1},{\"anchor\":\"irradiated-devices-in-the-beta-timing-setup\",\"content\":\"Irradiated devices in the beta timing setup\",\"level\":3,\"page\":1},{\"anchor\":\"example\",\"content\":\"Example\",\"level\":6,\"page\":1},{\"anchor\":\"conclusion\",\"content\":\"Conclusion\",\"level\":2,\"page\":1}]","expandText":"Expand Table of Contents","collapseText":"Collapse Table of Contents"};
+var kadence_blocks_toc = {"headings":"[{\"anchor\":\"uzh-beta-timing-setup\",\"content\":\"UZH beta timing setup\",\"level\":2,\"page\":1},{\"anchor\":\"hardware-elements-of-the-setup\",\"content\":\"Hardware elements of the setup\",\"level\":3,\"page\":1},{\"anchor\":\"data-acquisition\",\"content\":\"Data acquisition\",\"level\":3,\"page\":1},{\"anchor\":\"noise\",\"content\":\"Noise\",\"level\":5,\"page\":1},{\"anchor\":\"data-processing\",\"content\":\"Data processing\",\"level\":2,\"page\":1},{\"anchor\":\"basics-of-data-processing\",\"content\":\"Basics of data processing\",\"level\":4,\"page\":1},{\"anchor\":\"the-actual-processing-of-data\",\"content\":\"The actual processing of data\",\"level\":4,\"page\":1},{\"anchor\":\"extracting-time-information\",\"content\":\"Extracting time information\",\"level\":5,\"page\":1},{\"anchor\":\"measurement-of-irradiated-devices\",\"content\":\"Measurement of irradiated devices\",\"level\":2,\"page\":1},{\"anchor\":\"beta-setup-at-room-temperature-vs-inside-freezer\",\"content\":\"Beta setup at room temperature vs inside freezer\",\"level\":3,\"page\":1},{\"anchor\":\"outside-freezer\",\"content\":\"Outside freezer\",\"level\":6,\"page\":1},{\"anchor\":\"inside-freezer\",\"content\":\"Inside freezer\",\"level\":6,\"page\":1},{\"anchor\":\"irradiated-devices-in-the-beta-timing-setup\",\"content\":\"Irradiated devices in the beta timing setup\",\"level\":3,\"page\":1},{\"anchor\":\"example\",\"content\":\"Example\",\"level\":6,\"page\":1},{\"anchor\":\"conclusion\",\"content\":\"Conclusion\",\"level\":2,\"page\":1}]","expandText":"Expand Table of Contents","collapseText":"Collapse Table of Contents"};
+</script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/kb-table-of-contents.min.js%3Fver=3.1.22" id="kadence-blocks-tableofcontents-js"></script>
+<script src="wp-includes/js/imagesloaded.min.js%3Fver=5.0.0" id="imagesloaded-js"></script>
+<script src="wp-includes/js/masonry.min.js%3Fver=4.2.2" id="masonry-js"></script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/kb-masonry-init.min.js%3Fver=3.1.22" id="kadence-blocks-masonry-init-js"></script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/glightbox.min.js%3Fver=3.1.22" id="kadence-glightbox-js"></script>
+<script id="kadence-blocks-glight-init-js-extra">
+var kb_glightbox = {"moreText":"See more"};
+</script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/kb-gallery-glight-init.min.js%3Fver=3.1.22" id="kadence-blocks-glight-init-js"></script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/splide.min.js%3Fver=3.1.22" id="kad-splide-js"></script>
+<script src="wp-content/plugins/kadence-blocks/includes/assets/js/kb-splide-init.min.js%3Fver=3.1.22" id="kadence-blocks-splide-init-js"></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+				</body>
+</html>

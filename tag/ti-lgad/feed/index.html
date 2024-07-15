@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ti-lgad &#8211; e a la i por pi</title>
+	<atom:link href="https://msenger.web.cern.ch/tag/ti-lgad/feed/" rel="self" type="application/rss+xml" />
+	<link>https://msenger.web.cern.ch</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Mar 2022 06:16:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+
+<image>
+	<url>https://msenger.web.cern.ch/wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg</url>
+	<title>ti-lgad &#8211; e a la i por pi</title>
+	<link>https://msenger.web.cern.ch</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Performance of TI-LGAD after irradiation</title>
+		<link>https://msenger.web.cern.ch/performance-of-ti-lgad-after-irradiation/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2022 08:18:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[irradiation]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<category><![CDATA[ti-lgad]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=890</guid>
+
+					<description><![CDATA[This is the continuation of my previous post where I showed the main results on the inter-pixel distance measurement in TI-LGADs. In this post I will summarize my results for the same devices but after they have been irradiated. This was presented in the VCI2022 conference, here you can find the slides which I also &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/performance-of-ti-lgad-after-irradiation/"> <span class="screen-reader-text">Performance of TI-LGAD after irradiation</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>This is the continuation of <a href="https://msenger.web.cern.ch/measuring-the-inter-pixel-distance-of-ti-lgad/" data-type="post" data-id="772">my previous post</a> where I showed the main results on the inter-pixel distance measurement in TI-LGADs. In this post I will summarize my results for the same devices but after they have been irradiated. This was presented in the VCI2022 conference, <a rel="noreferrer noopener" href="https://indico.cern.ch/event/1044975/contributions/4663649/" data-type="URL" data-id="https://indico.cern.ch/event/1044975/contributions/4663649/" target="_blank">here</a> you can find the slides which I also embed below:</p>
+
+
+
+<iframe style="width: 100%; height: 77vh;" src="https://indico.cern.ch/event/1044975/contributions/4663649/attachments/2397720/4135801/220225%20VCI%20Matias%20Senger.pdf"></iframe>
+
+
+
+<p>In this post I just want to summarize my results and left a frozen version of the plots in interactive format which provide more information than the PDF version. </p>
+
+
+
+<p>So, what we did is to irradiate devices to 3 different fluences using reactor neutrons. The first question, did this affect their performance? Yes, it degraded the performance. The following plot shows the collected charge for different irradiation fluences (each color):</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/collected_charge_vs_bias_voltage.html"></iframe>
+
+
+
+<p>We see that the collected charge after irradiation is lower than before. This means basically that the devices have less gain. If you go to the subplot for <em>Trench depth=D3</em> and <em>Trenches=2</em> and zoom in the y axis between 0 and 1 fC you will find a non irradiated device (gray color). This is a PIN diode (i.e. no gain by design). We see that the LGADs after irradiation are still better than the PIN in the sense that they keep some gain. This gain, however, is much smaller than before irradiation. This was expected as it is the way regular LGADs behave.</p>
+
+
+
+<p>How do trenches behave after irradiation? To get an insight we look into the inter-pixel distance plot (below). In this plot we see that the inter-pixel distance dependence with the different design patterns is washed out after irradiation, i.e. they all behave in almost the same way and it is &#8220;a good way&#8221; since the inter-pixel distance  is still less than 5 µm.</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/ipd_vs_bias_voltage.html"></iframe>
+
+
+
+<p>Other characteristics such as the time resolution and the IV curves behave in a similar way as for regular LGADs:</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/time_resolution_vs_bias_voltage.html"></iframe>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/iv_curves.html"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Making a temperature controller with Python</title>
+		<link>https://msenger.web.cern.ch/making-a-temperature-controller-with-python/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 30 Dec 2021 11:10:02 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[ti-lgad]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=807</guid>
+
+					<description><![CDATA[Controlling the temperature of something is a very common task to do in the lab, basically because almost everything is a function of temperature and you usually want to keep it stable at a known value. Currently I am working in measuring the TI-LGADs after irradiation, and for this they have to be cooled down &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/making-a-temperature-controller-with-python/"> <span class="screen-reader-text">Making a temperature controller with Python</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>Controlling the temperature of something is a very common task to do in the lab, basically because almost everything is a function of temperature and you usually want to keep it stable at a known value. Currently I am working in measuring the TI-LGADs after irradiation, and for this they have to be cooled down to approximately -20 °C because otherwise the current blows up. That is why I implemented the &#8220;<a rel="noreferrer noopener" href="https://msenger.web.cern.ch/low-temperature-setup-for-the-tct/" data-type="URL" data-id="https://msenger.web.cern.ch/low-temperature-setup-for-the-tct/" target="_blank">low temperature system for the TCT setup</a>&#8220;. The system works fine and is capable of reaching the desired temperature, but without a controller there is not much precision in the temperature, and it is subjected to fluctuations. To ease my life and improve the quality of the results I decided to implement a temperature controller which automatically adjusts the current flowing through the Peltier cells such that the temperature is stabilized at the desired value.</p>
+
+
+
+<p>Usually these controllers can be just bought, but since I had all the required elements in the lab to implement one on my own, I decided to go this way. The only extra thing I had to do is to connect the DC power supply (powering the Peltier cells) using a USB cable to the computer, and write the software. Establishing the communication between the computer and the power supply was the most complicated part, but that&#8217;s another story. Once this communication was working, I decided to try with the engineer&#8217;s workhorse when something has to be automatically controlled, a <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/PID_controller" data-type="URL" data-id="https://en.wikipedia.org/wiki/PID_controller" target="_blank">PID controller</a>. Python is so vast that there is a PID module awaiting to be imported, the <a rel="noreferrer noopener" href="https://pypi.org/project/simple-pid/" data-type="URL" data-id="https://pypi.org/project/simple-pid/" target="_blank">simple-pid package</a>. So all I had to do is import this package, tune the PID constants for a while, and voilà, the controller was working. The current version of the software that controls the temperature in the TCT setup can be found <a rel="noreferrer noopener" href="https://github.com/SengerM/tct_scripts/blob/5c0806229609b75e4b04576152916a5c6d1835aa/temperature_controller.py" target="_blank">here</a>, it is more than just importing the PID package but that&#8217;s for having it running as a daemon in the background, automatically reporting parameters to my mobile (in case something goes wrong) and at the same time allowing control from any other Python script (for example the scripts that will actually measure the TI-LGADs).</p>
+
+
+
+<p>I have to say that I am surprised on how well the controller performs. Below there is a plot showing the set-temperature and the measured-temperature while I was doing some testing. We can see that it stabilizes in about 3 minutes and the temperature has fluctuation of less than 0.05 °C once it stabilizes. This is far better than what I need for this application, so nice <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f601.png" alt="😁" class="wp-smiley" style="height: 1em; max-height: 1em;" />.</p>
+
+
+
+<iframe style="width: 100%; height: 500px; min-width: 1000px;" src="https://msenger.web.cern.ch/wp-content/uploads/2021/12/temperature_controller.html"></iframe>
+
+
+
+<p>The &#8220;measured temperature&#8221; is the temperature measured by a sensor that is less than one centimeter from the TI-LGAD in the readout board, you can see it in the picture below it is the small black chip next to the gold pad where the TI-LGAD is mounted.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img fetchpriority="high" decoding="async" src="https://msenger.web.cern.ch/wp-content/uploads/2021/11/photo_2021-11-26_23-06-38.jpg" alt="" class="wp-image-792" width="345" height="325" srcset="https://msenger.web.cern.ch/wp-content/uploads/2021/11/photo_2021-11-26_23-06-38.jpg 764w, https://msenger.web.cern.ch/wp-content/uploads/2021/11/photo_2021-11-26_23-06-38-300x284.jpg 300w" sizes="(max-width: 345px) 100vw, 345px" /></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Measuring the inter-pixel distance of TI-LGAD</title>
+		<link>https://msenger.web.cern.ch/measuring-the-inter-pixel-distance-of-ti-lgad/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Thu, 25 Nov 2021 07:05:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<category><![CDATA[ti-lgad]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=772</guid>
+
+					<description><![CDATA[Recently I have been working on the measurement of the inter-pixel distance of novel Trench Isolated LGAD (TI-LGAD) detectors. I presented my results in the 39th RD50 Workshop in Valencia. In this link you can find my slides, which I also embed here: This post is to provide a (very) brief summary of my work. &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/measuring-the-inter-pixel-distance-of-ti-lgad/"> <span class="screen-reader-text">Measuring the inter-pixel distance of TI-LGAD</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>Recently I have been working on the measurement of the inter-pixel distance of novel Trench Isolated LGAD (TI-LGAD) detectors. I presented my results in the <a rel="noreferrer noopener" href="https://indico.cern.ch/event/1074989/contributions/4601936/" data-type="URL" data-id="https://indico.cern.ch/event/1074989/contributions/4601936/" target="_blank">39<sup>th</sup> RD50 Workshop in Valencia</a>.</p>
+
+
+
+<p> In <a rel="noreferrer noopener" href="https://indico.cern.ch/event/1074989/contributions/4601936/attachments/2348214/4004754/Senger_Matias__TI-LGAD_at_UZH.pdf" data-type="URL" data-id="https://indico.cern.ch/event/1074989/contributions/4601936/attachments/2348214/4004754/Senger_Matias__TI-LGAD_at_UZH.pdf" target="_blank">this link</a> you can find my slides, which I also embed here:</p>
+
+
+
+<iframe src="https://indico.cern.ch/event/1074989/contributions/4601936/attachments/2348214/4004754/Senger_Matias__TI-LGAD_at_UZH.pdf" style="width: 100%; height: 77vh;"></iframe>
+
+
+
+<p>This post is to provide a (very) brief summary of my work.</p>
+
+
+
+<p>First of all, what is a TI-LGAD? TI-LGAD is a novel technology to extend the application of LGAD detectors to high granularity applications, this means to create a pixelated array of LGADs with a pixel size between 25 and 100 µm and with a reasonable fill factor > 80 %. The TI-LGAD technology &#8220;competes&#8221; against <a href="https://msenger.web.cern.ch/tag/ac-lgad/" data-type="URL" data-id="https://msenger.web.cern.ch/tag/ac-lgad/" target="_blank" rel="noreferrer noopener">the AC-LGAD</a> technology to achieve high temporal and spacial resolution in the same device. In the TI-LGAD technology each pixel is isolated from its surrounding pixels by etching physical trenches. Below there is a cartoon illustrating this.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="357" height="208" src="https://msenger.web.cern.ch/wp-content/uploads/2021/11/4.svg" alt="" class="wp-image-773"/><figcaption>Cartoon of a TI-LGAD.</figcaption></figure>
+
+
+
+<p>At UZH we received a fraction of the RD50 production of TI-LGADs, which was produced by <a rel="noreferrer noopener" href="https://www.fbk.eu/en/" data-type="URL" data-id="https://www.fbk.eu/en/" target="_blank">FBK</a>. Measurements were done using <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/tct-setup-at-uzh/" data-type="URL" data-id="https://msenger.web.cern.ch/tct-setup-at-uzh/" target="_blank">the TCT setup that we have at UZH</a>. My results are summarized in the plot below:</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://sengerm.github.io/html-github-hosting/211125_inte_pixel_distance_measurements_on_TI-LGAD_post_in_CERN_website/ipd_vs_bias_voltage.html"></iframe>
+
+
+
+<p>In this plot I am showing the Inter-Pixel Distance (IPD) for each of the different design patterns we received at UZH, this is different combinations of trench depth, number of trenches, contact type and pixel border. As can be seen there are some devices which show practically zero IPD at the operating voltage of 200 V. </p>
+
+
+
+<p>The TI-LGADs were shipped yesterday to <a rel="noreferrer noopener" href="https://ric.ijs.si/en/" data-type="URL" data-id="https://ric.ijs.si/en/" target="_blank">Jožef Stefan Institute – RIC</a> to be irradiated with neutrons and hopefully I can re-measure the IPD and observe its degradation.</p>
+
+
+
+<p>For more details see <a rel="noreferrer noopener" href="https://indico.cern.ch/event/1074989/contributions/4601936/attachments/2348214/4004754/Senger_Matias__TI-LGAD_at_UZH.pdf" data-type="URL" data-id="https://indico.cern.ch/event/1074989/contributions/4601936/attachments/2348214/4004754/Senger_Matias__TI-LGAD_at_UZH.pdf" target="_blank">the slides</a> or just <a rel="noreferrer noopener" href="https://msenger.web.cern.ch/contact/" data-type="URL" data-id="https://msenger.web.cern.ch/contact/" target="_blank">ask me</a> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://indico.cern.ch/event/1074989/images/34329-IMG_20211118_131352.jpg" alt="" width="554" height="415"/><figcaption><a rel="noreferrer noopener" href="https://i.ytimg.com/vi/BLUkgRAy_Vo/maxresdefault.jpg" data-type="URL" data-id="https://i.ytimg.com/vi/BLUkgRAy_Vo/maxresdefault.jpg" target="_blank">Myself during the presentation at the RD50 Worksho</a><a href="https://i.ytimg.com/vi/BLUkgRAy_Vo/maxresdefault.jpg" data-type="URL" data-id="https://i.ytimg.com/vi/BLUkgRAy_Vo/maxresdefault.jpg" target="_blank" rel="noreferrer noopener">p</a>. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f913.png" alt="🤓" class="wp-smiley" style="height: 1em; max-height: 1em;" /></figcaption></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

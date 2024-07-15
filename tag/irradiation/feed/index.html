@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>irradiation &#8211; e a la i por pi</title>
+	<atom:link href="https://msenger.web.cern.ch/tag/irradiation/feed/" rel="self" type="application/rss+xml" />
+	<link>https://msenger.web.cern.ch</link>
+	<description></description>
+	<lastBuildDate>Tue, 29 Mar 2022 06:16:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+
+<image>
+	<url>https://msenger.web.cern.ch/wp-content/uploads/2020/12/e-a-la-i-por-pi-1.svg</url>
+	<title>irradiation &#8211; e a la i por pi</title>
+	<link>https://msenger.web.cern.ch</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Performance of TI-LGAD after irradiation</title>
+		<link>https://msenger.web.cern.ch/performance-of-ti-lgad-after-irradiation/</link>
+		
+		<dc:creator><![CDATA[Matías Senger]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2022 08:18:52 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[irradiation]]></category>
+		<category><![CDATA[spacial-resolution]]></category>
+		<category><![CDATA[tct]]></category>
+		<category><![CDATA[temporal-resolution]]></category>
+		<category><![CDATA[ti-lgad]]></category>
+		<guid isPermaLink="false">https://msenger.web.cern.ch/?p=890</guid>
+
+					<description><![CDATA[This is the continuation of my previous post where I showed the main results on the inter-pixel distance measurement in TI-LGADs. In this post I will summarize my results for the same devices but after they have been irradiated. This was presented in the VCI2022 conference, here you can find the slides which I also &#8230;<p class="read-more"> <a class="" href="https://msenger.web.cern.ch/performance-of-ti-lgad-after-irradiation/"> <span class="screen-reader-text">Performance of TI-LGAD after irradiation</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[
+<p>This is the continuation of <a href="https://msenger.web.cern.ch/measuring-the-inter-pixel-distance-of-ti-lgad/" data-type="post" data-id="772">my previous post</a> where I showed the main results on the inter-pixel distance measurement in TI-LGADs. In this post I will summarize my results for the same devices but after they have been irradiated. This was presented in the VCI2022 conference, <a rel="noreferrer noopener" href="https://indico.cern.ch/event/1044975/contributions/4663649/" data-type="URL" data-id="https://indico.cern.ch/event/1044975/contributions/4663649/" target="_blank">here</a> you can find the slides which I also embed below:</p>
+
+
+
+<iframe style="width: 100%; height: 77vh;" src="https://indico.cern.ch/event/1044975/contributions/4663649/attachments/2397720/4135801/220225%20VCI%20Matias%20Senger.pdf"></iframe>
+
+
+
+<p>In this post I just want to summarize my results and left a frozen version of the plots in interactive format which provide more information than the PDF version. </p>
+
+
+
+<p>So, what we did is to irradiate devices to 3 different fluences using reactor neutrons. The first question, did this affect their performance? Yes, it degraded the performance. The following plot shows the collected charge for different irradiation fluences (each color):</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/collected_charge_vs_bias_voltage.html"></iframe>
+
+
+
+<p>We see that the collected charge after irradiation is lower than before. This means basically that the devices have less gain. If you go to the subplot for <em>Trench depth=D3</em> and <em>Trenches=2</em> and zoom in the y axis between 0 and 1 fC you will find a non irradiated device (gray color). This is a PIN diode (i.e. no gain by design). We see that the LGADs after irradiation are still better than the PIN in the sense that they keep some gain. This gain, however, is much smaller than before irradiation. This was expected as it is the way regular LGADs behave.</p>
+
+
+
+<p>How do trenches behave after irradiation? To get an insight we look into the inter-pixel distance plot (below). In this plot we see that the inter-pixel distance dependence with the different design patterns is washed out after irradiation, i.e. they all behave in almost the same way and it is &#8220;a good way&#8221; since the inter-pixel distance  is still less than 5 µm.</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/ipd_vs_bias_voltage.html"></iframe>
+
+
+
+<p>Other characteristics such as the time resolution and the IV curves behave in a similar way as for regular LGADs:</p>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/time_resolution_vs_bias_voltage.html"></iframe>
+
+
+
+<iframe style="width: 100%; height: 70vh; min-width: 999px; min-height: 666px;" src="https://msenger.web.cern.ch/wp-content/uploads/2022/03/iv_curves.html"></iframe>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
